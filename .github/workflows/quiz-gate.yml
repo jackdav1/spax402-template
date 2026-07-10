@@ -1,0 +1,51 @@
+name: quiz-gate
+
+on:
+  push:
+    branches: ["**"]
+
+jobs:
+  quiz-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Every submitted week has a passing quiz artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          fail=0
+          shopt -s nullglob
+          for weekdir in weeks/week*/; do
+            week=$(basename "$weekdir")
+            # A week counts as "submitted" once its BRIEF.md has real content.
+            brief="$weekdir/BRIEF.md"
+            if [[ ! -s "$brief" ]]; then
+              continue
+            fi
+            artifact="$weekdir/checks/${week}-quiz.json"
+            if [[ ! -f "$artifact" ]]; then
+              echo "::error::$week has a BRIEF.md but no quiz artifact ($artifact). Run /quiz-me for this week."
+              fail=1
+              continue
+            fi
+            if ! python3 -c "import json,sys; d=json.load(open('$artifact')); sys.exit(0 if d.get('pass') is True else 1)"; then
+              echo "::error::$week quiz artifact exists but pass is not true. Finish /quiz-me for this week."
+              fail=1
+              continue
+            fi
+            transcript="$weekdir/checks/${week}-quiz-transcript.md"
+            if [[ ! -s "$transcript" ]]; then
+              echo "::error::$week quiz artifact is not backed by a transcript ($transcript)."
+              fail=1
+              continue
+            fi
+            echo "$week: quiz gate OK"
+          done
+          if [[ "$fail" -ne 0 ]]; then
+            echo ""
+            echo "Submission incomplete: every week with a BRIEF.md needs a passed /quiz-me."
+            exit 1
+          fi
+          echo "All submitted weeks pass the quiz gate."
