@@ -30,7 +30,18 @@ critique your draft (`/coach-brief`) — never to write it.
 3. **Write `BRIEF.md`** in the week's folder — your words, half a page.
 4. **Run `/quiz-me`** for the week. You can't submit without a passing quiz artifact.
 5. **Commit and push everything**, then submit your repo link in Canvas by **Monday 11:59pm**.
-   A green check on your latest commit means your submission is complete; a red X means it isn't.
+
+A green check on your latest commit means every week that is due has all three of: a written
+`BRIEF.md`, a passed `/quiz-me` artifact, and the transcript backing it. A red X tells you which of
+those is missing, by week. You can run the same check yourself before pushing:
+
+```
+python scripts/quiz_gate.py
+```
+
+Due dates live in `course-schedule.json`. The gate confirms your artifacts exist and agree with each
+other; it cannot confirm you understand anything, which is what the Tuesday quiz and the verbal test
+are for.
 
 ## The skills
 

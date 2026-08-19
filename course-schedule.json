@@ -1,0 +1,18 @@
+{
+  "_comment": [
+    "Due dates for each week's case study. The quiz gate reads this to decide what is overdue,",
+    "which is what lets a green check mean 'everything due so far is done' instead of merely",
+    "'nothing detectably wrong'. Times are 11:59pm America/New_York on the date given.",
+    "Weeks not listed here are not checked until they have a BRIEF.md. Add weeks 7-15 as their",
+    "assignments are built."
+  ],
+  "timezone": "America/New_York",
+  "due": {
+    "week01": "2026-08-31",
+    "week02": "2026-09-08",
+    "week03": "2026-09-14",
+    "week04": "2026-09-21",
+    "week05": "2026-09-28",
+    "week06": "2026-10-05"
+  }
+}
