@@ -10,8 +10,10 @@ to spit out an answer.
 ## The two gears
 
 - **Closed gear (no AI):** Thursday in class you build a small version of each week's method by
-  hand — paper or a small spreadsheet. This is where you prove the understanding is yours.
+  hand, on paper or in a small spreadsheet. This is where you prove the understanding is yours.
   Tuesday quizzes and both exams are also closed-book, closed-AI.
+  If you need more time on the Thursday hand-build, finish it at home that evening before you start
+  the open gear. You do not need to ask, and you do not need a reason.
 - **Open gear (this repo):** you direct Claude Code to scale the analysis up — real data, real
   size. Your hand-built version from Thursday is the reference answer you check the agent
   against.

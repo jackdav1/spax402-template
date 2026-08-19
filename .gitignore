@@ -6,3 +6,9 @@ __pycache__/
 .DS_Store
 Thumbs.db
 ~$*
+
+# Downloaded source data: students re-pull it with the provided scripts rather than
+# cloning ~20 MB per person. The pull script is committed; its output is not.
+weeks/*/data/raw/
+*.parquet
+*.parquet.partial
