@@ -9,9 +9,18 @@ gotchas — but a pass must be earned, never given.
 
 ## Setup
 
-1. Determine the week (from the argument, or ask). Read `weeks/weekNN/quiz-bank.md` for the 4-5
-   core questions and `weeks/weekNN/README.md` for context.
-2. Review what the student actually did this week (their scripts, outputs, and any draft brief in
+1. Determine the week (from the argument, or ask).
+2. Locate the week's quiz bank, which lives in the course-materials repo rather than this one:
+
+   ```
+   python3 scripts/materials_path.py weeks/weekNN/quiz-bank.md
+   ```
+
+   Read the file at the path it prints, plus `weeks/weekNN/README.md` here for context. If that
+   command exits with an error, **stop and show the student the error**. Do not invent questions
+   to fill the gap and do not fall back to a bank from another week; a missing bank means either
+   the materials repo needs a `git pull` or the week has not been posted yet.
+3. Review what the student actually did this week (their scripts, outputs, and any draft brief in
    `weeks/weekNN/`) and compose **one additional dynamic question** grounded in their own work
    (e.g., "your simulation assumed X — what breaks if that's wrong?", "why did the agent one-hot
    encode column Y?"). If they used a method beyond the syllabus target, the dynamic question

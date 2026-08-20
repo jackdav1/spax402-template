@@ -75,5 +75,6 @@ For a coach who is about to tell his offensive coordinator to run more:
 
 ## Before you push
 
-`/audit`, then `/quiz-me` (see `quiz-bank.md`). Submission = repo link in Canvas, Monday 11:59pm,
+`/audit`, then `/quiz-me`. The question bank lives in the materials repo, so `git pull`
+there first. Submission = repo link in Canvas, Monday 11:59pm,
 green check on your latest commit.

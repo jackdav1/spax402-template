@@ -57,15 +57,37 @@ are for.
 ```
 weeks/weekNN/         your work for each week
   README.md           the assignment: objectives, closed-gear recap, open-gear spec, brief questions
-  quiz-bank.md        the week's core quiz questions (no answers — understanding is the answer key)
   data/raw/           source data — never edited, never deleted
   outputs/            exported results (.xlsx/.csv/charts) — always inspectable in Excel
   checks/             quiz + audit artifacts and transcripts (graded; do not edit by hand)
   BRIEF.md            your half-page brief to the coach — typed by you
 learning-records/     what you've learned, accumulated by /teach across the semester
 lessons/              reference lessons /teach builds for you
+scripts/              helpers the harness runs (do not edit)
 my-skills/            skills YOU author (Week 9+) — this is yours; the harness itself is not editable
 ```
+
+## The other repo
+
+Two repositories, pointing opposite directions.
+
+| | this repo | `spax402-materials` |
+|---|---|---|
+| named | `spax402-<your-name>` | `spax402-materials` |
+| you | commit and push | pull only, never commit |
+| holds | your work | decks, shared data, quiz banks |
+
+Clone the materials repo **next to** this one, not inside it:
+
+```
+spax402-materials/     <- you pull
+spax402-<your-name>/   <- you commit
+```
+
+Then `git pull` there each week. `/quiz-me` reads the week's question bank from that repo, so if
+you have not cloned it the quiz cannot start. It will tell you so rather than making questions up.
+
+If you keep it somewhere else, set `SPAX402_MATERIALS` to that path and everything still works.
 
 ## Honor code, in one line
 
