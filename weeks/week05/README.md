@@ -19,7 +19,7 @@ By Monday night you can:
 Every coach has heard "establish the run." The data appears to agree, loudly. Your job this week
 is to find out whether it actually does.
 
-## Closed gear (Thursday, in class, pairs, no AI)
+## Thursday (in class, pairs, by hand, no AI)
 
 Two printed sheets. Nothing beyond a calculator or a small spreadsheet.
 
@@ -33,10 +33,10 @@ Two printed sheets. Nothing beyond a calculator or a small spreadsheet.
 
 Keep both. Sheet 1 is the result you will have to explain away. Sheet 2 is the explanation.
 
-If you need more time, finish at home Thursday evening, before you start the open gear. No need to
+If you need more time, finish at home Thursday evening, before you start the take-home. No need to
 ask.
 
-## Open gear (this repo, solo)
+## The take-home (this repo, solo)
 
 1. Pull four seasons of play-by-play (`data/pull_pbp.py`, same safety pattern as Week 1: read it
    with your agent first). Four seasons, not one, and you should be able to say why before you run

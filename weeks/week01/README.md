@@ -11,7 +11,7 @@ By Monday night you can:
 - run the full course workflow once, end to end: /teach → spec → verify → /audit → BRIEF.md →
   /quiz-me → push.
 
-## Closed gear (Thursday, in class, pairs, no AI)
+## Thursday (in class, pairs, by hand, no AI)
 
 You built, by hand / small Excel:
 1. Mean, SD, and coefficient of variation for a small set of NBA players' FG%, and a sketch of
@@ -19,12 +19,12 @@ You built, by hand / small Excel:
 2. Standardized entropy for **one team's** run/pass mix on 3rd/4th-and-short, on paper, from the
    formula.
 
-Keep these. They are your reference answers for the open gear.
+Keep these. They are your reference answers for the take-home.
 
-Need more time? Finish the hand-build at home Thursday evening, before you start the open gear. No
+Need more time? Finish the hand-build at home Thursday evening, before you start the take-home. No
 need to ask.
 
-## Open gear (this repo, solo)
+## The take-home (this repo, solo)
 
 **Case study: Entropy in the NFL.** Direct your agent to:
 1. Pull the season's play-by-play from nflverse (the pull script is provided in `data/` — read it

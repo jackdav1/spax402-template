@@ -7,23 +7,23 @@ study here, with Claude Code as your analytical agent. The course grades how wel
 the agent, **verify** its work, and **communicate** what it means — not how fast you can get it
 to spit out an answer.
 
-## The two gears
+## Every week has two halves
 
-- **Closed gear (no AI):** Thursday in class you build a small version of each week's method by
+- **Thursday, in class, by hand, no AI.** You build a small version of each week's method by
   hand, on paper or in a small spreadsheet. This is where you prove the understanding is yours.
   Tuesday quizzes and both exams are also closed-book, closed-AI.
   If you need more time on the Thursday hand-build, finish it at home that evening before you start
-  the open gear. You do not need to ask, and you do not need a reason.
-- **Open gear (this repo):** you direct Claude Code to scale the analysis up — real data, real
-  size. Your hand-built version from Thursday is the reference answer you check the agent
-  against.
+  the take-home. You do not need to ask, and you do not need a reason.
+- **The take-home, on your own, in this repo.** You direct Claude Code to scale the analysis
+  up — real data, real size. Your hand-built version from Thursday is the reference answer
+  you check the agent against.
 
 **The agent computes; you conclude.** Your `BRIEF.md` each week is typed by you. Ask Claude to
 critique your draft (`/coach-brief`) — never to write it.
 
 ## Your weekly workflow
 
-1. **Thursday (in class):** hand-build the toy version. Then start the open gear: run `/teach`
+1. **Thursday (in class):** hand-build the toy version. Then start the take-home: run `/teach`
    on the week's method, and spec the scale-up with your agent.
 2. **Take-home:** complete the analysis. Check the agent's output against your toy version.
    Run `/audit` and respond to what it finds.
@@ -56,7 +56,7 @@ are for.
 
 ```
 weeks/weekNN/         your work for each week
-  README.md           the assignment: objectives, closed-gear recap, open-gear spec, brief questions
+  README.md           the assignment: objectives, Thursday recap, take-home spec, brief questions
   data/raw/           source data — never edited, never deleted
   outputs/            exported results (.xlsx/.csv/charts) — always inspectable in Excel
   checks/             quiz + audit artifacts and transcripts (graded; do not edit by hand)
