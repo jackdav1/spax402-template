@@ -33,6 +33,11 @@ reassure.
    - **Overclaiming:** anything in outputs or the draft brief stated with more certainty than the
      analysis supports.
 3. Rank findings by severity: **[blocker] / [warning] / [note]**.
+4. **Cap what you present.** Report every [blocker] (objective bugs that must be remedied), and
+   if there are fewer than two blockers, fill up to a total of two findings with the top-ranked
+   remainder. Never present more than that cap. Everything else you checked collapses into one
+   short "also checked, holds" line in the artifact — no per-item write-ups. Nine findings is a
+   worse audit than two that matter.
 
 ## Calibration — what is NOT a finding
 
