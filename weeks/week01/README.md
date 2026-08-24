@@ -38,9 +38,6 @@ need to ask.
 4. Export the team table to `outputs/` as .xlsx and produce one chart relating entropy to
    conversion rate.
 
-**Case study: NBA FG% by position.** Same pattern: distribution shape, group comparison, CV —
-scaled to the full league, checked against your Thursday hand-build.
-
 ## Your brief (BRIEF.md — typed by you)
 
 **Audience:** a head coach.
@@ -53,7 +50,7 @@ Answer:
   success rate?
 - How would you go about assessing the optimal entropy for a given team?
 
-**NBA FG% comparison by position**
+**NBA FG% comparison by position** (from Tuesday's in-class example — no new analysis needed)
 - How else would you analyze FG% to compare scoring efficiency across different positions?
 
 ## Before you push
