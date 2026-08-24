@@ -7,8 +7,9 @@ study here, with Claude Code as your analytical agent. The course grades how wel
 the agent, **verify** its work, and **communicate** what it means — not how fast you can get it
 to spit out an answer.
 
-## Every week has three parts
+## Every unit has four parts
 
+- **Tuesday's lecture, in class.** The unit's concepts.
 - **Thursday, in class, by hand, no agentic AI.** You build a small version of each week's method by
   hand, on paper or in a small spreadsheet. This is where you prove the understanding is yours.
   Tuesday quizzes and both exams are also closed-book, closed-AI.
@@ -16,7 +17,7 @@ to spit out an answer.
   If you need more time on the hand-build, finish it at home that evening before you start the
   take-home. Commit the hand-build (the Excel file, or a photo of the paper work) with your
   Monday submission.
-- **The take-home, on your own, in this repo.** You direct Claude Code to scale the analysis
+- **The take-home case study, on your own, with Claude Code, in this repo.** You direct Claude Code to scale the analysis
   up — real data, real size. Your hand-built version from Thursday is the reference answer
   you check the agent against.
 - **Tuesday's quiz, closed-book, in class.** A short quiz at the start of Tuesday's class to
