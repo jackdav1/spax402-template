@@ -19,7 +19,7 @@ By Monday night you can:
 Every coach has heard "establish the run." The data appears to agree, loudly. Your job this week
 is to find out whether it actually does.
 
-## Thursday (in class, by hand, no AI)
+## Thursday (in class, by hand, no agentic AI)
 
 Two printed sheets. Nothing beyond a calculator or a small spreadsheet.
 

@@ -11,7 +11,7 @@ By Monday night you can:
 - run the full course workflow once, end to end: /teach → spec → verify → /audit → BRIEF.md →
   /quiz-me → push.
 
-## Thursday (in class, by hand, no AI)
+## Thursday (in class, by hand, no agentic AI)
 
 You built, by hand / small Excel:
 1. Mean, SD, and coefficient of variation for a small set of NBA players' FG%, and a sketch of
