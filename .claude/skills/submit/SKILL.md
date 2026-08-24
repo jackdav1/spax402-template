@@ -18,8 +18,11 @@ student sees the whole picture at once):
 2. **The analysis.** The scripts and outputs of the take-home case study.
 3. **The audit record.** `checks/weekNN-audit.md`, containing findings with dispositions (or an
    explicit "checked, holds" list). Missing → run `/audit NN`.
-4. **The brief.** `BRIEF.md`, non-empty and not the untouched template. Missing → they write it
-   by hand (template: `BRIEF-template.md`), then optionally `/coach-brief NN`.
+4. **The brief.** `BRIEF.md`, non-empty and not the untouched template. Missing → set them up
+   to write it: copy `BRIEF-template.md` to `weeks/weekNN/BRIEF.md`, tell them who this week's
+   audience is (the `**Audience:**` line in the week's README), and remind them `/coach-brief NN`
+   will critique a draft. **Never write or suggest a single sentence of the brief itself** —
+   same hard rule as /coach-brief.
 5. **The quiz.** `checks/weekNN-quiz.json` with `"pass": true`, plus its transcript. Missing or
    `pass: false` → run `/quiz-me NN`.
 
