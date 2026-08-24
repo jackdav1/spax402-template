@@ -10,7 +10,9 @@ gotchas — but a pass must be earned, never given.
 ## Setup
 
 1. Determine the week (from the argument, or ask).
-2. Locate the week's quiz bank, which lives in the course-materials repo rather than this one:
+2. Locate the week's quiz bank. If `weeks/weekNN/quiz-bank.md` exists in this repo (Week 1 ships
+   with its bank so setup week needs nothing else), use it. Otherwise it lives in the
+   course-materials repo:
 
    ```
    python3 scripts/materials_path.py weeks/weekNN/quiz-bank.md
