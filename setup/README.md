@@ -13,20 +13,19 @@ rather than guessing; every failure listed there has a two-line fix.
 **https://claude.ai** in your browser, and Claude will take you through these same steps one at a
 time, reading your error messages as you go. Same destination either way.
 
-You need four things, and each one exists for a reason:
+You need three things, and each one exists for a reason:
 
 | What | Why this course needs it |
 |---|---|
-| **Node.js** | Required to install and run Claude Code. |
 | **Git** | How your work gets from your laptop to GitHub, which is how it gets graded. On Windows it also supplies the shell Claude Code runs commands in. |
 | **Python 3.11 or newer** | The analysis language. Claude Code writes the Python; you read the output. |
-| **Claude Code** | The agent. A subscription is required, covered at the end. |
+| **Claude Desktop app** | The agent. Claude Code runs inside it. A subscription is required, covered at the end. |
 
 ---
 
 ## Windows
 
-Three installers and one command.
+Three installers.
 
 ### 1. Git for Windows
 
@@ -34,11 +33,7 @@ Download from **https://git-scm.com/download/win** and run it. The installer ask
 questions; **accept every default**. The defaults are correct for this course, and one of them
 installs Git Bash, which is the shell Claude Code uses on Windows.
 
-### 2. Node.js
-
-Download the **LTS** version from **https://nodejs.org** and run it. Accept the defaults here too.
-
-### 3. Python
+### 2. Python
 
 Download from **https://www.python.org/downloads/** and run it. There is exactly one box you must
 not miss:
@@ -49,18 +44,10 @@ It is at the bottom of the first installer screen and it is unchecked by default
 you click Install. If you miss it, Windows will not be able to find Python and the error you get
 back will not mention PATH at all. Re-running the installer and choosing Modify fixes it.
 
-### 4. Claude Code
+### 3. The Claude Desktop app
 
-Open **PowerShell**, not Command Prompt: press the Start key, type `powershell`, press Enter.
-(If you had one open before the installs, close it and open a new one, so it picks up the three
-things you just installed.) Then:
-
-```
-npm install -g @anthropic-ai/claude-code
-```
-
-That takes a minute or two and prints a lot of text. Warnings are normal. An error that stops it
-is not; see the troubleshooting section.
+Download it from **https://claude.ai/download** and run the installer. Claude Code, the agent
+this course runs on, lives inside the app.
 
 Now skip ahead to [Verify the installation](#verify-the-installation).
 
@@ -85,72 +72,52 @@ git --version
 If it prints a version number, you are done with this step. If macOS pops up a dialog offering to
 install developer tools, accept it and wait; that installs Git.
 
-### 2. Node.js
-
-Download the **LTS** version from **https://nodejs.org** and run the installer. Accept the
-defaults.
-
-### 3. Python
+### 2. Python
 
 macOS ships an old Python that will fight you. Install a current one from
 **https://www.python.org/downloads/** and accept the defaults. It installs alongside the system
 one rather than replacing it, which is what you want.
 
-### 4. Claude Code
+### 3. The Claude Desktop app
 
-Close Terminal, open a new one, then:
-
-```
-npm install -g @anthropic-ai/claude-code
-```
-
-If that fails with a permissions error, do not put `sudo` in front of it. See troubleshooting.
+Download it from **https://claude.ai/download**, open the file, and drag Claude into
+Applications. Claude Code, the agent this course runs on, lives inside the app.
 
 ---
 
 ## Verify the installation
 
-Open a **new** terminal window (PowerShell on Windows, Terminal on macOS) and run these four
-lines, one at a time. New window matters: a shell that was already open does not know about
-anything you installed since.
+Open a **new** terminal window (on Windows: press the Start key, type `powershell`, press Enter;
+on macOS: Terminal) and run these two lines, one at a time. New window matters: a shell that was
+already open does not know about anything you installed since.
 
 ```
 git --version
 ```
 ```
-node --version
-```
-```
 python --version
 ```
-```
-claude --version
-```
 
-You are looking for a version number from each. Rough floors: Git 2.40 or newer, Node 20 or
-newer, Python 3.11 or newer, Claude Code 2.0 or newer. Newer than that is fine.
+You are looking for a version number from each. Rough floors: Git 2.40 or newer, Python 3.11 or
+newer. Newer than that is fine.
+
+Then open the Claude app. If it starts and asks you to sign in, it installed correctly.
 
 On macOS, `python --version` may fail while `python3 --version` works. That is normal and nothing
 in this course breaks because of it. Use `python3` wherever these instructions say `python`.
 
-If any of the four says something like `command not found` or `is not recognized`, that one did
+If either command says something like `command not found` or `is not recognized`, that one did
 not install, or your shell has not noticed it yet. Close the window, open a new one, and try
 again before assuming it failed.
 
 ---
 
-## Sign in to Claude Code
+## Sign in to Claude
 
-Claude Code needs a **Claude Pro** subscription, about $20 a month.
+Claude needs a **Claude Pro** subscription, about $20 a month.
 
-Once you have an account, run:
-
-```
-claude
-```
-
-The first run opens a browser window to sign in. After that it remembers you. When you see a
-prompt waiting for input, type `/exit` and press Enter to get back to your terminal.
+Once you have an account, open the Claude app and sign in. That's the whole step: the app
+remembers you from then on.
 
 ---
 
@@ -213,14 +180,12 @@ On macOS, use `python3` instead of `python` in both lines.
 
 ## First commit
 
-You are set up when a commit of yours is on GitHub. Start Claude Code inside your repo:
-
-```
-claude
-```
+You are set up when a commit of yours is on GitHub. In the Claude app, open a **Claude Code**
+session and point it at your repo folder (the `spax402-...` folder you just cloned).
 
 Ask it to teach you something trivial with `/teach` if you are curious, or skip straight to
-the push test. Have Claude make any small change (it can add a line to a scratch file), then:
+the push test. Have Claude make any small change (it can add a line to a scratch file), then
+back in your terminal, inside the repo folder:
 
 ```
 git add -A
@@ -239,32 +204,14 @@ is behind you for the semester.
 
 ## Troubleshooting
 
-**`claude: command not found` or `'claude' is not recognized`, right after installing it.**
-Your shell was open before the install finished. Close the window, open a new one, try again.
-If it still fails, run `npm list -g --depth 0` and check that `@anthropic-ai/claude-code` is
-listed. If it is not, the install did not finish, and the error is further up in the output than
-you scrolled.
-
-**`npm: command not found` after installing Node.js.**
-Same cause, same fix: new terminal window. If a new window does not fix it on Windows, restart the
-machine. This is the one problem a restart genuinely solves.
+**`git` or `python` is not recognized, right after installing it.**
+Your terminal was open before the install finished. Close the window, open a new one, try again.
+If a new window does not fix it on Windows, restart the machine. This is the one problem a
+restart genuinely solves.
 
 **On Windows: `python` opens the Microsoft Store.**
 You missed the "Add python.exe to PATH" checkbox. Re-run the Python installer, choose Modify, and
 check it.
-
-**On macOS: `npm install -g` fails with `EACCES` or a permissions error.**
-Do not re-run it with `sudo`. That appears to work and then breaks in ways that are very hard to
-diagnose later. Instead, install Node from the **https://nodejs.org** installer rather than
-Homebrew, which puts it somewhere your account can write to.
-
-**On Windows: PowerShell says running scripts is disabled on this system.**
-You have hit an execution-policy restriction. Run PowerShell as Administrator once (right-click,
-Run as administrator) and enter:
-
-```
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
-```
 
 **Git asks for a password and rejects the one you type.**
 GitHub stopped accepting account passwords over the command line. When it prompts, let it open a
