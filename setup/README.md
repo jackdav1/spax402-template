@@ -147,6 +147,13 @@ Then copy the same URL and, in your terminal:
 git clone <paste-the-url-here>
 ```
 
+Then clone the course materials repo next to it — decks and weekly data live there, and each
+week you will `git pull` inside it to get the new content:
+
+```
+git clone https://github.com/jackdav1/spax402-course-materials
+```
+
 The first time you push work, Git will ask who you are. Answer once:
 
 ```
