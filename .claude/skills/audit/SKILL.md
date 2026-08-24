@@ -56,7 +56,9 @@ Present findings one at a time. For each, the student must respond with one of:
 - **accept** — they explain in their own words why it doesn't change the conclusion;
 - **disclose** — it stays, and they commit to naming it as a limitation in the brief.
 
-Do not accept "ok" or "sounds good" as a disposition. Their reasoning, verbatim, goes in the log.
+Do not accept "ok" or "sounds good" as a disposition. Their reasoning, verbatim, goes in the
+log. A sentence is enough — this is a conversation, not an essay. **You write the record; the
+student never types into the audit file.** Their typed prose belongs in the brief.
 
 ## Artifact (required)
 

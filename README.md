@@ -7,16 +7,20 @@ study here, with Claude Code as your analytical agent. The course grades how wel
 the agent, **verify** its work, and **communicate** what it means — not how fast you can get it
 to spit out an answer.
 
-## Every week has two halves
+## Every week has three parts
 
-- **Thursday, in class, by hand, no AI.** You build a small version of each week's method by
+- **Thursday, in class, by hand, no agentic AI.** You build a small version of each week's method by
   hand, on paper or in a small spreadsheet. This is where you prove the understanding is yours.
   Tuesday quizzes and both exams are also closed-book, closed-AI.
-  If you need more time on the Thursday hand-build, finish it at home that evening before you start
-  the take-home. You do not need to ask, and you do not need a reason.
+  You may still use an LLM to help troubleshoot formulas and understand the approach.
+  If you need more time on the hand-build, finish it at home that evening before you start the
+  take-home. Commit the hand-build (the Excel file, or a photo of the paper work) with your
+  Monday submission.
 - **The take-home, on your own, in this repo.** You direct Claude Code to scale the analysis
   up — real data, real size. Your hand-built version from Thursday is the reference answer
   you check the agent against.
+- **Tuesday's quiz, closed-book, in class.** A short quiz at the start of Tuesday's class to
+  confirm that you understand the concepts.
 
 **The agent computes; you conclude.** Your `BRIEF.md` each week is typed by you. Ask Claude to
 critique your draft (`/coach-brief`) — never to write it.
@@ -29,7 +33,8 @@ critique your draft (`/coach-brief`) — never to write it.
    Run `/audit` and respond to what it finds.
 3. **Write `BRIEF.md`** in the week's folder — your words, half a page.
 4. **Run `/quiz-me`** for the week. You can't submit without a passing quiz artifact.
-5. **Commit and push everything**, then submit your repo link in Canvas by **Monday 11:59pm**.
+5. **Run `/submit`** — it checks that nothing is missing, then commits and pushes. Make sure
+   your repo link is in the week's Canvas assignment by **Monday 11:59pm**.
 
 A green check on your latest commit means every week that is due has all three of: a written
 `BRIEF.md`, a passed `/quiz-me` artifact, and the transcript backing it. A red X tells you which of
@@ -51,6 +56,7 @@ are for.
 | `/quiz-me` | The week's comprehension check. Mastery loop: wrong answers get taught, then re-asked. Everything is logged. |
 | `/audit` | An adversarial reviewer goes hunting for flaws in your analysis: leakage, bad assumptions, wrong tails. |
 | `/coach-brief` | Red-teams your hand-written brief draft as the week's named audience (usually a skeptical coach). Critique only — it will not write for you. |
+| `/submit` | The submission preflight: checks every required artifact, tells you what's missing, and pushes when the week is complete. |
 
 ## Repo map
 
