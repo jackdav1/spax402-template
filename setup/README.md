@@ -295,5 +295,5 @@ like for reading files.
 
 **Is any of my work private?**
 Your repository is private to you and the instructor. Everything in it, including your Claude
-transcripts, is read as part of grading. Nothing you put there is private from the instructor,
-and that is deliberate: the transcript is a large part of what gets graded.
+transcripts, is read as part of grading. Nothing you put there is private from the instructor:
+the transcript is a large part of what gets graded.
