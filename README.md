@@ -54,7 +54,7 @@ other; it cannot confirm you understand anything, which is what the Tuesday quiz
 | Command | What it does |
 |---|---|
 | `/teach` | Teaches you the week's method by asking questions, not lecturing. Learning records accumulate in this repo. |
-| `/quiz-me` | The week's comprehension check. Mastery loop: wrong answers get taught, then re-asked. Everything is logged. |
+| `/quiz-me` | The week's comprehension check. Wrong answers get taught, then re-asked. Genuinely stuck after three tries, a question is marked unresolved and the quiz still passes. Everything is logged. |
 | `/audit` | An adversarial reviewer goes hunting for flaws in your analysis: leakage, bad assumptions, wrong tails. |
 | `/coach-brief` | Red-teams your hand-written brief draft as the week's named audience (usually a skeptical coach). Critique only — it will not write for you. |
 | `/submit` | The submission preflight: checks every required artifact, tells you what's missing, and pushes when the week is complete. |

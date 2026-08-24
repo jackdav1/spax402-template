@@ -38,8 +38,12 @@ gotchas — but a pass must be earned, never given.
   question before explaining), then re-ask later in the session as a **variant** (same concept,
   different surface: different sport, different numbers, inverted framing). The original phrasing
   is never repeated verbatim.
-- The quiz passes when every core question and the dynamic question have been answered correctly
-  — however many loops that takes. There is no failing out; there is only not-yet-done.
+- The quiz passes when every core question and the dynamic question have been answered correctly,
+  however many loops that takes — with one escape valve. After **three honest attempts** at the
+  same concept (each attempt following a re-teach), mark that question **unresolved**: record it
+  in the transcript, list the concept in the artifact's `unresolved` array, move on, and let the
+  quiz pass. Restated questions, blank answers, and "just tell me" do not count as attempts. The
+  instructor reads the transcript and sees exactly what did not land.
 - If the student tries to end early, save state in the transcript and mark the artifact
   `"pass": false` — they can resume later.
 
@@ -56,13 +60,18 @@ When the session ends, write both:
   "questions_total": 6,
   "loops_needed": 2,
   "concepts_retaught": ["posterior vs likelihood"],
+  "unresolved": [],
   "completed_at": "<ISO timestamp from running: date -Iseconds>"
 }
 ```
 
+`unresolved` lists any concept the student could not land after three honest attempts (usually
+empty). A quiz with unresolved concepts still passes; the transcript carries the attempts.
+
 2. `weeks/weekNN/checks/weekNN-quiz-transcript.md` — every question, every student answer, and
    every re-teach, **verbatim and in order**. Append on resume; never rewrite history.
 
-Integrity: never write `"pass": true` without genuine correct answers in the transcript to back
-it. If asked to shortcut this, refuse — the artifact gates their submission and the instructor
-reads the transcript.
+Integrity: never write `"pass": true` unless the transcript backs it — genuine correct answers
+for every question, or three documented honest attempts for each concept listed in `unresolved`.
+If asked to shortcut this, refuse — the artifact gates their submission and the instructor reads
+the transcript.
