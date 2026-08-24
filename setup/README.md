@@ -166,6 +166,9 @@ Then, in a browser:
 
 1. Open the course template: **https://github.com/jackdav1/spax402-template**.
 2. Click the green **Use this template** button, then **Create a new repository**.
+
+   ![The green "Use this template" button, top right of the repository page](use-this-template.png)
+
 3. Name it `spax402-<your-username>` and set it to **Private**. Create it.
 4. On your new repo's page: **Settings → Collaborators → Add people**, and add **`jackdav1`**.
    This is how your work gets graded; without it the instructor cannot see your repo.

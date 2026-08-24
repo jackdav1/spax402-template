@@ -9,8 +9,7 @@ A checked week needs three things: a written brief, a quiz artifact whose `pass`
 transcript backing that artifact. Any one missing is a red X.
 
 This is a workflow gate, not a security boundary. It proves the artifacts exist and are internally
-consistent. Whether the understanding behind them is real is what the closed-book quiz and the
-verbal test are for.
+consistent. Whether the understanding behind them is real is what the closed-book quiz is for.
 
 Instructor override: an `EXCUSED` file in a week's checks/ directory skips that week entirely.
 

@@ -46,8 +46,7 @@ python scripts/quiz_gate.py
 ```
 
 Due dates live in `course-schedule.json`. The gate confirms your artifacts exist and agree with each
-other; it cannot confirm you understand anything, which is what the Tuesday quiz and the verbal test
-are for.
+other; it cannot confirm you understand anything, which is what the Tuesday quiz is for.
 
 ## The skills
 
@@ -98,5 +97,5 @@ If you keep it somewhere else, set `SPAX402_MATERIALS` to that path and everythi
 
 ## Honor code, in one line
 
-Everything in `checks/` and every transcript is read by your instructor, the weekly verbal test
-can land on you, and the closed-book layer always tells the truth about what you know.
+Everything in `checks/` and every transcript is read by your instructor, and the closed-book
+layer always tells the truth about what you know.
