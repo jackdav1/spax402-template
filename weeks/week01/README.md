@@ -15,9 +15,9 @@ By Monday night you can:
 
 You built, by hand / small Excel:
 1. Mean, SD, and coefficient of variation for a small set of NBA players' FG%, and a sketch of
-   the distribution's shape.
+   the distribution's shape. The input rows are in `data/hand-build-nba-fg.csv`.
 2. Standardized entropy for **one team's** run/pass mix on 3rd/4th-and-short, on paper, from the
-   formula.
+   formula. The input plays are in `data/hand-build-nfl-entropy.csv`.
 
 Commit them (the Excel file, or a photo of the paper work) into `weeks/week01/` — the
 hand-build is part of the Monday 11:59pm submission, and it is your reference answer for
@@ -56,4 +56,5 @@ Answer:
 ## Before you push
 
 `/audit`, then `/quiz-me`. Week 1's question bank ships in this repo. Submission = repo link
-in Canvas, Monday 11:59pm, green check on your latest commit.
+in Canvas, Monday 11:59pm. You can submit with items missing; anything missing at the deadline
+counts against the analysis half of the grade.
