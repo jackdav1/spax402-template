@@ -2,7 +2,7 @@
 """Locate the course-materials repository that sits alongside this one.
 
 Lecture decks, shared data, and the weekly quiz banks live in a second
-repository (`spax402-materials`) that you pull and never commit to. This script
+repository (`spax402-course-materials`) that you pull and never commit to. This script
 finds it and prints its path, so tooling never has to guess.
 
     python3 scripts/materials_path.py                       -> the repo root
@@ -29,6 +29,7 @@ def candidates():
         yield Path(override).expanduser()
 
     parent = REPO_ROOT.parent
+    yield parent / "spax402-course-materials"
     yield parent / "spax402-materials"
 
     # A clone under any other name, as long as it is a sibling.
@@ -70,7 +71,7 @@ def main():
             "\n"
             "It should be cloned next to this one:\n"
             "\n"
-            f"    {REPO_ROOT.parent}\spax402-materials\n"
+            f"    {REPO_ROOT.parent}\spax402-course-materials\n"
             f"    {REPO_ROOT}\n"
             "\n"
             "Clone it, or set the "

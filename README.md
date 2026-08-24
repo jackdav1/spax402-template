@@ -77,17 +77,17 @@ my-skills/            skills YOU author (Week 9+) — this is yours; the harness
 
 Two repositories, pointing opposite directions.
 
-| | this repo | `spax402-materials` |
+| | this repo | `spax402-course-materials` |
 |---|---|---|
-| named | `spax402-<your-name>` | `spax402-materials` |
+| named | `spax402-<your-name>` | `spax402-course-materials` |
 | you | commit and push | pull only, never commit |
 | holds | your work | decks, shared data, quiz banks |
 
 Clone the materials repo **next to** this one, not inside it:
 
 ```
-spax402-materials/     <- you pull
-spax402-<your-name>/   <- you commit
+spax402-course-materials/   <- you pull
+spax402-<your-name>/        <- you commit
 ```
 
 Then `git pull` there each week. `/quiz-me` reads the week's question bank from that repo, so if
