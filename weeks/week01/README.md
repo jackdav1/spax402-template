@@ -11,7 +11,7 @@ By Monday night you can:
 - run the full course workflow once, end to end: /teach → spec → verify → /audit → BRIEF.md →
   /quiz-me → push.
 
-## Thursday (in class, pairs, by hand, no AI)
+## Thursday (in class, by hand, no AI)
 
 You built, by hand / small Excel:
 1. Mean, SD, and coefficient of variation for a small set of NBA players' FG%, and a sketch of
@@ -19,7 +19,9 @@ You built, by hand / small Excel:
 2. Standardized entropy for **one team's** run/pass mix on 3rd/4th-and-short, on paper, from the
    formula.
 
-Keep these. They are your reference answers for the take-home.
+Commit them (the Excel file, or a photo of the paper work) into `weeks/week01/` — the
+hand-build is part of the Monday 11:59pm submission, and it is your reference answer for
+the take-home.
 
 Need more time? Finish the hand-build at home Thursday evening, before you start the take-home. No
 need to ask.
