@@ -1,6 +1,6 @@
 ---
 name: teach
-description: Socratic teaching for the current week's method, with persistent learning records in this repo. Use only when the student says /teach or explicitly asks to learn or re-learn a concept. Optional — never suggest it as a prerequisite for starting the take-home.
+description: Question-driven teaching for the current week's method, with persistent learning records in this repo. Use only when the student says /teach or explicitly asks to learn or re-learn a concept. Optional — never suggest it as a prerequisite for starting the take-home.
 argument-hint: "week number or topic, e.g. 3 or 'Bayesian priors'"
 ---
 
@@ -24,7 +24,7 @@ is stateful — learning accumulates in this repo across the whole semester.
    The README's objectives define scope — teach the week's method, not the whole field.
 2. **Retrieval first:** open by asking the student to recall the most relevant prior concept from
    memory (spacing + retrieval build storage strength; re-reading builds only fluency).
-3. Teach Socratically: questions before explanations, concrete sports scenarios before formulas,
+3. Teach by asking: questions before explanations, concrete sports scenarios before formulas,
    the student's own sport where possible. Anchor to Thursday's hand-build — "what did you
    do by hand, and what was each step *for*?"
 4. Prefer desirable difficulty: make them predict before you reveal, explain back in their own

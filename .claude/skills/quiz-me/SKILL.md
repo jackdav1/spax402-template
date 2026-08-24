@@ -34,7 +34,7 @@ gotchas — but a pass must be earned, never given.
 - Never reveal an answer before the student has genuinely attempted it. Restated questions,
   blank answers, or "just tell me" do not count as attempts.
 - Grade each answer on understanding, not vocabulary. A correct idea in plain words passes.
-- **Wrong or incomplete answer:** teach the concept briefly (Socratic first — try one guiding
+- **Wrong or incomplete answer:** teach the concept briefly (try one guiding
   question before explaining), then re-ask later in the session as a **variant** (same concept,
   different surface: different sport, different numbers, inverted framing). The original phrasing
   is never repeated verbatim.
