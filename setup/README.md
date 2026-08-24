@@ -164,7 +164,7 @@ put on a resume.
 
 Then, in a browser:
 
-1. Open the template link the instructor posts in Canvas.
+1. Open the course template: **https://github.com/jackdav1/spax402-template**.
 2. Click the green **Use this template** button, then **Create a new repository**.
 3. Name it `spax402-<your-username>` and set it to **Private**. Create it.
 4. On your new repo's page: **Settings → Collaborators → Add people**, and add **`jackdav1`**.
