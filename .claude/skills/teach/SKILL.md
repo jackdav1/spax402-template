@@ -1,6 +1,6 @@
 ---
 name: teach
-description: Socratic teaching for the current week's method, with persistent learning records in this repo. Use when the student says /teach, asks to learn or re-learn a concept, or before starting a week's take-home work.
+description: Socratic teaching for the current week's method, with persistent learning records in this repo. Use only when the student says /teach or explicitly asks to learn or re-learn a concept. Optional — never suggest it as a prerequisite for starting the take-home.
 argument-hint: "week number or topic, e.g. 3 or 'Bayesian priors'"
 ---
 

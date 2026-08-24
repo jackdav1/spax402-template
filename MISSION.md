@@ -1,6 +1,7 @@
 # Mission
 
-<!-- Seeded by the course. /teach will personalize this with you in your first session. -->
+<!-- Seeded by the course. Fill in "About me" during setup — it is your first commit.
+     The course skills read this file to tailor their work to you. -->
 
 Become an analyst a coach trusts: someone who can direct powerful tools to do real analytical
 work, verify that work like a skeptic, explain any model they ship without a computer in the

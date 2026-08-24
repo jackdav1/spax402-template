@@ -8,8 +8,8 @@ By Monday night you can:
 - compare variation across stats on different scales using the coefficient of variation;
 - explain standardized entropy as a measure of unpredictability in play-calling, including what
   0 and 1 mean;
-- run the full course workflow once, end to end: /teach → spec → verify → /audit → BRIEF.md →
-  /quiz-me → push.
+- run the full course workflow once, end to end: spec → verify → /audit → BRIEF.md →
+  /quiz-me → push. (/teach is optional, whenever you want a concept walked through.)
 
 ## Thursday (in class, by hand, no agentic AI)
 

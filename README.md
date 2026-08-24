@@ -28,8 +28,9 @@ critique your draft (`/coach-brief`) — never to write it.
 
 ## Your weekly workflow
 
-1. **Thursday (in class):** do the hand-build. Then start the take-home: run `/teach`
-   on the week's method, and spec the scale-up with your agent.
+1. **Thursday (in class):** do the hand-build. Then start the take-home: spec the
+   scale-up with your agent. (`/teach` is there if you want the week's method walked
+   through first — optional, never required.)
 2. **Take-home:** complete the analysis. Check the agent's output against your hand-build.
    Run `/audit` and respond to what it finds.
 3. **Write `BRIEF.md`** in the week's folder — your words, half a page.
