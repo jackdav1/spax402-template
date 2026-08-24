@@ -12,7 +12,7 @@ reassure.
 
 1. Read everything in `weeks/weekNN/`: README (the assignment), scripts, outputs, data lineage,
    and the draft brief if present.
-2. Spawn an adversarial review as a subagent (general-purpose) with instructions to actively try
+2. Run the adversarial review yourself, in this session — do not spawn a subagent. Actively try
    to **refute the analysis**, checking at minimum:
    - **Leakage:** any feature or filter that uses information unavailable at prediction/decision
      time.
@@ -28,7 +28,7 @@ reassure.
      on the same small input? If nobody checked, that's a finding.
    - **Overclaiming:** anything in outputs or the draft brief stated with more certainty than the
      analysis supports.
-3. Merge and rank findings by severity: **[blocker] / [warning] / [note]**.
+3. Rank findings by severity: **[blocker] / [warning] / [note]**.
 
 ## Calibration — what is NOT a finding
 
