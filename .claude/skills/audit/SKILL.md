@@ -13,7 +13,11 @@ reassure.
 1. Read everything in `weeks/weekNN/`: README (the assignment), scripts, outputs, data lineage,
    and the draft brief if present.
 2. Run the adversarial review yourself, in this session — do not spawn a subagent. Actively try
-   to **refute the analysis**, checking at minimum:
+   to **refute the analysis**. Verify against the data, never against your own code: re-derive
+   each key quantity from the raw rows (recompute the filter, cross-tab the flags, pull and read
+   the discrepant cases) rather than re-reading the code that produced it, and check every column
+   used against what it actually means in the source data — a clause can be logically clean and
+   still wrong about the field's semantics. Check at minimum:
    - **Leakage:** any feature or filter that uses information unavailable at prediction/decision
      time.
    - **Assumption failures:** independence (is the simulation/resampling unit actually
