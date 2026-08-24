@@ -10,7 +10,8 @@ is stateful — learning accumulates in this repo across the whole semester.
 ## Workspace files
 
 - `MISSION.md` (repo root): why this student is here. Seeded by the course; personalize it in
-  your first session (their sport, their dream job) and ground teaching in it thereafter.
+  your first session (their sport or sports, their dream job) and ground teaching in it
+  thereafter.
 - `learning-records/NNNN-<dash-case-name>.md`: one record per non-obvious thing the student
   learned or struggled with — the insight, the misconception it replaced, and the date. These
   drive future sessions: read the recent ones first to find the zone of proximal development.

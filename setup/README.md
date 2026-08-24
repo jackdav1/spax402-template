@@ -184,8 +184,8 @@ You are set up when a commit of yours is on GitHub. In the Claude app, open a **
 session and point it at your repo folder (the `spax402-...` folder you just cloned).
 
 Your repo has a `MISSION.md` at its root: what you want out of this course, in your own words.
-Ask Claude Code to help you fill in the **About me** section — your name, the sport you care
-about, where you want to be in three years. That edit is your first commit. Then back in your
+Ask Claude Code to help you fill in the **About me** section — your name, the sport or sports
+you care about, where you want to be in three years. That edit is your first commit. Then back in your
 terminal, inside the repo folder:
 
 ```
@@ -245,6 +245,7 @@ The course is built on Claude Code and every weekly command depends on it. Use w
 like for reading files.
 
 **Is any of my work private?**
-Your repository is private to you and the instructor. Everything in it, including your Claude
-transcripts, is read as part of grading. Nothing you put there is private from the instructor:
-the transcript is a large part of what gets graded.
+Your repository is private to you and the instructor. Everything in it, including your quiz and
+audit transcripts, is read as part of grading. Nothing you put there is private from the
+instructor: those transcripts are a large part of what gets graded. Your free-form Claude Code
+conversations stay on your laptop and are not part of the repo.
