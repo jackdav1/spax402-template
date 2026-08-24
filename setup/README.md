@@ -6,7 +6,7 @@ Everything you install here, you install once. After Tuesday you will not think 
 again for the rest of the semester.
 
 **Budget 30 to 45 minutes if you have never used a terminal.** Twenty if you have. Do it before
-class if you can. If something breaks, skip to [When something goes wrong](#when-something-goes-wrong)
+class if you can. If something breaks, skip to [Troubleshooting](#troubleshooting)
 rather than guessing; every failure listed there has a two-line fix.
 
 **Prefer being walked through it?** Canvas also has a setup prompt you can paste into
@@ -62,7 +62,7 @@ npm install -g @anthropic-ai/claude-code
 That takes a minute or two and prints a lot of text. Warnings are normal. An error that stops it
 is not; see the troubleshooting section.
 
-Now skip ahead to [Check that it all worked](#check-that-it-all-worked).
+Now skip ahead to [Verify the installation](#verify-the-installation).
 
 **You do not need WSL.** If you have read elsewhere that Claude Code on Windows requires the
 Windows Subsystem for Linux, that is out of date. It runs natively, and installing WSL will cost
@@ -108,7 +108,7 @@ If that fails with a permissions error, do not put `sudo` in front of it. See tr
 
 ---
 
-## Check that it all worked
+## Verify the installation
 
 Open a **new** terminal window (PowerShell on Windows, Terminal on macOS) and run these four
 lines, one at a time. New window matters: a shell that was already open does not know about
@@ -211,7 +211,7 @@ On macOS, use `python3` instead of `python` in both lines.
 
 ---
 
-## The last step, and the one that matters Tuesday
+## First commit
 
 You are set up when a commit of yours is on GitHub. Start Claude Code inside your repo:
 
@@ -237,7 +237,7 @@ is behind you for the semester.
 
 ---
 
-## When something goes wrong
+## Troubleshooting
 
 **`claude: command not found` or `'claude' is not recognized`, right after installing it.**
 Your shell was open before the install finished. Close the window, open a new one, try again.
@@ -281,7 +281,7 @@ in about a minute.
 
 ---
 
-## Questions people ask
+## FAQs
 
 **Do I need to set up an MCP server so Claude Code can use GitHub?**
 No. Claude Code runs `git` and, if you install it, the `gh` command directly in your terminal,

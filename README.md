@@ -73,7 +73,7 @@ scripts/              helpers the harness runs (do not edit)
 my-skills/            skills YOU author (Week 9+) — this is yours; the harness itself is not editable
 ```
 
-## The other repo
+## The materials repo
 
 Two repositories, pointing opposite directions.
 
@@ -95,7 +95,7 @@ you have not cloned it the quiz cannot start. It will tell you so rather than ma
 
 If you keep it somewhere else, set `SPAX402_MATERIALS` to that path and everything still works.
 
-## Honor code, in one line
+## Honor code
 
 Everything in `checks/` and every transcript is read by your instructor, and the closed-book
 layer always tells the truth about what you know.
