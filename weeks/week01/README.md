@@ -41,7 +41,9 @@ scaled to the full league, checked against your Thursday toy.
 
 ## Your brief (BRIEF.md — typed by you)
 
-Answer, for a coach:
+**Audience:** a head coach.
+
+Answer:
 - Do you see a relationship between play-calling unpredictability and converting short-yardage
   downs? Which team is the interesting outlier, and what's your best explanation?
 - What other information would you want before telling a team to change its run/pass mix?
@@ -49,6 +51,5 @@ Answer, for a coach:
 
 ## Before you push
 
-`/audit`, then `/quiz-me`. The question bank lives in the materials repo, so `git pull`
-there first. Submission = repo link in Canvas, Monday 11:59pm,
-green check on your latest commit.
+`/audit`, then `/quiz-me`. Week 1's question bank ships in this repo. Submission = repo link
+in Canvas, Monday 11:59pm, green check on your latest commit.

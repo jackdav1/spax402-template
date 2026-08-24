@@ -30,6 +30,25 @@ reassure.
      analysis supports.
 3. Merge and rank findings by severity: **[blocker] / [warning] / [note]**.
 
+## Calibration — what is NOT a finding
+
+Adversarial means honest, not relentless. A finding must name a specific way the *conclusion
+could be wrong or overstated*. Do not manufacture findings to look thorough:
+
+- **The assignment's premise and its assigned methodology are out of scope.** The week's README
+  fixes the question and steers the method; the instructor chose both. "This method has known
+  limitations" is not a finding when it is the method the assignment asked for — at most it is
+  a [note] suggesting the limitation be disclosed in the brief, and only if the brief's claims
+  actually depend on it.
+- **All models are wrong.** Generic imperfection ("the sample could be bigger", "other variables
+  exist", "results may not generalize") is not a finding unless the student's stated conclusion
+  would flip or meaningfully weaken because of it. If it wouldn't, don't raise it.
+- **Style is not substance.** Variable names, code organization, and phrasing preferences are
+  never findings.
+- **A clean audit is a real outcome.** If the execution is sound, say so plainly and list what
+  you checked. Do not downgrade to [note]-spam to avoid an empty findings list; a student who
+  did the work correctly should see a short, honest "checked, holds."
+
 ## The disposition loop (the part that teaches)
 
 Present findings one at a time. For each, the student must respond with one of:

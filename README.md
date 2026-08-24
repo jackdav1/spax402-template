@@ -50,7 +50,7 @@ are for.
 | `/teach` | Teaches you the week's method Socratically. Learning records accumulate in this repo. |
 | `/quiz-me` | The week's comprehension check. Mastery loop: wrong answers get taught, then re-asked. Everything is logged. |
 | `/audit` | An adversarial reviewer goes hunting for flaws in your analysis: leakage, bad assumptions, wrong tails. |
-| `/coach-brief` | Red-teams your hand-written brief draft like a skeptical coach. Critique only — it will not write for you. |
+| `/coach-brief` | Red-teams your hand-written brief draft as the week's named audience (usually a skeptical coach). Critique only — it will not write for you. |
 
 ## Repo map
 
@@ -60,7 +60,7 @@ weeks/weekNN/         your work for each week
   data/raw/           source data — never edited, never deleted
   outputs/            exported results (.xlsx/.csv/charts) — always inspectable in Excel
   checks/             quiz + audit artifacts and transcripts (graded; do not edit by hand)
-  BRIEF.md            your half-page brief to the coach — typed by you
+  BRIEF.md            your half-page brief to the week's audience — typed by you
 learning-records/     what you've learned, accumulated by /teach across the semester
 lessons/              reference lessons /teach builds for you
 scripts/              helpers the harness runs (do not edit)

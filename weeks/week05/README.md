@@ -63,7 +63,9 @@ not, something is wrong with your filter, not with the NFL.
 
 ## Your brief (BRIEF.md — typed by you)
 
-For a coach who is about to tell his offensive coordinator to run more:
+**Audience:** a head coach who is about to tell his offensive coordinator to run more.
+
+Answer:
 
 - What does the naive model say the advice should be, and how confident does it look?
 - What happens to that advice once you account for score state, and what is the mechanism? Explain
