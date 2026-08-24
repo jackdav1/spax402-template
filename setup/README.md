@@ -183,9 +183,10 @@ On macOS, use `python3` instead of `python` in both lines.
 You are set up when a commit of yours is on GitHub. In the Claude app, open a **Claude Code**
 session and point it at your repo folder (the `spax402-...` folder you just cloned).
 
-Ask it to teach you something trivial with `/teach` if you are curious, or skip straight to
-the push test. Have Claude make any small change (it can add a line to a scratch file), then
-back in your terminal, inside the repo folder:
+Your repo has a `MISSION.md` at its root: what you want out of this course, in your own words.
+Ask Claude Code to help you fill in the **About me** section — your name, the sport you care
+about, where you want to be in three years. That edit is your first commit. Then back in your
+terminal, inside the repo folder:
 
 ```
 git add -A
