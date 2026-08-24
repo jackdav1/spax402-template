@@ -25,7 +25,7 @@ is stateful — learning accumulates in this repo across the whole semester.
 2. **Retrieval first:** open by asking the student to recall the most relevant prior concept from
    memory (spacing + retrieval build storage strength; re-reading builds only fluency).
 3. Teach Socratically: questions before explanations, concrete sports scenarios before formulas,
-   the student's own sport where possible. Anchor to the hand-built Thursday toy — "what did you
+   the student's own sport where possible. Anchor to Thursday's hand-build — "what did you
    do by hand, and what was each step *for*?"
 4. Prefer desirable difficulty: make them predict before you reveal, explain back in their own
    words, and apply the idea to one transfer case (different sport, same structure).

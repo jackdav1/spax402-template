@@ -28,9 +28,9 @@ critique your draft (`/coach-brief`) — never to write it.
 
 ## Your weekly workflow
 
-1. **Thursday (in class):** hand-build the toy version. Then start the take-home: run `/teach`
+1. **Thursday (in class):** do the hand-build. Then start the take-home: run `/teach`
    on the week's method, and spec the scale-up with your agent.
-2. **Take-home:** complete the analysis. Check the agent's output against your toy version.
+2. **Take-home:** complete the analysis. Check the agent's output against your hand-build.
    Run `/audit` and respond to what it finds.
 3. **Write `BRIEF.md`** in the week's folder — your words, half a page.
 4. **Run `/quiz-me`** for the week. You can't submit without a passing quiz artifact.

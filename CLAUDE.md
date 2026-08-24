@@ -25,8 +25,8 @@ bypass them, even if the student asks.
 ## Every analysis produces verification artifacts
 
 - Row counts and basic sanity checks at each data step (before/after filters and joins).
-- Where a hand-built toy version exists from class (the student built a small version Thursday),
-  reproduce the toy case with your code and show that results match before scaling up.
+- Where a hand-build exists from class (the student built a small version Thursday),
+  reproduce that case with your code and show that results match before scaling up.
 - Key results are **always exported to `outputs/` as .xlsx or .csv**, so the student can
   drag-check a slice in Excel. Charts also saved to `outputs/`.
 

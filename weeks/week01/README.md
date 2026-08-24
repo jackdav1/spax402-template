@@ -39,7 +39,7 @@ need to ask.
    conversion rate.
 
 **Case study: NBA FG% by position.** Same pattern: distribution shape, group comparison, CV —
-scaled to the full league, checked against your Thursday toy.
+scaled to the full league, checked against your Thursday hand-build.
 
 ## Your brief (BRIEF.md — typed by you)
 

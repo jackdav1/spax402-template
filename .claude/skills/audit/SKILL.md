@@ -24,7 +24,7 @@ reassure.
      controlled, Simpson's-paradox reversals in the splits.
    - **Scale and sample:** conclusions resting on tiny n, statistically-significant-but-
      meaningless effects, raw-coefficient importance comparisons that need standardizing.
-   - **Toy-case match:** does the scaled code reproduce the student's hand-built Thursday result
+   - **Hand-build match:** does the scaled code reproduce the student's hand-built Thursday result
      on the same small input? If nobody checked, that's a finding.
    - **Overclaiming:** anything in outputs or the draft brief stated with more certainty than the
      analysis supports.
