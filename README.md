@@ -34,20 +34,21 @@ critique your draft (`/coach-brief`) — never to write it.
 2. **Take-home:** complete the analysis. Check the agent's output against your hand-build.
    Run `/audit` and respond to what it finds.
 3. **Write `BRIEF.md`** in the week's folder — your words, half a page.
-4. **Run `/quiz-me`** for the week. You can't submit without a passing quiz artifact.
-5. **Run `/submit`** — it checks that nothing is missing, then commits and pushes. Make sure
+4. **Run `/quiz-me`** for the week.
+5. **Run `/submit`** — it tells you exactly what's missing, then commits and pushes. Make sure
    your repo link is in the week's Canvas assignment by **Monday 11:59pm**.
 
-A green check on your latest commit means every week that is due has all three of: a written
-`BRIEF.md`, a passed `/quiz-me` artifact, and the transcript backing it. A red X tells you which of
-those is missing, by week. You can run the same check yourself before pushing:
+You can always submit, complete or not. Nothing blocks the push: missing items (brief, quiz
+artifact, audit record, hand-build) are reported as warnings on your commit, and anything still
+missing at the deadline counts against the analysis half of that case study's grade. You can run
+the same report yourself before pushing:
 
 ```
 python scripts/quiz_gate.py
 ```
 
-Due dates live in `course-schedule.json`. The gate confirms your artifacts exist and agree with each
-other; it cannot confirm you understand anything, which is what the Tuesday quiz is for.
+Due dates live in `course-schedule.json`. The report confirms your artifacts exist and agree with
+each other; it cannot confirm you understand anything, which is what the Tuesday quiz is for.
 
 ## The skills
 

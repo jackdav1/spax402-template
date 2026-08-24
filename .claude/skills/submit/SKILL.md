@@ -1,11 +1,13 @@
 ---
 name: submit
-description: Preflight the week's submission, then commit and push it. Checks every required artifact locally, names anything missing and the command that produces it, and only pushes when the week is actually complete. Use when the student says /submit or asks to turn in, finish, or push their weekly work.
+description: Preflight the week's submission, then commit and push it. Checks every required artifact locally, names anything missing and the command that produces it, and always submits when the student says to — missing items are reported, never blocking. Use when the student says /submit or asks to turn in, finish, or push their weekly work.
 argument-hint: "week number, e.g. 3"
 ---
 
 Run the submission preflight for the given week, then submit. The goal: no student ever learns
-about a missing artifact from a red X after the deadline.
+about a missing artifact after the deadline. The checklist informs; it never blocks. If the
+student wants to submit an incomplete week, submit it — gaps count against the analysis half of
+the case study grade, and that is the student's call to make, not this skill's.
 
 ## Step 1 — the checklist
 
@@ -26,28 +28,28 @@ student sees the whole picture at once):
 5. **The quiz.** `checks/weekNN-quiz.json` with `"pass": true`, plus its transcript. Missing or
    `pass: false` → run `/quiz-me NN`.
 
-Then run the authoritative check — the same one GitHub runs:
+Then run the completeness report — the same one GitHub runs:
 
 ```
 python3 scripts/quiz_gate.py
 ```
 
-If it exits non-zero, the push would show a red X. Stop and say why.
+It warns on gaps; it does not fail on them.
 
 ## Step 2 — anything missing
 
-Stop. List what's missing and the command for each, in the order they should run them
-(audit → brief → quiz is the intended order). Do not commit a knowingly incomplete week unless
-the student says they want to save progress — committing work-in-progress is always fine and
-normal, just tell them plainly that this push will not be their submission.
+List what's missing and the command for each, in the order they should run them
+(audit → brief → quiz is the intended order). Then say plainly: they can submit right now with
+these gaps, and the gaps will count against the analysis half of the case study grade — or fill
+the gaps first if there is time. Ask which they want. If they say submit, submit. Never refuse
+to push, and never present completeness as a requirement for submitting.
 
-## Step 3 — everything present
+## Step 3 — submitting
 
-1. `git add` the week's files, commit with a plain message like `Week NN submission`, and push.
-2. Tell them the two things that finish the job:
-   - watch for the **green check** on the repo page (it takes about a minute), and
-   - make sure their **repo URL is in the week's Canvas assignment** — Canvas is the deadline
-     of record, the push is not.
+1. `git add` the week's files, commit with a plain message like `Week NN submission` (or
+   `Week NN submission, incomplete` when gaps remain), and push.
+2. Tell them the one thing that finishes the job: their **repo URL goes in the week's Canvas
+   assignment** — Canvas is the deadline of record, the push is not.
 
 ## Integrity
 

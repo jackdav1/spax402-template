@@ -1,19 +1,22 @@
 """
-The quiz gate.
+The completeness report.
 
 A week is checked when either of these is true:
   * its due date has passed (from course-schedule.json), or
   * it has a non-empty BRIEF.md, meaning the student started submitting it early.
 
-A checked week needs three things: a written brief, a quiz artifact whose `pass` is true, and a
-transcript backing that artifact. Any one missing is a red X.
+A checked week wants three things: a written brief, a quiz artifact whose `pass` is true, and a
+transcript backing that artifact. Missing items are reported as warnings, never as a failure:
+submitting an incomplete week is always allowed, and incompleteness is graded as part of the
+case study's analysis half rather than blocked here.
 
-This is a workflow gate, not a security boundary. It proves the artifacts exist and are internally
-consistent. Whether the understanding behind them is real is what the closed-book quiz is for.
+This is a report, not a security boundary. It says what exists and what does not. Whether the
+understanding behind the artifacts is real is what the closed-book quiz is for.
 
 Instructor override: an `EXCUSED` file in a week's checks/ directory skips that week entirely.
 
-Exit 0 = green, exit 1 = red.
+Exit is 0 unless the repo or schedule itself is broken; warnings are printed for anything
+missing so the student (and the instructor) can see the gaps.
 """
 
 import json
@@ -126,14 +129,13 @@ def main():
     if problems:
         print("")
         for p in problems:
-            print("::error::%s" % p)
-        print("\nSubmission incomplete. %d problem(s) above." % len(problems))
-        sys.exit(1)
-
-    if not checked and not skipped:
+            print("::warning::%s" % p)
+        print("\nSubmission accepted with %d gap(s) above. Gaps count against the analysis "
+              "half of the case study grade." % len(problems))
+    elif not checked and not skipped:
         print("Nothing due yet and nothing started. Green, but you have not submitted anything.")
     else:
-        print("\nAll %d checked week(s) pass the quiz gate." % len(checked))
+        print("\nAll %d checked week(s) are complete." % len(checked))
 
 
 if __name__ == "__main__":
