@@ -39,6 +39,7 @@ def candidates():
             if sibling.is_dir() and "spax402" in name and "material" in name:
                 yield sibling
 
+    yield Path.home() / "repos" / "spax402-course-materials"
     yield Path.home() / "repos" / "spax402-materials"
     yield Path.home() / "spax402-materials"
 
