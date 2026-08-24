@@ -46,10 +46,15 @@ scaled to the full league, checked against your Thursday hand-build.
 **Audience:** a head coach.
 
 Answer:
-- Do you see a relationship between play-calling unpredictability and converting short-yardage
-  downs? Which team is the interesting outlier, and what's your best explanation?
-- What other information would you want before telling a team to change its run/pass mix?
-- How else would you compare scoring efficiency across positions beyond raw FG%?
+
+**Entropy in the NFL**
+- Do you see a trend between standardized entropy and first down conversion percentage?
+- What other information would you want to look at to determine how important entropy is for
+  success rate?
+- How would you go about assessing the optimal entropy for a given team?
+
+**NBA FG% comparison by position**
+- How else would you analyze FG% to compare scoring efficiency across different positions?
 
 ## Before you push
 
