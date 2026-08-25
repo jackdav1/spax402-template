@@ -135,7 +135,6 @@ Then, in a browser:
 3. Name it `spax402-<your-username>` and set it to **Private**. Create it.
 4. On your new repo's page: **Settings → Collaborators → Add people**, and add **`jackdav1`**.
    This is how your work gets graded; without it the instructor cannot see your repo.
-5. Paste your repo's URL into the Week 1 Canvas assignment.
 
 Now pick where both course folders will live on your computer. One folder holds everything for
 the semester. Open a terminal and make it:

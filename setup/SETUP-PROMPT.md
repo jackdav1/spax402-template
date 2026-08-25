@@ -50,7 +50,7 @@ What done looks like, in order. Walk me through all of it:
    on a resume. Then, in the browser, open https://github.com/jackdav1/spax402-template, click
    "Use this template" then "Create a new repository", name it spax402-<my-username>,
    set it to PRIVATE, and create it. Then on my new repo's page: Settings, Collaborators,
-   Add people, add jackdav1. Then paste my repo's URL into the Week 1 Canvas assignment.
+   Add people, add jackdav1.
 
 5. Back in the terminal: make one home for the semester with `mkdir spax402` then
    `cd spax402` (this puts a spax402 folder in my home folder — everything for the
