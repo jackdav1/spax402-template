@@ -1,0 +1,76 @@
+---
+name: update
+description: Refresh the course harness in this repo from the published template — skills, scripts, the schedule, and assignment files the instructor maintains. Shows what would change before writing anything and never touches the student's own work. Use when the student says /update, asks to get the latest skills or course files, or when something in the harness looks out of date or broken.
+---
+
+Bring this repo's harness up to date with what the instructor has published.
+
+This repo was created from a template, so it shares no history with it and `git pull` cannot
+deliver instructor fixes. `scripts/harness_update.py` does that instead: it reads a manifest of
+the files the instructor maintains and downloads only the ones that differ.
+
+## Step 1 — show the student what would change
+
+Run the preview. It writes nothing:
+
+```
+python3 scripts/harness_update.py
+```
+
+Report what it prints, in plain terms. Translate the file list into what it means for them: a
+changed `SKILL.md` means one of their commands behaves differently, a changed
+`course-schedule.json` means a due date moved, a changed `weeks/weekNN/README.md` means an
+assignment was corrected.
+
+If it reports nothing pending, say so and stop. Do not run `--apply` when there is nothing to do.
+
+If it fails on the network, say plainly that the update needs internet and nothing was changed.
+Do not retry in a loop — the script already backs off and gives up on its own.
+
+## Step 2 — commit anything of theirs that is outstanding
+
+Check `git status --short` before applying. If the student has uncommitted work, commit it first
+(or let them decide to), so the harness update lands as its own commit and stays easy to undo.
+
+The script refuses to overwrite any file with uncommitted changes and reports it as skipped, so
+a student who has edited a harness file will not silently lose it. If that happens, tell them
+which file, and that they can commit or discard their version to accept the published one.
+
+## Step 3 — apply, then commit it on its own
+
+```
+python3 scripts/harness_update.py --apply
+```
+
+Then commit the refresh by itself, so `git revert` on one commit puts the harness back:
+
+```
+git add -A
+git commit -m "Update course harness"
+```
+
+Push it. Tell the student what changed in behavior, not just which files moved.
+
+If a skill file changed, mention that Claude Code loads skills at session start, so they should
+start a fresh session before relying on the updated command.
+
+## What this never touches
+
+The script protects these regardless of what the manifest says, and you must not work around it:
+
+- `weeks/*/BRIEF.md` — their brief, always typed by them
+- `weeks/*/checks/` — quiz and audit artifacts, which are graded
+- `weeks/*/outputs/` and any `data/raw/` — their results and source data
+- `learning-records/` and `lessons/` — what `/teach` has built up for them
+- `my-skills/` — skills they author from Week 9 on; this is theirs, not the harness
+- `MISSION.md` — their own words about what they want out of the course
+
+If a student asks you to update one of those from the template, decline and explain that it is
+their work. If they believe a protected file is genuinely broken, that is a question for the
+instructor, not something to overwrite.
+
+## Integrity
+
+Never edit `harness-manifest.json` locally to force an outcome, never fetch a harness file by
+hand to sidestep the script's checks, and never disable the protections above. If the script and
+the student disagree about what should happen, the script wins and the instructor settles it.

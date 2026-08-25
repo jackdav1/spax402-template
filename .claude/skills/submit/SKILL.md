@@ -36,6 +36,18 @@ python3 scripts/quiz_gate.py
 
 It warns on gaps; it does not fail on them.
 
+Then check whether the harness itself is out of date:
+
+```
+python3 scripts/harness_update.py --check
+```
+
+This prints one line if the instructor has published newer skills or course files, and prints
+nothing when there is nothing pending. It always exits 0 and needs the internet, so treat silence
+and failure the same way: mention it if it says something, ignore it otherwise, and never let it
+delay a submission. If it does report a gap, tell them `/update` will handle it **after** they
+submit — a deadline is never the moment to change the harness.
+
 ## Step 2 — anything missing
 
 List what's missing and the command for each, in the order they should run them

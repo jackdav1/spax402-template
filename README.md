@@ -60,6 +60,7 @@ each other; it cannot confirm you understand anything, which is what the Tuesday
 | `/audit` | An adversarial reviewer goes hunting for flaws in your analysis: leakage, bad assumptions, wrong tails. |
 | `/coach-brief` | Red-teams your hand-written brief draft as the week's named audience (usually a skeptical coach). Critique only — it will not write for you. |
 | `/submit` | The submission preflight: checks every required artifact, tells you what's missing, and pushes when the week is complete. |
+| `/update` | Pulls in corrected skills, scripts, and course files from the template. Shows you what would change first, and never touches your own work. |
 
 ## Repo map
 
@@ -75,6 +76,11 @@ lessons/              reference lessons /teach builds for you
 scripts/              helpers the harness runs (do not edit)
 my-skills/            skills YOU author (Week 9+) — this is yours; the harness itself is not editable
 ```
+
+Your repo was made from a template, so `git pull` here does not bring you instructor fixes. When
+a skill, a script, or a due date is corrected mid-semester, `/update` fetches it. It shows you
+what would change before writing anything, and it cannot touch your briefs, your `checks/`
+artifacts, your outputs, your learning records, or `my-skills/`.
 
 ## The materials repo
 

@@ -1,0 +1,23 @@
+name: harness-manifest
+
+# Catches a harness edit that was committed without regenerating harness-manifest.json.
+# A stale manifest is silent in the worst way: /update reports nothing pending while the
+# published file actually differs, so students never receive the fix.
+#
+# This only means anything in the template repo, which is the source of truth. Student repos
+# get this file too, and the guard below skips it there rather than showing them a red X.
+
+on:
+  push:
+    branches: ["**"]
+
+jobs:
+  manifest:
+    if: github.repository == 'jackdav1/spax402-template'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: harness-manifest.json matches the tree
+        run: python3 scripts/build_harness_manifest.py --check

@@ -1,0 +1,103 @@
+{
+  "files": {
+    ".claude/skills/audit/SKILL.md": {
+      "bytes": 4978,
+      "sha256": "ba9296590161fceb82b88b9c38ecef655804c6eda17424878bc93ba24b024a38"
+    },
+    ".claude/skills/coach-brief/SKILL.md": {
+      "bytes": 3157,
+      "sha256": "0d71d18a23f5fec99f3acd89e7cd0f62734812213cfb099ab2ea83e328618ac9"
+    },
+    ".claude/skills/quiz-me/SKILL.md": {
+      "bytes": 3910,
+      "sha256": "a6dd4a3846e8b5991a7e6576d55087f6a868d79a50a7c7b1f054992d1d07b6a8"
+    },
+    ".claude/skills/submit/SKILL.md": {
+      "bytes": 3873,
+      "sha256": "329f01ae4ee47a3663e3f454a4fdf6eae050c9616cf4567f70f05b48b9faf8a9"
+    },
+    ".claude/skills/teach/SKILL.md": {
+      "bytes": 2732,
+      "sha256": "224163aa58d81d3dc88646774b63e2fd7e114568a3ed0f8b55c250c679e72bfe"
+    },
+    ".claude/skills/update/SKILL.md": {
+      "bytes": 3574,
+      "sha256": "8f0e4b2769dea024a43922ff2ba9b7a27a38b3bc375ebdf853b3924f70f674cd"
+    },
+    ".github/workflows/harness-manifest.yml": {
+      "bytes": 778,
+      "sha256": "7b30002b2d9d931eab238b0d7dfa04db54492be7909874ba3223b4aa434b9a16"
+    },
+    ".github/workflows/quiz-gate.yml": {
+      "bytes": 437,
+      "sha256": "9ccc7dcfa5afbabda49846f9eb39b4767832880e0f16daa4b3f9e19f80f06a63"
+    },
+    ".gitignore": {
+      "bytes": 284,
+      "sha256": "203e15ff8269a448b34f07da7d0ef8a77ac44f7b8d91bfb44419055359545992"
+    },
+    "BRIEF-template.md": {
+      "bytes": 1312,
+      "sha256": "1c62f9ad57e169e54f5d66e8258d1c343983cce8eb980d4bd77e3af4d78827c2"
+    },
+    "CLAUDE.md": {
+      "bytes": 3565,
+      "sha256": "0d7e830c7b23e431d486b9e5f4120549b53233a9c07a6eaae3ca795c670a5ed7"
+    },
+    "README.md": {
+      "bytes": 5873,
+      "sha256": "fd84c6930c9995d2c77ccfad0a16d41a00f8e664fec30e8ac734c51f55847389"
+    },
+    "course-schedule.json": {
+      "bytes": 648,
+      "sha256": "413c8ef658ca10e4d09f1368ce65e925b7da48d8230a2752299b23470263c839"
+    },
+    "scripts/build_harness_manifest.py": {
+      "bytes": 4881,
+      "sha256": "4659910d197f504c459ef0dcdd719d9771e0ad274c8de558476b0082dd775fea"
+    },
+    "scripts/harness_update.py": {
+      "bytes": 13268,
+      "sha256": "c8e0bf690b5f9ec58cd280aad9999e503ab59541f8d0427a7e5fa4b32820a4b3"
+    },
+    "scripts/materials_path.py": {
+      "bytes": 2921,
+      "sha256": "d5825a757db5997914c04204c167a27d68f562de949c4218b73e4374676f1d60"
+    },
+    "scripts/quiz_gate.py": {
+      "bytes": 5442,
+      "sha256": "0116d0ab0031d69f955e3ced2f46916865067d30d6e1ce7b27b4224fda440a80"
+    },
+    "setup/README.md": {
+      "bytes": 10924,
+      "sha256": "2efdcdb62caca1f2e7c7b2b6afe777f7be33ee62d582021c6d9a8bb781a79b11"
+    },
+    "setup/SETUP-PROMPT.md": {
+      "bytes": 5386,
+      "sha256": "d4e75f59186c30c9476c62cf093b25d1fbb0e1d8adc0f147cd60c7b358932435"
+    },
+    "setup/use-this-template.png": {
+      "bytes": 9216,
+      "sha256": "cc335f9d3463cf9c4e34d1508af9832a40d293f7bd42b501a933c500fc965b2d"
+    },
+    "weeks/week01/README.md": {
+      "bytes": 2640,
+      "sha256": "6e8ee0b34bf8b4e9bd33a563d23f37426cdee2051469a4e14bbe2ac4d469a42f"
+    },
+    "weeks/week01/data/hand-build-nfl-entropy.csv": {
+      "bytes": 368,
+      "sha256": "c4a533b06e42c47c0f554fabfde0e5cff1ffc36bc38260d6e0e83a14b1b82837"
+    },
+    "weeks/week01/data/pull_pbp.py": {
+      "bytes": 7342,
+      "sha256": "b4111c5cdd8206f2f8ba01b0a39a9ccca5c18739df26db137078bd1169733224"
+    }
+  },
+  "generated": "2026-08-25",
+  "managed_prefixes": [
+    ".claude/skills/",
+    "scripts/",
+    "setup/"
+  ],
+  "source": "jackdav1/spax402-template@main"
+}
