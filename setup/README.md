@@ -5,9 +5,9 @@ Predictive Analytics with Athletics Data · University of Delaware · Fall 2026
 Everything you install here, you install once. After Tuesday you will not think about any of it
 again for the rest of the semester.
 
-**Budget 30 to 45 minutes if you have never used a terminal.** Twenty if you have. Do it before
-class if you can. If something breaks, skip to [Troubleshooting](#troubleshooting)
-rather than guessing; every failure listed there has a two-line fix.
+We do this together in class on Tuesday. If something breaks, skip to
+[Troubleshooting](#troubleshooting) rather than guessing; every failure listed there has a
+two-line fix.
 
 **Prefer being walked through it?** Canvas also has a setup prompt you can paste into
 **https://claude.ai** in your browser, and Claude will take you through these same steps one at a
