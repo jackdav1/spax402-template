@@ -40,7 +40,8 @@ It warns on gaps; it does not fail on them.
 
 List what's missing and the command for each, in the order they should run them
 (audit → brief → quiz is the intended order). Then say plainly: they can submit right now with
-these gaps, and the gaps will count against the analysis half of the case study grade — or fill
+these gaps. A missing hand-build, audit record, or quiz transcript counts against the analysis
+half of the case study grade; a missing or empty BRIEF.md counts against the brief half. Or fill
 the gaps first if there is time. Ask which they want. If they say submit, submit. Never refuse
 to push, and never present completeness as a requirement for submitting.
 

@@ -148,8 +148,8 @@ cd spax402
 
 That creates a folder named `spax402` in your home folder (`C:\Users\yourname\spax402` on
 Windows, `/Users/yourname/spax402` on a Mac) and moves you into it. Every command below runs
-from inside it, and any time these instructions say to open a terminal "in your repo," you get
-there with a single `cd spax402/spax402-your-name`.
+from inside it. If you close the terminal and open a fresh one later, get back to your repo with
+a single `cd spax402/spax402-your-name`.
 
 Copy your repo's URL and clone it:
 
@@ -183,8 +183,8 @@ opens. It only asks once per machine.
 
 ## Install the Python packages
 
-Move into your repo (`cd spax402/spax402-your-name`, using whatever your folder is actually
-called), then:
+Still in the same terminal, move into your repo (`cd spax402-your-name`, using whatever your
+folder is actually called), then:
 
 ```
 python -m pip install --upgrade pip
@@ -211,8 +211,9 @@ session and point it at your repo folder (the `spax402-...` folder you just clon
 
 Your repo has a `MISSION.md` at its root: what you want out of this course, in your own words.
 Ask Claude Code to help you fill in the **About me** section — your name, the sport or sports
-you care about, where you want to be in three years. That edit is your first commit. Then back in your
-terminal, inside the repo folder:
+you care about, where you want to be in three years, and what you already know or what worries
+you about this course. That edit is your first commit. Then back in your terminal, inside the
+repo folder:
 
 ```
 git add -A

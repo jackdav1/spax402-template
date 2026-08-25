@@ -39,9 +39,10 @@ critique your draft (`/coach-brief`) — never to write it.
    your repo link is in the week's Canvas assignment by **Monday 11:59pm**.
 
 You can always submit, complete or not. Nothing blocks the push: missing items (brief, quiz
-artifact, audit record, hand-build) are reported as warnings on your commit, and anything still
-missing at the deadline counts against the analysis half of that case study's grade. You can run
-the same report yourself before pushing:
+artifact, audit record, hand-build) are reported as warnings on your commit. At the deadline, a
+missing hand-build, audit record, or quiz transcript counts against the analysis half of that
+case study's grade, and a missing brief counts against the brief half. You can run the same
+report yourself before pushing:
 
 ```
 python scripts/quiz_gate.py

@@ -61,14 +61,15 @@ What done looks like, in order. Walk me through all of it:
    `git config --global user.name "My Name"` and
    `git config --global user.email "my@udel.edu"`.
 
-6. Python packages, from inside the repo folder (`cd spax402/spax402-...`):
+6. Python packages, from inside the repo folder (still in the same terminal, `cd spax402-...`):
    `python -m pip install --upgrade pip`, then
    `python -m pip install pandas numpy pyarrow matplotlib openpyxl scikit-learn`.
    (Mac: python3.)
 
 7. The finish line: in the Claude app, open a Claude Code session pointed at my repo
    folder and have it help me fill in the "About me" section of MISSION.md at the repo
-   root (my name, the sport or sports I care about, where I want to be in three years). Then,
+   root (my name, the sport or sports I care about, where I want to be in three years, and
+   what I already know or what worries me about this course). Then,
    back in my terminal inside the repo folder, `git add -A`,
    `git commit -m "First commit"`, `git push`.
    Before I run those, explain them in one breath: a commit is a checkpoint (a labeled
