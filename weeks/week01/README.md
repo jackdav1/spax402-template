@@ -29,15 +29,17 @@ need to ask.
 
 ## The Case Study (this repo, solo)
 
-**Case study: Entropy in the NFL.** Direct your agent to:
+**Case study: Entropy in the NFL.** The question: do less predictable play-callers have more
+success in short yardage situations? Deciding what counts as success is your call, and you have to
+defend the choice in your brief. Direct your agent to:
 1. Pull the season's play-by-play from nflverse (the pull script is provided in `data/` — read it
    with your agent and have it explained to you, including how it limits and caches requests).
-2. Filter to 3rd/4th-and-short situations, compute each team's run/pass split, standardized
-   entropy, and first-down conversion rate.
+2. Filter to 3rd/4th-and-short situations, compute each team's run/pass split and standardized
+   entropy, and measure success the way you defined it.
 3. **Verify:** the agent must reproduce your hand-computed team from Thursday and match your
    number before you accept the league-wide table.
-4. Export the team table to `outputs/` as .xlsx and produce one chart relating entropy to
-   conversion rate.
+4. Export the team table to `outputs/` as .xlsx and produce one chart relating entropy to your
+   success measure.
 
 ## Your brief (BRIEF.md — typed by you)
 
@@ -45,14 +47,11 @@ need to ask.
 
 Answer:
 
-**Entropy in the NFL**
-- Do you see a trend between standardized entropy and first down conversion percentage?
+- How did you define success in short yardage, and why that measure?
+- Do you see a trend between standardized entropy and your measure of success?
 - What other information would you want to look at to determine how important entropy is for
-  success rate?
+  success?
 - How would you go about assessing the optimal entropy for a given team?
-
-**NBA FG% comparison by position** (from Tuesday's in-class example — no new analysis needed)
-- How else would you analyze FG% to compare scoring efficiency across different positions?
 
 ## Before you push
 
