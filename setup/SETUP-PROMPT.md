@@ -61,7 +61,7 @@ What done looks like, in order. Walk me through all of it:
    `git config --global user.name "My Name"` and
    `git config --global user.email "my@udel.edu"`.
 
-6. Python packages, from inside the repo folder (`cd spax402-...`):
+6. Python packages, from inside the repo folder (`cd spax402/spax402-...`):
    `python -m pip install --upgrade pip`, then
    `python -m pip install pandas numpy pyarrow matplotlib openpyxl scikit-learn`.
    (Mac: python3.)
@@ -77,7 +77,7 @@ What done looks like, in order. Walk me through all of it:
    Git may open a browser to sign in to GitHub the first time; that is normal.
    I am done when I refresh my repository page on GitHub and see my commit.
    Then tell me the one habit to remember for the semester: every Tuesday, run
-   `cd spax402`, `cd spax402-course-materials`, `git pull` to get that week's
+   `cd spax402/spax402-course-materials`, then `git pull` to get that week's
    deck and data. My own repo is where my work goes; that one is the handouts.
 
 Known failures and their fixes, so you don't improvise:

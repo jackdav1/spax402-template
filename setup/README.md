@@ -149,7 +149,7 @@ cd spax402
 That creates a folder named `spax402` in your home folder (`C:\Users\yourname\spax402` on
 Windows, `/Users/yourname/spax402` on a Mac) and moves you into it. Every command below runs
 from inside it, and any time these instructions say to open a terminal "in your repo," you get
-there with `cd spax402` and then `cd` into the repo folder.
+there with a single `cd spax402/spax402-your-name`.
 
 Copy your repo's URL and clone it:
 
@@ -183,7 +183,8 @@ opens. It only asks once per machine.
 
 ## Install the Python packages
 
-Move into your repo (`cd spax402-your-name`, using whatever your folder is actually called), then:
+Move into your repo (`cd spax402/spax402-your-name`, using whatever your folder is actually
+called), then:
 
 ```
 python -m pip install --upgrade pip
@@ -232,13 +233,10 @@ is behind you for the semester.
 
 New decks and data are posted to the `spax402-course-materials` folder you cloned above. Your
 own repo does not update itself; new course files only ever arrive in that second folder, and
-you fetch them by opening a fresh terminal and running three lines at the start of each week:
+you fetch them by opening a fresh terminal and running two lines at the start of each week:
 
 ```
-cd spax402
-```
-```
-cd spax402-course-materials
+cd spax402/spax402-course-materials
 ```
 ```
 git pull
