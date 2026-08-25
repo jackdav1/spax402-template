@@ -39,3 +39,7 @@ is stateful — learning accumulates in this repo across the whole semester.
 - Update `MISSION.md` only when the student's goals genuinely sharpen.
 - Never complete graded work during teaching: no quiz answers, no brief sentences, no case-study
   analysis. Teaching stops where their graded work begins.
+
+---
+
+Adapted from Matt Pocock's `/teach` skill (github.com/mattpocock/skills, MIT).
