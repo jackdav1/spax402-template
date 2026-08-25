@@ -15,7 +15,7 @@ to spit out an answer.
   Tuesday quizzes and both exams are also closed-book, closed-AI.
   You may still use an LLM to help troubleshoot formulas and understand the approach.
   If you need more time on the hand-build, finish it at home that evening before you start the
-  take-home. Commit the hand-build (the Excel file, or a photo of the paper work) with your
+  take-home. Commit the hand-build Excel file with your
   Monday submission.
 - **The take-home case study, on your own, with Claude Code, in this repo.** You direct Claude Code to scale the analysis
   up — real data, real size. Your hand-built version from Thursday is the reference answer

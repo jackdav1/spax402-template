@@ -71,6 +71,9 @@ What done looks like, in order. Walk me through all of it:
    root (my name, the sport or sports I care about, where I want to be in three years). Then,
    back in my terminal inside the repo folder, `git add -A`,
    `git commit -m "First commit"`, `git push`.
+   Before I run those, explain them in one breath: a commit is a checkpoint (a labeled
+   snapshot of my work I can come back to), and a push uploads my commits to GitHub;
+   until I push, my work exists only on my laptop and cannot be seen or graded.
    Git may open a browser to sign in to GitHub the first time; that is normal.
    I am done when I refresh my repository page on GitHub and see my commit.
    Then tell me the one habit to remember for the semester: every Tuesday, run

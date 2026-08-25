@@ -205,6 +205,11 @@ On macOS, use `python3` instead of `python` in both lines.
 
 ## First commit
 
+Two words you will use every week. A **commit** is a checkpoint: it snapshots your work with a
+label, like saving your game, and you can always come back to it. A **push** uploads your commits
+to GitHub. Until you push, your work exists only on your laptop and cannot be seen or graded.
+The rhythm is always: save the file, commit the checkpoint, push it to GitHub.
+
 You are set up when a commit of yours is on GitHub. In the Claude app, open a **Claude Code**
 session and point it at your repo folder (the `spax402-...` folder you just cloned).
 
