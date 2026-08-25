@@ -14,7 +14,7 @@ to spit out an answer.
   hand, in a small spreadsheet. This is where you prove the understanding is yours.
   Tuesday quizzes and both exams are also closed-book, closed-AI.
   You may still use an LLM to help troubleshoot formulas and understand the approach.
-  If you need more time on the hand-build, finish it at home that evening before you start the
+  If you need more time on the hand-build, finish it at home before you start the
   take-home. Commit the hand-build Excel file with your
   Monday submission.
 - **The take-home case study, on your own, with Claude Code, in this repo.** You direct Claude Code to scale the analysis
