@@ -51,10 +51,6 @@ this course runs on, lives inside the app.
 
 Now skip ahead to [Verify the installation](#verify-the-installation).
 
-**You do not need WSL.** If you have read elsewhere that Claude Code on Windows requires the
-Windows Subsystem for Linux, that is out of date. It runs natively, and installing WSL will cost
-you an hour and give you a second machine to keep track of.
-
 ---
 
 ## macOS
