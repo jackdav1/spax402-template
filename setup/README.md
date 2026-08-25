@@ -210,6 +210,29 @@ is behind you for the semester.
 
 ---
 
+## Getting each week's files
+
+New decks and data are posted to the `spax402-course-materials` folder you cloned above. Your
+own repo does not update itself; new course files only ever arrive in that second folder, and
+you fetch them by running two lines in your terminal at the start of each week:
+
+```
+cd spax402-course-materials
+```
+```
+git pull
+```
+
+(If the terminal says `No such file or directory`, you are not in the folder that contains it;
+`cd` to wherever you cloned both repos first.)
+
+When a weekly assignment points at a data file, look in your own repo's `weeks/` folder first;
+if it is not there, it is in `spax402-course-materials` after a pull. Copy it into the matching
+`weeks/` folder of your own repo before working on it, so your work and its inputs get pushed
+together.
+
+---
+
 ## Troubleshooting
 
 **`git` or `python` is not recognized, right after installing it.**
