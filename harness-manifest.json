@@ -53,8 +53,8 @@
       "sha256": "413c8ef658ca10e4d09f1368ce65e925b7da48d8230a2752299b23470263c839"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 4881,
-      "sha256": "4659910d197f504c459ef0dcdd719d9771e0ad274c8de558476b0082dd775fea"
+      "bytes": 4944,
+      "sha256": "fabf5311a9acab18618f6fbe5d98ab30379329b016042d36f9a4f0f73dcd681a"
     },
     "scripts/harness_update.py": {
       "bytes": 13268,
@@ -81,8 +81,12 @@
       "sha256": "cc335f9d3463cf9c4e34d1508af9832a40d293f7bd42b501a933c500fc965b2d"
     },
     "weeks/week01/README.md": {
-      "bytes": 2640,
-      "sha256": "6e8ee0b34bf8b4e9bd33a563d23f37426cdee2051469a4e14bbe2ac4d469a42f"
+      "bytes": 2930,
+      "sha256": "9f15adafb474484da79b80cf3da72ab43a19576c7be3f33aa7f9e82671243251"
+    },
+    "weeks/week01/data/hand-build-nfl-entropy-worksheet.xlsx": {
+      "bytes": 5930,
+      "sha256": "dc1f268eeece886a56896c79e8d66629bb671e4eee961f4d038d52d2993d7d00"
     },
     "weeks/week01/data/hand-build-nfl-entropy.csv": {
       "bytes": 368,

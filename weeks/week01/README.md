@@ -15,16 +15,19 @@ By Monday night you can:
 
 You built, by hand / small Excel:
 - Standardized entropy for **one team's** run/pass mix on 3rd/4th-and-short, in Excel, from the
-  formula. The input plays are in `data/hand-build-nfl-entropy.csv`.
+  formula. Open `data/hand-build-nfl-entropy-worksheet.xlsx` and fill in every highlighted cell.
+  It holds every Philadelphia Eagles run or pass play on 3rd or 4th down with exactly 2 yards to
+  go, from the 2024 regular season and playoffs: 23 plays. The same rows are in
+  `data/hand-build-nfl-entropy.csv` if you would rather build the sheet yourself.
 
 Commit it (the Excel file) into `weeks/week01/` — the
 hand-build is part of the Monday 11:59pm submission, and it is your reference answer for
-the take-home.
+the Case Study.
 
-Need more time? Finish the hand-build at home Thursday evening, before you start the take-home. No
+Need more time? Finish the hand-build at home Thursday evening, before you start the Case Study. No
 need to ask.
 
-## The take-home (this repo, solo)
+## The Case Study (this repo, solo)
 
 **Case study: Entropy in the NFL.** Direct your agent to:
 1. Pull the season's play-by-play from nflverse (the pull script is provided in `data/` — read it

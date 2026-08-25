@@ -47,6 +47,7 @@ MANAGED_FILES = [
     "course-schedule.json",
     "weeks/week01/README.md",
     "weeks/week01/data/hand-build-nfl-entropy.csv",
+    "weeks/week01/data/hand-build-nfl-entropy-worksheet.xlsx",
     "weeks/week01/data/pull_pbp.py",
 ]
 
