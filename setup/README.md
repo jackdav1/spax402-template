@@ -141,7 +141,22 @@ Then, in a browser:
    This is how your work gets graded; without it the instructor cannot see your repo.
 5. Paste your repo's URL into the Week 1 Canvas assignment.
 
-Then copy the same URL and, in your terminal:
+Now pick where both course folders will live on your computer. One folder holds everything for
+the semester. Open a terminal and make it:
+
+```
+mkdir spax402
+```
+```
+cd spax402
+```
+
+That creates a folder named `spax402` in your home folder (`C:\Users\yourname\spax402` on
+Windows, `/Users/yourname/spax402` on a Mac) and moves you into it. Every command below runs
+from inside it, and any time these instructions say to open a terminal "in your repo," you get
+there with `cd spax402` and then `cd` into the repo folder.
+
+Copy your repo's URL and clone it:
 
 ```
 git clone <paste-the-url-here>
@@ -153,6 +168,9 @@ week you will `git pull` inside it to get the new content:
 ```
 git clone https://github.com/jackdav1/spax402-course-materials
 ```
+
+When you are done, the `spax402` folder contains exactly two folders: `spax402-yourname` (your
+work, gets pushed) and `spax402-course-materials` (the handouts, gets pulled).
 
 The first time you push work, Git will ask who you are. Answer once:
 
@@ -214,8 +232,11 @@ is behind you for the semester.
 
 New decks and data are posted to the `spax402-course-materials` folder you cloned above. Your
 own repo does not update itself; new course files only ever arrive in that second folder, and
-you fetch them by running two lines in your terminal at the start of each week:
+you fetch them by opening a fresh terminal and running three lines at the start of each week:
 
+```
+cd spax402
+```
 ```
 cd spax402-course-materials
 ```
@@ -223,8 +244,8 @@ cd spax402-course-materials
 git pull
 ```
 
-(If the terminal says `No such file or directory`, you are not in the folder that contains it;
-`cd` to wherever you cloned both repos first.)
+(If the terminal says `No such file or directory`, you are not where you think you are; a fresh
+terminal always starts in your home folder, which is where `spax402` lives.)
 
 When a weekly assignment points at a data file, look in your own repo's `weeks/` folder first;
 if it is not there, it is in `spax402-course-materials` after a pull. Copy it into the matching
