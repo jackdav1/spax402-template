@@ -11,7 +11,7 @@ to spit out an answer.
 
 - **Tuesday's lecture, in class.** The unit's concepts.
 - **Thursday, in class, by hand, no agentic AI.** You build a small version of each week's method by
-  hand, on paper or in a small spreadsheet. This is where you prove the understanding is yours.
+  hand, in a small spreadsheet. This is where you prove the understanding is yours.
   Tuesday quizzes and both exams are also closed-book, closed-AI.
   You may still use an LLM to help troubleshoot formulas and understand the approach.
   If you need more time on the hand-build, finish it at home that evening before you start the
