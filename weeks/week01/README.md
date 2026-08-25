@@ -14,13 +14,10 @@ By Monday night you can:
 ## Thursday (in class, by hand, no agentic AI)
 
 You built, by hand / small Excel:
-1. Mean, SD, and coefficient of variation for a small set of NBA players' FG%, plus a histogram
-   of `fg_pct` with bins of 0.02 and one sentence naming the shape (unimodal or bimodal, and
-   which way it is skewed). The input rows are in `data/hand-build-nba-fg.csv`.
-2. Standardized entropy for **one team's** run/pass mix on 3rd/4th-and-short, in Excel, from the
-   formula. The input plays are in `data/hand-build-nfl-entropy.csv`.
+- Standardized entropy for **one team's** run/pass mix on 3rd/4th-and-short, in Excel, from the
+  formula. The input plays are in `data/hand-build-nfl-entropy.csv`.
 
-Commit them (the Excel file) into `weeks/week01/` — the
+Commit it (the Excel file) into `weeks/week01/` — the
 hand-build is part of the Monday 11:59pm submission, and it is your reference answer for
 the take-home.
 
