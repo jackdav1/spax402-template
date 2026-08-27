@@ -41,7 +41,6 @@ MANAGED_FILES = [
     ".github/workflows/harness-manifest.yml",
     ".github/workflows/quiz-gate.yml",
     ".gitignore",
-    "BRIEF-template.md",
     "CLAUDE.md",
     "README.md",
     "course-schedule.json",

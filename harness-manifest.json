@@ -5,16 +5,16 @@
       "sha256": "ba9296590161fceb82b88b9c38ecef655804c6eda17424878bc93ba24b024a38"
     },
     ".claude/skills/coach-brief/SKILL.md": {
-      "bytes": 3157,
-      "sha256": "0d71d18a23f5fec99f3acd89e7cd0f62734812213cfb099ab2ea83e328618ac9"
+      "bytes": 3476,
+      "sha256": "155503b41a6fc0af204f27f5a8773ed9e220e06c43d5121f814691e433975556"
     },
     ".claude/skills/quiz-me/SKILL.md": {
       "bytes": 3910,
       "sha256": "a6dd4a3846e8b5991a7e6576d55087f6a868d79a50a7c7b1f054992d1d07b6a8"
     },
     ".claude/skills/submit/SKILL.md": {
-      "bytes": 3873,
-      "sha256": "329f01ae4ee47a3663e3f454a4fdf6eae050c9616cf4567f70f05b48b9faf8a9"
+      "bytes": 3986,
+      "sha256": "8f0b23169594a8bd9178135c07673c1e4831db33458b80f65294a291ef6004bd"
     },
     ".claude/skills/teach/SKILL.md": {
       "bytes": 2732,
@@ -36,25 +36,21 @@
       "bytes": 284,
       "sha256": "203e15ff8269a448b34f07da7d0ef8a77ac44f7b8d91bfb44419055359545992"
     },
-    "BRIEF-template.md": {
-      "bytes": 1312,
-      "sha256": "1c62f9ad57e169e54f5d66e8258d1c343983cce8eb980d4bd77e3af4d78827c2"
-    },
     "CLAUDE.md": {
-      "bytes": 3565,
-      "sha256": "0d7e830c7b23e431d486b9e5f4120549b53233a9c07a6eaae3ca795c670a5ed7"
+      "bytes": 4492,
+      "sha256": "07669c832238f448dec2bc51c1ea3b22be05729d8aa4ab3afc297053d3b23110"
     },
     "README.md": {
-      "bytes": 5873,
-      "sha256": "fd84c6930c9995d2c77ccfad0a16d41a00f8e664fec30e8ac734c51f55847389"
+      "bytes": 5968,
+      "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 648,
-      "sha256": "413c8ef658ca10e4d09f1368ce65e925b7da48d8230a2752299b23470263c839"
+      "bytes": 1506,
+      "sha256": "e23ecd124237779b7f4d26911d71355a6ade5f3c887ec8f80a7285b21c75283d"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 4944,
-      "sha256": "fabf5311a9acab18618f6fbe5d98ab30379329b016042d36f9a4f0f73dcd681a"
+      "bytes": 4919,
+      "sha256": "2a737aa723235c28d80490a59e1786e5c0b9f8dbf6e3c7cf18add1ba0221d1f6"
     },
     "scripts/harness_update.py": {
       "bytes": 13268,
@@ -64,9 +60,13 @@
       "bytes": 2921,
       "sha256": "d5825a757db5997914c04204c167a27d68f562de949c4218b73e4374676f1d60"
     },
+    "scripts/new_brief.py": {
+      "bytes": 3259,
+      "sha256": "4635791e2cad0af2197b114e9072c775c5cb17239c8a0bf222ebdc88a7c674c6"
+    },
     "scripts/quiz_gate.py": {
-      "bytes": 5442,
-      "sha256": "0116d0ab0031d69f955e3ced2f46916865067d30d6e1ce7b27b4224fda440a80"
+      "bytes": 6601,
+      "sha256": "614fb857615a9431649ba51fa9962896cc99ce2d6e5da3bb74e5fb27fc8296e1"
     },
     "setup/README.md": {
       "bytes": 10924,
@@ -81,8 +81,8 @@
       "sha256": "cc335f9d3463cf9c4e34d1508af9832a40d293f7bd42b501a933c500fc965b2d"
     },
     "weeks/week01/README.md": {
-      "bytes": 2983,
-      "sha256": "d38e202266492931e73c62e7c59031ea2dbc4707daefc5ee40b02ccb48f03268"
+      "bytes": 3160,
+      "sha256": "8089d3cc53c04a121f8683aa9ae2891bf49c4cf55cecd1832758cc05118f1e45"
     },
     "weeks/week01/data/hand-build-nfl-entropy-worksheet.xlsx": {
       "bytes": 5930,
@@ -97,7 +97,7 @@
       "sha256": "b4111c5cdd8206f2f8ba01b0a39a9ccca5c18739df26db137078bd1169733224"
     }
   },
-  "generated": "2026-08-25",
+  "generated": "2026-08-27",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",

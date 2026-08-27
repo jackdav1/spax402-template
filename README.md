@@ -33,7 +33,8 @@ critique your draft (`/coach-brief`) — never to write it.
    through first — optional, never required.)
 2. **Take-home:** complete the analysis. Check the agent's output against your hand-build.
    Run `/audit` and respond to what it finds.
-3. **Write `BRIEF.md`** in the week's folder — your words, half a page.
+3. **Write `BRIEF.md`** in the week's folder — your words, half a page. Create it with
+   `python3 scripts/new_brief.py weekNN`, which fills in the week's questions.
 4. **Run `/quiz-me`** for the week.
 5. **Run `/submit`** — it tells you exactly what's missing, then commits and pushes. Make sure
    your repo link is in the week's Canvas assignment by **Monday 11:59pm**.
@@ -70,7 +71,7 @@ weeks/weekNN/         your work for each week
   data/raw/           source data — never edited, never deleted
   outputs/            exported results (.xlsx/.csv/charts) — always inspectable in Excel
   checks/             quiz + audit artifacts and transcripts (graded; do not edit by hand)
-  BRIEF.md            your half-page brief to the week's audience — typed by you
+  BRIEF.md            the week's questions, answered in your words — typed by you
 learning-records/     what you've learned, accumulated by /teach across the semester
 lessons/              reference lessons /teach builds for you
 scripts/              helpers the harness runs (do not edit)

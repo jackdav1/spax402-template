@@ -3,7 +3,9 @@ The completeness report.
 
 A week is checked when either of these is true:
   * its due date has passed (from course-schedule.json), or
-  * it has a non-empty BRIEF.md, meaning the student started submitting it early.
+  * its BRIEF.md has an answer under at least one question, meaning the student started
+    submitting it early. A brief that only holds the instructor's questions does not count:
+    scripts/new_brief.py creates it that way, so its mere existence proves nothing.
 
 A checked week wants three things: a written brief, a quiz artifact whose `pass` is true, and a
 transcript backing that artifact. Missing items are reported as warnings, never as a failure:
@@ -20,6 +22,7 @@ missing so the student (and the instructor) can see the gaps.
 """
 
 import json
+import re
 import sys
 from datetime import datetime, time
 from pathlib import Path
@@ -27,6 +30,24 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 SCHEDULE = ROOT / "course-schedule.json"
+
+
+COMMENT = re.compile(r"<!--.*?-->", re.S)
+
+
+def brief_answered(path):
+    """True when a BRIEF.md holds the student's own writing.
+
+    new_brief.py seeds the file with the week's questions as headings and its instructions
+    as an HTML comment, so "the file exists and is not empty" no longer distinguishes a
+    written brief from an untouched one. Everything that is neither a heading nor a comment
+    is the student's answer.
+    """
+    if not path.exists():
+        return False
+    body = COMMENT.sub("", path.read_text(encoding="utf-8"))
+    return any(line.strip() and not line.lstrip().startswith("#")
+               for line in body.splitlines())
 
 
 def load_schedule():
@@ -58,9 +79,15 @@ def check_week(week, weekdir, reason):
     problems = []
 
     brief = weekdir / "BRIEF.md"
-    if not brief.exists() or not brief.read_text(encoding="utf-8").strip():
-        problems.append("%s: no BRIEF.md, and it was due (%s). Your brief is typed by you."
-                        % (week, reason))
+    if not brief_answered(brief):
+        if brief.exists():
+            problems.append("%s: BRIEF.md still holds only the questions, and it was due "
+                            "(%s). Answer them under the headings; your brief is typed by "
+                            "you." % (week, reason))
+        else:
+            problems.append("%s: no BRIEF.md, and it was due (%s). Create it with "
+                            "`python3 scripts/new_brief.py %s`, then answer the questions "
+                            "in your own words." % (week, reason, week))
         # Without a brief the rest is moot, but keep checking so one push shows everything.
 
     artifact = weekdir / "checks" / ("%s-quiz.json" % week)
@@ -105,7 +132,7 @@ def main():
             continue
 
         brief = weekdir / "BRIEF.md"
-        started = brief.exists() and bool(brief.read_text(encoding="utf-8").strip())
+        started = brief_answered(brief)
         overdue = week in due and deadline_passed(due[week], tz, now)
 
         if overdue:

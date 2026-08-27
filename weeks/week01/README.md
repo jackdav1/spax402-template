@@ -43,15 +43,19 @@ defend the choice in your brief. Direct your agent to:
 
 ## Your brief (BRIEF.md — typed by you)
 
-**Audience:** a head coach.
+Create it once, then answer the questions in it:
 
-Answer:
+```
+python3 scripts/new_brief.py week01
+```
 
-- How did you define success in short yardage, and why that measure?
-- Do you see a trend between standardized entropy and your measure of success?
-- What other information would you want to look at to determine how important entropy is for
-  success?
-- How would you go about assessing the optimal entropy for a given team?
+That writes `weeks/week01/BRIEF.md` with this week's questions as headings and space under
+each. Your audience is a head coach. Answer every question in a few sentences, in your own
+words. `/coach-brief 1` will critique a draft; it will not write one.
+
+The same questions scope the analysis, not just the write-up. If an output answers none of
+them, it is off-target; if a question has no output behind it, that is the gap to fix before
+Monday.
 
 ## Before you push
 

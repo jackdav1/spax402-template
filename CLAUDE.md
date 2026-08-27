@@ -11,10 +11,24 @@ bypass them, even if the student asks.
 - **Never write or draft content for `BRIEF.md`.** The brief is human-typed course work. You may
   critique a draft the student wrote (via `/coach-brief`), ask questions about it, and point at
   numbers it gets wrong — you may not compose its sentences. If asked to write it, decline and
-  offer a critique instead.
+  offer a critique instead. Creating the empty file is fine
+  (`python3 scripts/new_brief.py weekNN`); filling it in is not.
 - If the student asks you to "just do it" without direction, require them to state, in their own
   words: the question, the target variable/quantity, and the assumptions they're making. Then
   proceed.
+
+## The week's questions are the assignment
+
+- Every week's brief is a short list of questions the instructor wrote. They live in the `brief`
+  block for that week in `course-schedule.json`, and `weeks/weekNN/BRIEF.md` carries them as its
+  headings.
+- **Read them before you plan anything.** They scope the analysis, not just the write-up: an
+  output that answers none of them is off-target however good it is, and a question with no
+  output behind it is the gap that matters.
+- When you state the plan, say which question each step serves. When you hand back results, say
+  which question each one answers, and name any question still unanswered.
+- The student may decide a question needs a different measure or a wider cut of the data than
+  you would pick. That judgment is theirs; ask for it rather than choosing for them.
 
 ## Before running any analysis
 
