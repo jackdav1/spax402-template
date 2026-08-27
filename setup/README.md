@@ -44,10 +44,17 @@ It is at the bottom of the first installer screen and it is unchecked by default
 you click Install. If you miss it, Windows will not be able to find Python and the error you get
 back will not mention PATH at all. Re-running the installer and choosing Modify fixes it.
 
+If the installer never shows you that screen and instead offers **Modify / Repair / Uninstall**,
+Python is already on this machine. Choose **Modify**, click Next, and check **Add Python to
+environment variables** on the page that follows.
+
 ### 3. The Claude Desktop app
 
 Download it from **https://claude.ai/download** and run the installer. Claude Code, the agent
 this course runs on, lives inside the app.
+
+Download it from that address in your browser. Claude is **not** in the Microsoft Store, and the
+apps that come back when you search the Store for "Claude" are other people's products.
 
 Now skip ahead to [Verify the installation](#verify-the-installation).
 
@@ -254,7 +261,13 @@ git pull
 ```
 
 (If the terminal says `No such file or directory`, you are not where you think you are; a fresh
-terminal always starts in your home folder, which is where `spax402` lives.)
+terminal starts in your home folder, which is where `spax402` lives.)
+
+One exception on Windows: a terminal you opened with **Run as administrator** starts in
+`C:\Windows\System32` instead, and every command in this course fails there. `mkdir` reports
+*Access to the path is denied*, which reads like a permissions problem and is really a location
+problem. You do not need administrator rights for anything here. Close that window, open
+PowerShell or Windows Terminal normally, and start again.
 
 When a weekly assignment points at a data file, look in your own repo's `weeks/` folder first;
 if it is not there, it is in `spax402-course-materials` after a pull. Copy it into the matching
@@ -275,9 +288,27 @@ You missed the "Add python.exe to PATH" checkbox. Re-run the Python installer, c
 check it.
 
 **Git asks for a password and rejects the one you type.**
-GitHub stopped accepting account passwords over the command line. When it prompts, let it open a
-browser and sign in there instead. If it never offers a browser, install the GitHub CLI from
-**https://cli.github.com** and run `gh auth login`.
+GitHub stopped accepting account passwords over the command line in 2021. What replaces it
+differs by platform, and this is the single most common place people get stuck.
+
+*On Windows*, Git for Windows installs a helper that opens a browser window the first time you
+push or clone. Sign in there and it remembers you from then on. If no window appears, look behind
+the terminal; it sometimes opens underneath.
+
+*On macOS*, no browser window is coming. Git hands the prompt to the keychain, which asks for a
+password that no longer works, and there is nothing to click. Use a personal access token
+instead:
+
+1. Go to **https://github.com/settings/tokens** and choose **Generate new token (classic)**.
+2. Give it a name, set an expiration past the end of the semester, and check the **repo** scope.
+3. Generate it and copy the token. GitHub shows it once and never again.
+4. Run your `git clone` or `git push` again. At the username prompt type your GitHub username; at
+   the password prompt paste the token. It is long and nothing appears as you paste, which is
+   normal. Press Enter.
+
+The keychain stores it, so you do this once per machine. You do not need the GitHub CLI (`gh`)
+for any of this, and `gh: command not found` is expected since nothing in this course installs
+it.
 
 **On macOS: something says `CERTIFICATE_VERIFY_FAILED` or `unable to get local issuer
 certificate`.**
