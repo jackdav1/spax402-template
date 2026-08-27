@@ -22,6 +22,11 @@ changed `SKILL.md` means one of their commands behaves differently, a changed
 `course-schedule.json` means a due date moved, a changed `weeks/weekNN/README.md` means an
 assignment was corrected.
 
+A `remove` line means the instructor retired that file and nothing in the course uses it any
+more. Say which file and that it is going, so a deletion never arrives unannounced. The script
+only ever removes a harness file, never one of theirs, and refuses every path in the protected
+list below whatever the manifest asks for.
+
 If it reports nothing pending, say so and stop. Do not run `--apply` when there is nothing to do.
 
 If it fails on the network, say plainly that the update needs internet and nothing was changed.
