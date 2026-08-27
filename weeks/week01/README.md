@@ -20,7 +20,7 @@ You built, by hand / small Excel:
   go, from the 2024 regular season and playoffs: 23 plays. The same rows are in
   `data/hand-build-nfl-entropy.csv` if you would rather build the sheet yourself.
 
-Commit it (the Excel file) into `weeks/week01/` — the
+Commit the filled-in worksheet where it already sits, in `weeks/week01/data/`. The
 hand-build is part of the Monday 11:59pm submission, and it is your reference answer for
 the Case Study.
 
@@ -38,8 +38,8 @@ defend the choice in your brief. Direct your agent to:
    entropy, and measure success the way you defined it.
 3. **Verify:** the agent must reproduce your hand-computed team from Thursday and match your
    number before you accept the league-wide table.
-4. Export the team table to `outputs/` as .xlsx and produce one chart relating entropy to your
-   success measure.
+4. Commit the code you ran, plus any tables or charts from the analysis that back up your
+   brief. `outputs/` is the place for them.
 
 ## Your brief (BRIEF.md — typed by you)
 
