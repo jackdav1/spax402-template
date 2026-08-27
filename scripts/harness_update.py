@@ -228,9 +228,16 @@ def plan(manifest):
         else:
             updates.append(relpath)
 
-    if prefixes and tracked is not None:
-        for relpath in sorted(tracked):
-            if not relpath.startswith(prefixes) or relpath in files:
+    if tracked is not None:
+        # Two ways a file gets removed. Inside a managed directory, absence from the manifest
+        # is enough. Anywhere else the manifest has to name it, because we cannot tell a
+        # retired harness file from a file the student made.
+        retired = tuple(manifest.get("retired", ()))
+        candidates = {relpath for relpath in tracked
+                      if prefixes and relpath.startswith(prefixes)}
+        candidates.update(relpath for relpath in retired if relpath in tracked)
+        for relpath in sorted(candidates):
+            if relpath in files:
                 continue
             if is_protected(relpath):
                 continue

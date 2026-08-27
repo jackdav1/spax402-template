@@ -49,12 +49,12 @@
       "sha256": "e23ecd124237779b7f4d26911d71355a6ade5f3c887ec8f80a7285b21c75283d"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 4919,
-      "sha256": "2a737aa723235c28d80490a59e1786e5c0b9f8dbf6e3c7cf18add1ba0221d1f6"
+      "bytes": 6400,
+      "sha256": "4299c292ed55b36928018314242973023a2f8e7227f2a35037a724a44d9bf71e"
     },
     "scripts/harness_update.py": {
-      "bytes": 13268,
-      "sha256": "c8e0bf690b5f9ec58cd280aad9999e503ab59541f8d0427a7e5fa4b32820a4b3"
+      "bytes": 13720,
+      "sha256": "36d1cc76f79c685205c58199d0979b8db18c229be38b26e940ed41d86f88eeb8"
     },
     "scripts/materials_path.py": {
       "bytes": 2921,
@@ -102,6 +102,9 @@
     ".claude/skills/",
     "scripts/",
     "setup/"
+  ],
+  "retired": [
+    "BRIEF-template.md"
   ],
   "source": "jackdav1/spax402-template@main"
 }
