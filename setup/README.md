@@ -74,6 +74,16 @@ macOS ships an old Python that will fight you. Install a current one from
 **https://www.python.org/downloads/** and accept the defaults. It installs alongside the system
 one rather than replacing it, which is what you want.
 
+**Then do one more step that the installer does not do for you.** Open **Finder → Applications →
+Python 3.x** and double-click **Install Certificates.command**. A terminal window opens, prints
+a few lines, and closes.
+
+That step gives Python the list of certificate authorities it uses to confirm a download really
+came from where it claims. Without it, anything Python downloads over the internet fails, and the
+error it prints (`CERTIFICATE_VERIFY_FAILED`) never mentions certificates being missing. Safari
+and Git are unaffected, so the machine looks fine right up until Python tries. Thirty seconds now
+saves an hour in week three.
+
 ### 3. The Claude Desktop app
 
 Download it from **https://claude.ai/download**, open the file, and drag Claude into
@@ -268,6 +278,13 @@ check it.
 GitHub stopped accepting account passwords over the command line. When it prompts, let it open a
 browser and sign in there instead. If it never offers a browser, install the GitHub CLI from
 **https://cli.github.com** and run `gh auth login`.
+
+**On macOS: something says `CERTIFICATE_VERIFY_FAILED` or `unable to get local issuer
+certificate`.**
+You skipped **Install Certificates.command** in the Python step above, or you have an older
+Python that was installed without it. Go run it now: **Applications → Python 3.x → Install
+Certificates.command**. Nothing was downloaded and nothing was damaged, so re-run whatever
+failed afterwards. Installing the `certifi` package instead does not fix this on its own.
 
 **`pip install` fails while building something.**
 Almost always an old pip. Run the `python -m pip install --upgrade pip` line first; it is easy to

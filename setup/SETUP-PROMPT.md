@@ -33,7 +33,10 @@ What done looks like, in order. Walk me through all of it:
    - Git (Windows: https://git-scm.com/download/win, accept every default.
      Mac: run `git --version` in Terminal and accept the developer-tools popup if offered).
    - Python from https://www.python.org/downloads/ (on Windows I MUST check the
-     "Add python.exe to PATH" box on the first installer screen — warn me before I run it).
+     "Add python.exe to PATH" box on the first installer screen — warn me before I run it.
+     On a Mac, once it is installed, walk me through double-clicking
+     Applications → Python 3.x → Install Certificates.command, and do not let me skip it.
+     Without it every download Python makes fails later with an error that never says why).
    - The Claude Desktop app from https://claude.ai/download. Claude Code, the agent the
      course runs on, lives inside the app.
 
@@ -89,6 +92,9 @@ Known failures and their fixes, so you don't improvise:
 - Git rejects my password: let it open a browser instead; if it never offers one,
   install https://cli.github.com and run `gh auth login`.
 - pip fails while building: upgrade pip first (step 6's first line).
+- Mac, anything says CERTIFICATE_VERIFY_FAILED or "unable to get local issuer
+  certificate": Install Certificates.command was skipped in step 1. Have me run it,
+  then re-run whatever failed. Installing certifi on its own does not fix it.
 
 Start by asking me: Windows or Mac?
 ```
