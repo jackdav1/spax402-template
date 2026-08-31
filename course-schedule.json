@@ -31,6 +31,16 @@
     "What other information would you want to look at to determine how important entropy is for success?",
     "How would you go about assessing the optimal entropy for a given team?"
    ]
+  },
+  "week02": {
+   "title": "Which kickers can you actually tell apart?",
+   "audience": "a general manager",
+   "questions": [
+    "Which kickers, if any, can you separate from league average, and what test did you use to decide?",
+    "Your own kicker made two thirds of his attempts and finished last among qualifying kickers. What do you tell a general manager who wants to replace him?",
+    "How much does adjusting for the distances a kicker was sent out from change the ranking, and who moves the most?",
+    "How many attempts would a kicker need before you could detect a five point difference from league average?"
+   ]
   }
  }
 }

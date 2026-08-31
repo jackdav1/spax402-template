@@ -45,16 +45,16 @@
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 1506,
-      "sha256": "e23ecd124237779b7f4d26911d71355a6ade5f3c887ec8f80a7285b21c75283d"
+      "bytes": 2140,
+      "sha256": "37bac3fd56b319708714c40a9c13910becdbad8aac7f3438130bdb042079c584"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 6400,
-      "sha256": "4299c292ed55b36928018314242973023a2f8e7227f2a35037a724a44d9bf71e"
+      "bytes": 6553,
+      "sha256": "d86de234261e0f5cf52baa914c4ddf5273dfdb8149e1fa75bb0fe04844f76260"
     },
     "scripts/harness_update.py": {
-      "bytes": 13720,
-      "sha256": "36d1cc76f79c685205c58199d0979b8db18c229be38b26e940ed41d86f88eeb8"
+      "bytes": 14837,
+      "sha256": "b2545388d9029f41fa39471b36443cfc0d6e589ac107e6eed1728657dcb9b61f"
     },
     "scripts/materials_path.py": {
       "bytes": 2921,
@@ -69,12 +69,12 @@
       "sha256": "614fb857615a9431649ba51fa9962896cc99ce2d6e5da3bb74e5fb27fc8296e1"
     },
     "setup/README.md": {
-      "bytes": 10924,
-      "sha256": "2efdcdb62caca1f2e7c7b2b6afe777f7be33ee62d582021c6d9a8bb781a79b11"
+      "bytes": 13919,
+      "sha256": "482cbfe743fea4bd5edd420800f2b84e772031f0d1fd3b378899bf250c65f0c2"
     },
     "setup/SETUP-PROMPT.md": {
-      "bytes": 5386,
-      "sha256": "d4e75f59186c30c9476c62cf093b25d1fbb0e1d8adc0f147cd60c7b358932435"
+      "bytes": 5880,
+      "sha256": "e4210433cecdc75bc64c190a48d161ce9aa7c5665ac48e7cf817e57b6e8d5677"
     },
     "setup/use-this-template.png": {
       "bytes": 9216,
@@ -95,9 +95,21 @@
     "weeks/week01/data/pull_pbp.py": {
       "bytes": 7342,
       "sha256": "b4111c5cdd8206f2f8ba01b0a39a9ccca5c18739df26db137078bd1169733224"
+    },
+    "weeks/week02/README.md": {
+      "bytes": 4709,
+      "sha256": "f7bebe00e8b29c0940131b067f502d0c7c24b0c441546564c12e856c4a0b62ef"
+    },
+    "weeks/week02/data/hand-build-nfl-field-goals-worksheet.xlsx": {
+      "bytes": 6272,
+      "sha256": "699bbf17f6255f61d0521ddfbc03bb7391ea009a913e60c977479c335b6408ef"
+    },
+    "weeks/week02/data/hand-build-nfl-field-goals.csv": {
+      "bytes": 768,
+      "sha256": "71555f85b2b91385e43941997a3100ad217fb05a514916d89287bae5d1a03ce8"
     }
   },
-  "generated": "2026-08-27",
+  "generated": "2026-08-31",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",
