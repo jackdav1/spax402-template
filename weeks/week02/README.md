@@ -2,7 +2,7 @@
 
 ## Objectives
 
-By Monday night you can:
+By Tuesday night you can:
 - state the probability of an event, its complement, and a probability conditioned on a
   situation, and say in words what each one means;
 - use the binomial distribution to get the chance of a given number of successes in a fixed
@@ -24,18 +24,18 @@ the league's make rate. The same rows are in `data/hand-build-nfl-field-goals.cs
 would rather build the sheet from scratch.
 
 Use cell references rather than typing numbers back in. A sheet built on references still
-gives the right answer when a row changes, and you will change rows in the case study.
+gives the right answer when a row changes, and you will change rows in the Case Study.
 
 Commit the filled-in worksheet where it already sits, in `weeks/week02/data/`. The hand-build
-is part of the Monday 11:59pm submission, and it is the number your agent has to reproduce
-before you trust anything it computes for the whole league.
+is part of the Tuesday, September 8 submission, and it is the number your agent has to
+reproduce before you trust anything it computes for the whole league.
 
-Need more time? Finish the hand-build at home Thursday evening, before you start the case
-study. No need to ask.
+Need more time? Finish the hand-build at home Thursday evening, before you start the Case
+Study. No need to ask.
 
 ## The Case Study (this repo, solo)
 
-**Case study: which kickers can you actually tell apart?** A general manager wants to know
+**Case Study: which kickers can you actually tell apart?** A general manager wants to know
 whether his kicker is a problem. Every kicker in the league has a make rate, they are all
 different from each other, and almost none of those differences survive a confidence
 interval. Your job is to find out which ones do. Direct your agent to:
@@ -78,10 +78,10 @@ what a standard error is. Answer every question in a few sentences, in your own 
 
 The same questions scope the analysis, not just the write-up. If an output answers none of
 them, it is off-target; if a question has no output behind it, that is the gap to fix before
-Monday.
+you push.
 
 ## Before you push
 
-`/audit`, then `/quiz-me`. Submission = repo link in Canvas, Monday 11:59pm. You can submit
-with items missing; anything missing at the deadline counts against the analysis half of the
-grade.
+`/audit`, then `/quiz-me`. Submission = repo link in Canvas, Tuesday, September 8 at
+11:59pm. Labor Day moves this week's deadline off Monday. You can submit with items
+missing; anything missing at the deadline counts against the analysis half of the grade.
