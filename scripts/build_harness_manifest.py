@@ -49,6 +49,9 @@ MANAGED_FILES = [
     "weeks/week01/data/hand-build-nfl-entropy.csv",
     "weeks/week01/data/hand-build-nfl-entropy-worksheet.xlsx",
     "weeks/week01/data/pull_pbp.py",
+    "weeks/week02/README.md",
+    "weeks/week02/data/hand-build-nfl-field-goals.csv",
+    "weeks/week02/data/hand-build-nfl-field-goals-worksheet.xlsx",
 ]
 
 # Files this harness used to ship and no longer does. Deletion propagates only inside

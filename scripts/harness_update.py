@@ -58,6 +58,19 @@ PROTECTED_PREFIXES = (
 PROTECTED_PARTS = ("/checks/", "/outputs/", "/data/raw/")
 PROTECTED_NAMES = ("BRIEF.md", "MISSION.md")
 
+# Files the harness delivers once and then never touches again. The hand-build worksheets
+# ship blank, the student fills them in and commits them in place, and from that moment the
+# file on disk is their work under a harness-managed name. Protecting them outright would
+# mean never delivering them at all, and the alternative is worse than it sounds: once the
+# filled-in sheet is committed it is no longer uncommitted, so the ordinary update path sees
+# a managed file whose hash does not match and restores the blank one over an evening's work.
+DELIVER_ONCE_SUFFIXES = ("-worksheet.xlsx",)
+
+
+def is_deliver_once(relpath):
+    """True for a managed file that may be added but must never be overwritten."""
+    return relpath.replace("\\", "/").endswith(DELIVER_ONCE_SUFFIXES)
+
 
 def is_protected(relpath):
     """True when a path belongs to the student rather than the harness."""
@@ -222,6 +235,11 @@ def plan(manifest):
         if local is None:
             adds.append(relpath)
         elif sha256_bytes(local) == files[relpath].get("sha256"):
+            unchanged.append(relpath)
+        elif is_deliver_once(relpath):
+            # Already here and different from the published copy, which for a worksheet
+            # means it has been worked in. Leave it alone and do not report it as pending,
+            # or every /update for the rest of the semester offers to erase it.
             unchanged.append(relpath)
         elif relpath in dirty:
             blocked.append((relpath, "you have uncommitted changes here"))
