@@ -22,12 +22,16 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import subprocess
 import sys
 import time
 import urllib.error
 import urllib.request
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import materials_path  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -45,6 +49,15 @@ BASE_ENV = "SPAX402_TEMPLATE_RAW_BASE"
 TIMEOUT = 20
 MAX_ATTEMPTS = 3
 BACKOFF_BASE = 1.5
+
+# Lecture decks and quiz banks live in a sibling repo the student clones and pulls
+# themselves; git history there is unrelated to this repo's, so it cannot be part of the
+# manifest above. This is a single fetch attempt with a timeout, not a retry loop: a
+# materials problem is never allowed to hold up or fail the harness update.
+MATERIALS_REPO_URL = "https://github.com/jackdav1/spax402-course-materials"
+MATERIALS_FETCH_TIMEOUT = 20
+MATERIALS_DECK_RE = re.compile(r"decks/.*?[Ww]eek-?0*(\d+).*\.pdf$")
+MATERIALS_QUIZ_RE = re.compile(r"weeks/week0*(\d+)/quiz-bank\.md$")
 
 # Nothing under these may ever be written or deleted, no matter what a manifest claims.
 # A bad manifest is a possibility; losing a student's semester is not.
@@ -326,6 +339,124 @@ def apply_changes(adds, updates, deletes, files):
     return written, removed
 
 
+def materials_clone_hint():
+    """Where the materials repo is expected and how to get it, for whoever is missing it."""
+    sibling = materials_path.REPO_ROOT.parent / "spax402-course-materials"
+    print("Course materials (decks, quiz banks) are not on this machine.")
+    print("")
+    print("Clone them as a sibling of this repo:")
+    print("")
+    print("    git clone %s \"%s\"" % (MATERIALS_REPO_URL, sibling))
+    print("")
+    print("Harness update finished; this has no effect on the harness itself.")
+
+
+def describe_materials_files(names):
+    """Turn a list of changed paths into a plain-language call-out, decks and quizzes first."""
+    callouts = []
+    for name in names:
+        deck = MATERIALS_DECK_RE.search(name.replace("\\", "/"))
+        if deck:
+            callouts.append("  %s  (Week %02d deck)" % (name, int(deck.group(1))))
+            continue
+        quiz = MATERIALS_QUIZ_RE.search(name.replace("\\", "/"))
+        if quiz:
+            callouts.append("  %s  (Week %02d quiz bank)" % (name, int(quiz.group(1))))
+            continue
+        callouts.append("  %s" % name)
+    return callouts
+
+
+def materials_step(apply):
+    """Check the sibling course-materials repo and, in apply mode, pull it.
+
+    This never touches the harness manifest or its exit code: a problem here is reported and
+    the function returns, whatever it was.
+    """
+    print("")
+    print("Course materials")
+    print("-----------------")
+
+    root = materials_path.find_materials()
+    if root is None:
+        materials_clone_hint()
+        return
+
+    if not (root / ".git").is_dir():
+        print("Found %s, but it is not a git checkout." % root)
+        print("Remove it and clone the real thing:")
+        print("")
+        print("    git clone %s \"%s\"" % (MATERIALS_REPO_URL, root))
+        return
+
+    try:
+        subprocess.run(
+            ["git", "-C", str(root), "fetch", "--quiet", "origin"],
+            capture_output=True, timeout=MATERIALS_FETCH_TIMEOUT, check=True,
+        )
+    except subprocess.TimeoutExpired:
+        print("Checking %s timed out. The materials check needs internet; skipping it." % root)
+        return
+    except (OSError, subprocess.CalledProcessError) as err:
+        print("Could not reach origin for %s (%s). The materials check needs internet;" % (root, err))
+        print("skipping it.")
+        return
+
+    status = subprocess.run(
+        ["git", "-C", str(root), "status", "--porcelain"],
+        capture_output=True, text=True, check=False,
+    ).stdout
+    branch = subprocess.run(
+        ["git", "-C", str(root), "rev-parse", "--abbrev-ref", "HEAD"],
+        capture_output=True, text=True, check=False,
+    ).stdout.strip()
+
+    if status.strip() or branch != "main":
+        print("%s has local changes or is not on main." % root)
+        print("That folder is meant to be pulled, never edited. Leaving it alone; if you made")
+        print("changes there on purpose, they are not part of the course harness and will not")
+        print("be touched, but they also will not update.")
+        return
+
+    count_out = subprocess.run(
+        ["git", "-C", str(root), "rev-list", "--count", "HEAD..origin/main"],
+        capture_output=True, text=True, check=False,
+    ).stdout.strip()
+    count = int(count_out) if count_out.isdigit() else 0
+
+    if count == 0:
+        print("Course materials are already current.")
+        return
+
+    names_out = subprocess.run(
+        ["git", "-C", str(root), "diff", "--name-status", "HEAD..origin/main"],
+        capture_output=True, text=True, check=False,
+    ).stdout
+    names = [line.split("\t", 1)[-1] for line in names_out.splitlines() if line.strip()]
+
+    if not apply:
+        print("Course materials are %d commit(s) behind. This would arrive:" % count)
+        for line in describe_materials_files(names):
+            print(line)
+        print("")
+        print("Re-run with --apply to pull it, same as the harness above.")
+        return
+
+    try:
+        subprocess.run(
+            ["git", "-C", str(root), "pull", "--ff-only", "--quiet", "origin", "main"],
+            capture_output=True, timeout=MATERIALS_FETCH_TIMEOUT, check=True,
+        )
+    except (OSError, subprocess.CalledProcessError, subprocess.TimeoutExpired) as err:
+        print("Fetch succeeded but the pull failed (%s). Nothing was changed there; try" % err)
+        print("`git pull` in %s yourself." % root)
+        return
+
+    print("Pulled %d commit(s) into course materials:" % count)
+    for line in describe_materials_files(names):
+        print(line)
+
+
 def check_mode(manifest):
     """One line for /submit. Never fails, never writes, silent when nothing is pending."""
     adds, updates, deletes, _blocked, _unchanged = plan(manifest)
@@ -366,9 +497,11 @@ def main():
         if adds or updates or deletes:
             print("")
             print("This was a preview. Re-run with --apply to make these changes.")
+        materials_step(apply=False)
         return
 
     if not (adds or updates or deletes):
+        materials_step(apply=True)
         return
 
     print("")
@@ -389,6 +522,8 @@ def main():
           % (len(written), len(removed)))
     print("")
     print("    git add -A && git commit -m \"Update course harness\"")
+
+    materials_step(apply=True)
 
 
 if __name__ == "__main__":

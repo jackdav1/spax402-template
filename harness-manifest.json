@@ -21,8 +21,8 @@
       "sha256": "224163aa58d81d3dc88646774b63e2fd7e114568a3ed0f8b55c250c679e72bfe"
     },
     ".claude/skills/update/SKILL.md": {
-      "bytes": 3901,
-      "sha256": "18f625b21ef9e1a94805d291745234c527f2b0120e2b64f5a4a93194eb632ab6"
+      "bytes": 5605,
+      "sha256": "fea1c947336cc85a4ab15e6fbf4e553f423c8e1703181a95b2178ba74b9b1dea"
     },
     ".github/workflows/harness-manifest.yml": {
       "bytes": 778,
@@ -53,8 +53,8 @@
       "sha256": "d86de234261e0f5cf52baa914c4ddf5273dfdb8149e1fa75bb0fe04844f76260"
     },
     "scripts/harness_update.py": {
-      "bytes": 14837,
-      "sha256": "b2545388d9029f41fa39471b36443cfc0d6e589ac107e6eed1728657dcb9b61f"
+      "bytes": 20176,
+      "sha256": "f35ff79324cc61debf6717453dc0f013fcae38564decf903ac25d66b4daab811"
     },
     "scripts/materials_path.py": {
       "bytes": 2921,
@@ -109,7 +109,7 @@
       "sha256": "71555f85b2b91385e43941997a3100ad217fb05a514916d89287bae5d1a03ce8"
     }
   },
-  "generated": "2026-08-31",
+  "generated": "2026-09-01",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",
