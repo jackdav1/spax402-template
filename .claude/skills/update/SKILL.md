@@ -27,7 +27,9 @@ more. Say which file and that it is going, so a deletion never arrives unannounc
 only ever removes a harness file, never one of theirs, and refuses every path in the protected
 list below whatever the manifest asks for.
 
-If it reports nothing pending, say so and stop. Do not run `--apply` when there is nothing to do.
+If both the harness and the course materials are current, say so and stop. Do not run `--apply`
+when there is nothing to do. If only the course materials are behind, `--apply` is still the way
+to pull them, so continue to Step 3.
 
 If it fails on the network, say plainly that the update needs internet and nothing was changed.
 Do not retry in a loop — the script already backs off and gives up on its own.
@@ -62,6 +64,9 @@ git commit -m "Update course harness"
 ```
 
 Push it. Tell the student what changed in behavior, not just which files moved.
+
+If `scripts/harness_update.py` was one of the files that changed, run the preview once more.
+The run that downloaded it was still the old copy, and the new one may have something to report.
 
 If a skill file changed, mention that Claude Code loads skills at session start, so they should
 start a fresh session before relying on the updated command.

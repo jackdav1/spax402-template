@@ -21,8 +21,8 @@
       "sha256": "224163aa58d81d3dc88646774b63e2fd7e114568a3ed0f8b55c250c679e72bfe"
     },
     ".claude/skills/update/SKILL.md": {
-      "bytes": 5282,
-      "sha256": "6c5aef14f784c0af19cd03eb3b36816d91ca81218a8006d777dba5c4ef8bb1b6"
+      "bytes": 5605,
+      "sha256": "fea1c947336cc85a4ab15e6fbf4e553f423c8e1703181a95b2178ba74b9b1dea"
     },
     ".github/workflows/harness-manifest.yml": {
       "bytes": 778,
