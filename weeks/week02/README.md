@@ -14,21 +14,63 @@ By Tuesday night you can:
 - adjust a rate for the difficulty of the attempts behind it, and explain why the adjustment
   changes the ranking.
 
-## Thursday (in class, by hand, no agentic AI)
+## Thursday (in class, in Excel, no agentic AI)
 
-Open `data/hand-build-nfl-field-goals-worksheet.xlsx` and fill in every highlighted cell. It
-holds all 27 field goal attempts by Dustin Hopkins in the 2024 regular season and playoffs,
-one row per kick, with the distance and the result. You compute his make rate, its standard
-error, the 95% margin of error, both ends of the interval, and whether that interval contains
-the league's make rate. The same rows are in `data/hand-build-nfl-field-goals.csv` if you
-would rather build the sheet from scratch.
+Open `data/hand-build-nfl-field-goals-worksheet.xlsx`. It has three sheets, and every
+highlighted cell on all three turns from yellow to green when the answer in it is right.
+The check allows for rounding, so a value you rounded to three decimals still turns green.
+Any yellow left anywhere in the file is work still to do.
 
 Use cell references rather than typing numbers back in. A sheet built on references still
 gives the right answer when a row changes, and you will change rows in the Case Study.
 
-Commit the filled-in worksheet where it already sits, in `weeks/week02/data/`. The hand-build
-is part of the Tuesday, September 8 submission, and it is the number your agent has to
-reproduce before you trust anything it computes for the whole league.
+### Sheet 1, `field goals`
+
+All 27 field goal attempts by Dustin Hopkins in the 2024 regular season and playoffs, one
+row per kick, with the distance and the result. You compute his make rate, its standard
+error, the 95% margin of error, both ends of the interval, and whether that interval
+contains the league's make rate.
+
+Three more cells cover the binomial. Two of them ask for the chance he makes his next two
+kicks, once by multiplying his rate by itself in the formula bar and once with BINOM.DIST;
+they should agree to every decimal, and when they do not, the BINOM.DIST arguments are in
+the wrong order. The third asks BINOM.DIST for the chance a league-average kicker would
+have made his number of kicks or fewer out of the same attempts, which asks how unusual
+his season looks against the league's rate.
+
+The same rows are in `data/hand-build-nfl-field-goals.csv` if you would rather build the
+sheet from scratch.
+
+### Sheet 2, `free throws`
+
+Nick Anderson's 1994-95 season, and the four free throws he missed in a row in the closing
+seconds of Game 1 of that year's Finals. You compute the chance a shooter at his season
+rate misses all four, once by multiplying the miss rate by itself and once with
+BINOM.DIST, and the chance he makes at least one.
+
+The arithmetic is the easy half. Both routes assume the four attempts are independent of
+each other and that his season rate is the right rate for those four attempts. Come to
+class with an answer to which of those two you trust less.
+
+### Sheet 3, `game log`
+
+Kevin Durant's 2010-11 season, 78 games, with points and rebounds and assists for each
+one. You compute the average, the standard deviation, the standard error, the relative
+spread and both ends of the interval, for all three statistics.
+
+This is the standard error of an *average*, not of a rate, which is why the individual
+games have to be on the sheet at all: a rate hands you its own spread, an average does
+not. COUNT, AVERAGE, STDEV.S and SQRT are the four functions you need. One last cell asks
+how many standard errors sit between his scoring average and 30 points a game.
+
+The same 78 games produced all three columns, so anything that differs between them is
+the spread of the statistic and nothing else.
+
+### Submitting it
+
+Commit the filled-in worksheet where it already sits, in `weeks/week02/data/`. All three
+sheets are part of the Tuesday, September 8 submission, and sheet 1 is the number your
+agent has to reproduce before you trust anything it computes for the whole league.
 
 Need more time? Finish the hand-build at home Thursday evening, before you start the Case
 Study. No need to ask.
@@ -50,18 +92,22 @@ interval. Your job is to find out which ones do. Direct your agent to:
 3. Compare each interval against the league's overall make rate, and count how many kickers
    you can separate from average in either direction.
 4. Work out the make rate the whole league managed at each distance, then use it to get what an
-   average kicker would have made from the attempts each kicker actually faced. Rank the
-   kickers by how far above or below that they finished, and compare that ranking to the raw
-   one.
-5. **Verify:** the agent must reproduce your hand-computed kicker from Thursday, to the same
-   standard error, before you accept any league-wide table. If the two disagree, the agent is
-   wrong until proven otherwise.
+   average kicker would have made from the attempts each kicker actually faced. Turn that into
+   an adjusted make rate for each kicker, on the same scale as his raw one, and compare the
+   two rankings.
+5. Check the table against what you already know before you write about it. The kicker
+   attempts have to add up to the league total, every interval has to sit inside 0 and 1 or
+   be flagged where it does not, and the adjusted rates have to average out to about the
+   league rate. A table that fails one of those is wrong no matter how confident the agent
+   sounds.
 6. Commit the code you ran, plus the tables or charts that back up your brief. `outputs/` is
    the place for them.
 
-A note on question 4 in your brief. Solving for the sample size is algebra on the margin of
-error formula, not a new method: fix the margin of error you want and solve for the number of
-attempts. Do it in Excel and show the number.
+A note on the last question in your brief. It is algebra on the margin of error formula
+rather than a new method: fix the margin of error you need, then solve for the number of
+attempts. Do it in Excel and show the number. Then compare it against how many field goals a
+kicker actually attempts in a season, and say what that comparison means for the general
+manager.
 
 ## Your brief (BRIEF.md — typed by you)
 
