@@ -16,7 +16,7 @@ By Tuesday night you can:
 
 ## Thursday (in class, in Excel, no agentic AI)
 
-Open `data/hand-build-nfl-field-goals-worksheet.xlsx`. It has three sheets, and every
+Open `data/hand-build-rates-and-intervals-worksheet.xlsx`. It has three sheets, and every
 highlighted cell on all three turns from yellow to green when the answer in it is right.
 The check allows for rounding, so a value you rounded to three decimals still turns green.
 Any yellow left anywhere in the file is work still to do.
