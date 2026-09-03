@@ -50,7 +50,6 @@ MANAGED_FILES = [
     "weeks/week01/data/hand-build-nfl-entropy-worksheet.xlsx",
     "weeks/week01/data/pull_pbp.py",
     "weeks/week02/README.md",
-    "weeks/week02/data/hand-build-nfl-field-goals.csv",
     "weeks/week02/data/hand-build-rates-and-intervals-worksheet.xlsx",
 ]
 
@@ -64,6 +63,7 @@ MANAGED_FILES = [
 RETIRED_FILES = [
     "BRIEF-template.md",
     "weeks/week02/data/hand-build-nfl-field-goals-worksheet.xlsx",
+    "weeks/week02/data/hand-build-nfl-field-goals.csv",
 ]
 
 # Never manage these, even by accident. Kept in step with harness_update.is_protected.
