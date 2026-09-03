@@ -45,8 +45,8 @@
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 2309,
-      "sha256": "8dfb0aa4dbc82b05de9a7618de2cc7c7846ca4b17592e1fdaa64ea0d67d4975e"
+      "bytes": 2228,
+      "sha256": "7191094f462bc24490e2bc2383e168942cba907c44acee10d58295f87b8a324c"
     },
     "scripts/build_harness_manifest.py": {
       "bytes": 6624,
@@ -97,12 +97,12 @@
       "sha256": "b4111c5cdd8206f2f8ba01b0a39a9ccca5c18739df26db137078bd1169733224"
     },
     "weeks/week02/README.md": {
-      "bytes": 6742,
-      "sha256": "19a954d4aa26af0aad44f968cca97eff21aeef35a65f73b80d64a3ad1c5d239d"
+      "bytes": 5870,
+      "sha256": "32caa606806e8ed54c6e011e2e2948b143d83a29a78d50c4c2028af3e18bee71"
     },
     "weeks/week02/data/hand-build-rates-and-intervals-worksheet.xlsx": {
-      "bytes": 11729,
-      "sha256": "09066e88eeac5a44cfe2d4902eacd2e870ffe701a30fa3fad4be4dfcb3dcefd7"
+      "bytes": 11322,
+      "sha256": "aa1dba15e38fe2496c3ef5e71d89a547085fb77f09c1bb42f4379a7b2958ca7d"
     }
   },
   "generated": "2026-09-03",
