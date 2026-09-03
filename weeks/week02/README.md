@@ -77,10 +77,10 @@ Study. No need to ask.
 
 ## The Case Study (this repo, solo)
 
-**Case Study: which kickers can you actually tell apart?** A general manager wants to know
-whether his kicker is a problem. Every kicker in the league has a make rate, they are all
-different from each other, and almost none of those differences survive a confidence
-interval. Your job is to find out which ones do. Direct your agent to:
+**Case Study: which kickers can you actually tell apart?** You work for the Dallas Cowboys,
+and the general manager wants to know whether Brandon Aubrey is a problem. Every kicker in
+the league has a make rate, they are all different from each other, and almost none of those
+differences survive a confidence interval. Your job is to find out which ones do. Direct your agent to:
 
 1. Pull the season's play-by-play. The pull script from Week 1 is in
    `weeks/week01/data/pull_pbp.py` and the file it already downloaded is the one to use;
@@ -95,12 +95,7 @@ interval. Your job is to find out which ones do. Direct your agent to:
    average kicker would have made from the attempts each kicker actually faced. Turn that into
    an adjusted make rate for each kicker, on the same scale as his raw one, and compare the
    two rankings.
-5. Check the table against what you already know before you write about it. The kicker
-   attempts have to add up to the league total, every interval has to sit inside 0 and 1 or
-   be flagged where it does not, and the adjusted rates have to average out to about the
-   league rate. A table that fails one of those is wrong no matter how confident the agent
-   sounds.
-6. Commit the code you ran, plus the tables or charts that back up your brief. `outputs/` is
+5. Commit the code you ran, plus the tables or charts that back up your brief. `outputs/` is
    the place for them.
 
 A note on the last question in your brief. It is algebra on the margin of error formula
