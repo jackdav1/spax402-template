@@ -51,7 +51,7 @@ MANAGED_FILES = [
     "weeks/week01/data/pull_pbp.py",
     "weeks/week02/README.md",
     "weeks/week02/data/hand-build-nfl-field-goals.csv",
-    "weeks/week02/data/hand-build-nfl-field-goals-worksheet.xlsx",
+    "weeks/week02/data/hand-build-rates-and-intervals-worksheet.xlsx",
 ]
 
 # Files this harness used to ship and no longer does. Deletion propagates only inside
@@ -63,6 +63,7 @@ MANAGED_FILES = [
 # dropped once every repo has updated past it; leaving it costs nothing.
 RETIRED_FILES = [
     "BRIEF-template.md",
+    "weeks/week02/data/hand-build-nfl-field-goals-worksheet.xlsx",
 ]
 
 # Never manage these, even by accident. Kept in step with harness_update.is_protected.
