@@ -45,8 +45,8 @@
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 2228,
-      "sha256": "7191094f462bc24490e2bc2383e168942cba907c44acee10d58295f87b8a324c"
+      "bytes": 2304,
+      "sha256": "2543d541d772ad0fbf55de343ca5f332681a04388366039c6fba0a14707abdae"
     },
     "scripts/build_harness_manifest.py": {
       "bytes": 6624,
