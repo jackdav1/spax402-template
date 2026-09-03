@@ -38,9 +38,6 @@ the wrong order. The third asks BINOM.DIST for the chance a league-average kicke
 have made his number of kicks or fewer out of the same attempts, which asks how unusual
 his season looks against the league's rate.
 
-The same rows are in `data/hand-build-nfl-field-goals.csv` if you would rather build the
-sheet from scratch.
-
 ### Sheet 2, `free throws`
 
 Nick Anderson's 1994-95 season, and the four free throws he missed in a row in the closing
