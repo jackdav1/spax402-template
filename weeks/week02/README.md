@@ -28,15 +28,8 @@ gives the right answer when a row changes, and you will change rows in the Case 
 
 All 27 field goal attempts by Dustin Hopkins in the 2024 regular season and playoffs, one
 row per kick, with the distance and the result. You compute his make rate, its standard
-error, the 95% margin of error, both ends of the interval, and whether that interval
-contains the league's make rate.
-
-Three more cells cover the binomial. Two of them ask for the chance he makes his next two
-kicks, once by multiplying his rate by itself in the formula bar and once with BINOM.DIST;
-they should agree to every decimal, and when they do not, the BINOM.DIST arguments are in
-the wrong order. The third asks BINOM.DIST for the chance a league-average kicker would
-have made his number of kicks or fewer out of the same attempts, which asks how unusual
-his season looks against the league's rate.
+error, the 95% margin of error, both ends of the interval, and his z score against the
+league's make rate.
 
 ### Sheet 2, `free throws`
 
@@ -94,12 +87,6 @@ differences survive a confidence interval. Your job is to find out which ones do
    two rankings.
 5. Commit the code you ran, plus the tables or charts that back up your brief. `outputs/` is
    the place for them.
-
-A note on the last question in your brief. It is algebra on the margin of error formula
-rather than a new method: fix the margin of error you need, then solve for the number of
-attempts. Do it in Excel and show the number. Then compare it against how many field goals a
-kicker actually attempts in a season, and say what that comparison means for the general
-manager.
 
 ## Your brief (BRIEF.md — typed by you)
 

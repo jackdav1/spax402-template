@@ -50,7 +50,7 @@
     },
     "scripts/build_harness_manifest.py": {
       "bytes": 6624,
-      "sha256": "df75d5c8186ac8b8bad24cc15d580d70fe49cd84832022d07a4d7c09c1f7188b"
+      "sha256": "ddafbdfd6e35b69a60b3d913f17a46569559e57ed304a8eae23b294bf94cd185"
     },
     "scripts/harness_update.py": {
       "bytes": 20176,
@@ -97,8 +97,8 @@
       "sha256": "b4111c5cdd8206f2f8ba01b0a39a9ccca5c18739df26db137078bd1169733224"
     },
     "weeks/week02/README.md": {
-      "bytes": 6852,
-      "sha256": "5906eba29baa87bdf37d032fb5598a519deb970c1e8de4e2ecd68b5e05f82ce4"
+      "bytes": 6742,
+      "sha256": "19a954d4aa26af0aad44f968cca97eff21aeef35a65f73b80d64a3ad1c5d239d"
     },
     "weeks/week02/data/hand-build-rates-and-intervals-worksheet.xlsx": {
       "bytes": 11729,
