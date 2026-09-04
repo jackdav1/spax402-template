@@ -45,12 +45,12 @@
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 2304,
-      "sha256": "2543d541d772ad0fbf55de343ca5f332681a04388366039c6fba0a14707abdae"
+      "bytes": 3163,
+      "sha256": "4a7c750d678efd8d666f20a355bf99dc64308ff19d2d4e1bc83fde923a18617b"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 6624,
-      "sha256": "ddafbdfd6e35b69a60b3d913f17a46569559e57ed304a8eae23b294bf94cd185"
+      "bytes": 6762,
+      "sha256": "c3530895ca64c44f160acc5c397e17c76409304e4aae4fbe2e99413291e51efe"
     },
     "scripts/harness_update.py": {
       "bytes": 20176,
@@ -103,9 +103,21 @@
     "weeks/week02/data/hand-build-rates-and-intervals-worksheet.xlsx": {
       "bytes": 11322,
       "sha256": "aa1dba15e38fe2496c3ef5e71d89a547085fb77f09c1bb42f4379a7b2958ca7d"
+    },
+    "weeks/week03/README.md": {
+      "bytes": 6695,
+      "sha256": "15f29e4aca6d8e6241ab0232b3c9f5d60f530cfaa87c74283d32dba7afdfdd43"
+    },
+    "weeks/week03/data/april-2025-hot-starts.csv": {
+      "bytes": 8189,
+      "sha256": "404880b9293a5f567dc5f868a2ddca460d489f9a6cacf7b72bd1243720fbda49"
+    },
+    "weeks/week03/data/hand-build-bayes-worksheet.xlsx": {
+      "bytes": 8898,
+      "sha256": "189a71ebba500a7de11b3e7e0e94037fa2c94ad47e2f22f223b4cf627101881d"
     }
   },
-  "generated": "2026-09-03",
+  "generated": "2026-09-04",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",
