@@ -43,6 +43,18 @@
     "Create a visual comparing Aubrey to other kickers around the league.",
     "Which kicker do you believe is the best in the league? What other data do you wish you had to answer that question?"
    ]
+  },
+  "week03": {
+   "title": "Is Jorge Polanco's April real?",
+   "audience": "a manager",
+   "questions": [
+    "Before a single at bat in 2025, what were the odds Polanco would hit .300 this season, and where did that number come from?",
+    "After April, how likely is it that he is a .300 hitter rather than his career .263? Show me the two likelihoods behind the answer, using his 28 hits in 73 at bats.",
+    "Run the same computation on every hitter in the data who hit .300 or better in April with at least 50 at bats. Who tops the list, and how many of them should we believe?",
+    "How much does the answer depend on the prior? Show it at 1% and at 50%.",
+    "Give me one visual that shows why the same April average is stronger evidence for one hitter than for another.",
+    "What else would you want to know before changing the lineup?"
+   ]
   }
  }
 }
