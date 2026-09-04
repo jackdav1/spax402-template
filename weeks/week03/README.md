@@ -3,13 +3,10 @@
 ## Objectives
 
 By Tuesday night you can:
-- tell apart the two questions, how surprising is this data if nothing changed, and given
-  this data how likely is it that something changed, and say which one a p-value answers;
-- name the prior, the likelihoods and the posterior in a sports question, and compute the
-  posterior with Bayes' theorem;
-- take a prior from a base rate in the data instead of guessing it;
-- compute likelihoods with BINOM.DIST for a count and NORM.DIST for an average;
-- say how much an answer depends on the prior, and defend your prior to a coach.
+- differentiate between “how surprising the data is if nothing changed” and “the
+  likelihood that something did change”, and say which one a p-value answers;
+- identify conditions where prior beliefs should be included in analysis, then quantify
+  those prior beliefs and factor them in using Bayes' theorem.
 
 ## Thursday (in class, in Excel, no agentic AI)
 
