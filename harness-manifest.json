@@ -105,8 +105,8 @@
       "sha256": "aa1dba15e38fe2496c3ef5e71d89a547085fb77f09c1bb42f4379a7b2958ca7d"
     },
     "weeks/week03/README.md": {
-      "bytes": 6695,
-      "sha256": "15f29e4aca6d8e6241ab0232b3c9f5d60f530cfaa87c74283d32dba7afdfdd43"
+      "bytes": 6481,
+      "sha256": "4d145b6e0d80f803d87f798991525d5d1064bcb33cb730111a3f3cb5e4c931be"
     },
     "weeks/week03/data/april-2025-hot-starts.csv": {
       "bytes": 8189,
@@ -117,7 +117,7 @@
       "sha256": "189a71ebba500a7de11b3e7e0e94037fa2c94ad47e2f22f223b4cf627101881d"
     }
   },
-  "generated": "2026-09-04",
+  "generated": "2026-09-07",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",
