@@ -51,6 +51,9 @@ MANAGED_FILES = [
     "weeks/week01/data/pull_pbp.py",
     "weeks/week02/README.md",
     "weeks/week02/data/hand-build-rates-and-intervals-worksheet.xlsx",
+    "weeks/week03/README.md",
+    "weeks/week03/data/hand-build-bayes-worksheet.xlsx",
+    "weeks/week03/data/april-2025-hot-starts.csv",
 ]
 
 # Files this harness used to ship and no longer does. Deletion propagates only inside
