@@ -86,10 +86,14 @@ do the same for everyone else who started hot. Direct your agent to:
 3. For Polanco, compute the two likelihoods with the binomial distribution, one for a .300
    hitter and one for his career average, and the posterior. Then run the same computation
    on every hitter in the file who hit .300 or better in April.
-4. Show how the answer moves with the prior, at 1% and at 50% as well as the base rate.
-5. Make one chart that shows why the same April average is stronger evidence for one hitter
-   than for another. Career average and April at bats are the two things that differ.
-6. Commit the code you ran, plus the tables or charts that back up your brief. `outputs/`
+4. Build an interactive visual where the user slides the prior and watches Polanco's
+   posterior move. A single HTML file with a slider is enough; commit it and open it in a
+   browser. Your agent can build this in one pass, so ask for it directly.
+5. Build a visual that compares every hitter who hit .300 or better in April: his posterior
+   that he is a .300 hitter, with his career average and April at bats in view, so the user
+   can see why the same April average is stronger evidence for one hitter than for another.
+   Interactive is welcome (hover, sort, filter); a clear static chart is also fine.
+6. Commit the code you ran, plus the tables, charts, and visuals that back up your brief. `outputs/`
    is the place for them.
 
 ## Your brief (BRIEF.md — typed by you)
@@ -101,9 +105,11 @@ python3 scripts/new_brief.py week03
 ```
 
 That writes `weeks/week03/BRIEF.md` with this week's questions as headings and space under
-each. Your audience is a manager, so he needs to know whether to move Polanco up in the order,
-not what a likelihood is. Answer every question in a few sentences, in your own words.
-`/coach-brief 3` will critique a draft; it will not write one.
+each. The brief is your thinking in your own words. Your code, tables, and visuals are
+committed alongside it, so do not restate numbers the outputs already show; say what they
+mean. Your audience is a manager, so he needs to know whether to move Polanco up in the order,
+not what a likelihood is. Answer every question in a few sentences. `/coach-brief 3` will
+critique a draft; it will not write one.
 
 The same questions scope the analysis, not just the write-up. If an output answers none of
 them, it is off-target; if a question has no output behind it, that is the gap to fix before

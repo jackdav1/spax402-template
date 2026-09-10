@@ -45,8 +45,8 @@
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 3163,
-      "sha256": "4a7c750d678efd8d666f20a355bf99dc64308ff19d2d4e1bc83fde923a18617b"
+      "bytes": 3092,
+      "sha256": "8e2ac52ad54b905ba3dc5321fbd6cf196abe1bf8d2e42d9584bbbfd5ac5ffd39"
     },
     "scripts/build_harness_manifest.py": {
       "bytes": 6762,
@@ -105,8 +105,8 @@
       "sha256": "aa1dba15e38fe2496c3ef5e71d89a547085fb77f09c1bb42f4379a7b2958ca7d"
     },
     "weeks/week03/README.md": {
-      "bytes": 6476,
-      "sha256": "07fb7d4f5436aaf213069cdb670a1ac7852ed67a53039165cfa96631132e066b"
+      "bytes": 6989,
+      "sha256": "498faf86f5ec446f7fffc55b8150a1ea790a6f5762b9dcaee57981bd7f35c00a"
     },
     "weeks/week03/data/april-2025-hot-starts.csv": {
       "bytes": 8189,
