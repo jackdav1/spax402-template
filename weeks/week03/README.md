@@ -60,8 +60,7 @@ likelihood. The same function answers both questions, which is the whole point o
 ### Submitting it
 
 Commit the filled-in worksheet where it already sits, in `weeks/week03/data/`. All three
-sheets are part of the Monday, September 14 submission, and sheet 1 is the computation your
-agent has to reproduce for one hitter before you trust it on the whole league.
+sheets are part of the Monday, September 14 submission.
 
 Need more time? Finish the hand-build at home Thursday evening, before you start the Case
 Study. No need to ask.
