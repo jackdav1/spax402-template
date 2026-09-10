@@ -113,11 +113,11 @@
       "sha256": "404880b9293a5f567dc5f868a2ddca460d489f9a6cacf7b72bd1243720fbda49"
     },
     "weeks/week03/data/hand-build-bayes-worksheet.xlsx": {
-      "bytes": 8898,
-      "sha256": "189a71ebba500a7de11b3e7e0e94037fa2c94ad47e2f22f223b4cf627101881d"
+      "bytes": 8899,
+      "sha256": "563c364301ede5980969eb67f282da777479ac1671b2b1caaf6d37ef48080b34"
     }
   },
-  "generated": "2026-09-07",
+  "generated": "2026-09-10",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",
