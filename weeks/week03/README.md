@@ -26,10 +26,11 @@ you change the prior and watch the answer move.
 
 ### Sheet 1, `hot start`
 
-LaMonte Wade Jr. hit .333 in April 2024, 21 for 63, against a career .241 over 1,077 at
-bats. You compute the p-value for an April that good if he is still a .241 hitter, then the
-likelihood of 21 for 63 if he is a .300 hitter and the likelihood if he is his career self,
-both with BINOM.DIST. The posterior uses the base rate from Tuesday's deck as the prior. A
+Salvador Perez hit .355 in April 2024, 38 for 107, against a career .267 over 5,290 at
+bats. You compute the p-value for an April that good if he is still a .267 hitter, then the
+likelihood of 38 for 107 if he is a .300 hitter and the likelihood if he is his career self,
+both with BINOM.DIST. "At least this many hits" is 1 minus the cumulative probability at one
+hit fewer, not at the hits themselves. The posterior uses the base rate from Tuesday's deck as the prior. A
 last cell asks for the same posterior at a 20% prior, so you can see how much of the answer
 is the April and how much is the prior.
 
