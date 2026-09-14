@@ -55,6 +55,18 @@
     "Why is the same April average stronger evidence for one hitter than for another?",
     "What else would you want to know before changing the lineup?"
    ]
+  },
+  "week04": {
+   "title": "What decided Super Bowl LX?",
+   "audience": "a head coach",
+   "questions": [
+    "Across the whole game, how closely do EPA and WPA agree, and what does that tell you about what each one is measuring?",
+    "On the plays where EPA and WPA disagree most, why do the two models see the same play so differently?",
+    "Where in this game do a counting statistic and an efficiency statistic tell two different stories, and which one do you believe?",
+    "With two minutes left in a one-score game, which of EPA or WPA should I be looking at, and why?",
+    "Which single play would you show the team on film, and what would you say about it?",
+    "What is one thing these two statistics cannot tell me about this game?"
+   ]
   }
  }
 }
