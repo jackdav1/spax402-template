@@ -13,8 +13,8 @@ By Monday night you can:
 ## Thursday (in class, in Excel, no agentic AI)
 
 Open `data/hand-build-descriptive-worksheet.xlsx`. It has three sheets. The given numbers sit
-in columns B and C, your answers go in the yellow cells, and the gray Check cell beside each
-answer turns green when the answer is right. The check allows for rounding, so a value you
+in the left-hand columns, your answers go in the yellow cells, and the gray Check cell beside
+each answer turns green when the answer is right. The check allows for rounding, so a value you
 rounded to three decimals still turns green. Any gray left in a Check column is work still to
 do.
 
@@ -24,36 +24,47 @@ value and watch everything below it move.
 
 ### Sheet 1, `four factors`
 
-The box score from Game 3 of the 2024 WNBA Finals, Minnesota Lynx against New York Liberty,
-October 16, 2024. Minnesota is in column B and New York in column C: points, field goals made
-and attempted, three-pointers made, free throws made and attempted, offensive and defensive
-rebounds, and turnovers. The free throw possession weight, 0.44, is a given cell of its own.
+The box score from Indiana Fever at Los Angeles Sparks, August 29, 2025, a one-point game.
+Los Angeles is in column B and Indiana in column C: points, field goals made and attempted,
+three-pointers made, free throws made and attempted, offensive and defensive rebounds, and
+turnovers. The free throw possession weight, 0.44, is a given cell of its own.
 
 For each team you compute Dean Oliver's Four Factors: effective field goal percentage,
 free throw attempt rate, turnover percentage and offensive rebound percentage. Then
 possessions, estimated as FGA - ORB + TOV + 0.44 x FTA, and points per possession. Offensive
 rebound percentage needs the opponent's defensive rebounds, so each team's block reads from
-both columns. Minnesota's block is first and New York's is below it.
+both columns. Los Angeles's block is first and Indiana's is below it.
+
+Los Angeles shot much better from the field and lost. Work out which factor made up the
+difference, and by how much. Tuesday's deck works a different game, so it will not tell you.
 
 ### Sheet 2, `weighted efficiency`
 
-Luis Arraez and Aaron Judge, 2024 season totals: at bats, hits, doubles, triples, home runs,
-walks, intentional walks, hit by pitches and sacrifice flies. Arraez is in column B and Judge
-in column C. The six wOBA weights are given below the stat lines.
+Jonathan India, Ceddanne Rafaela and Shea Langeliers, 2024 season totals: at bats, hits,
+doubles, triples, home runs, walks, intentional walks, hit by pitches and sacrifice flies.
+They sit in columns B, C and D. The six wOBA weights are given below the stat lines.
 
 Singles are not on a stat line, so they come first: hits minus doubles, triples and home
-runs. Then batting average, slugging (weights 1, 2, 3 and 4 on the four hit types, over at
-bats), unintentional walks (BB - IBB), the wOBA numerator and denominator, and wOBA itself.
-SUMPRODUCT does the weighted sums in one cell each.
+runs. Then batting average, on-base percentage, slugging (weights 1, 2, 3 and 4 on the four
+hit types, over at bats), OPS, unintentional walks (BB - IBB), the wOBA numerator and
+denominator, and wOBA itself. SUMPRODUCT does the weighted sums in one cell each.
+
+Rank the three hitters by average, by OPS and by wOBA. The three rankings do not agree. Two
+of these three had the same season by average and by slugging, so decide what wOBA's extra
+work bought you that OPS did not, and whether it was worth it.
 
 ### Sheet 3, `epa and wpa`
 
-Twelve plays from Super Bowl LI, New England 34, Atlanta 28 in overtime, with each play's
-expected points added and win probability added from nflverse. The twelve were chosen so the
-two statistics disagree about several of them. For each play you compute the z-score of its
-EPA and of its WPA with STANDARDIZE, using AVERAGE and STDEV.S over the twelve plays, then
-the difference between the two z-scores. Two cells at the bottom ask for the correlation
-between EPA and WPA across the twelve, with CORREL, and the largest absolute gap.
+Twelve plays from Baltimore at Buffalo, Week 1 of the 2025 season, Buffalo 41 and Baltimore
+40, with each play's expected points added and win probability added from nflverse. The score
+each play was run at is given beside it. The twelve were chosen so the two statistics
+disagree about several of them. For each play you compute the z-score of its EPA and of its
+WPA with STANDARDIZE, using AVERAGE and STDEV.S over the twelve plays, then the difference
+between the two z-scores. Two cells at the bottom ask for the correlation between EPA and WPA
+across the twelve, with CORREL, and the largest absolute gap.
+
+Tuesday's deck works Super Bowl LI. This game is on no slide. Find the two largest gaps in
+either direction, look at the score column beside them, and say what they have in common.
 
 STANDARDIZE takes the value, the mean and the standard deviation, in that order. Compute the
 mean and standard deviation once each and point every row at those cells.
