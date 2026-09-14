@@ -79,9 +79,10 @@ Study. No need to ask.
 
 ## The Case Study (this repo, solo)
 
-**Case Study: what decided Super Bowl LX?** You work for a head coach. Seattle beat New
-England 29 to 13, and the coach wants to know which plays decided it and whether the two
-numbers the analytics staff keep quoting, EPA and WPA, agree. Direct your agent to:
+**Case Study: why did we lose Super Bowl LX?** You work for the New England Patriots.
+Seattle beat New England 29 to 13, and Robert Kraft wants to know which plays decided it
+and whether the two numbers the analytics staff keep quoting, EPA and WPA, agree. Direct
+your agent to:
 
 1. Start from `data/super-bowl-lx-plays.csv`. It is every play of the game from the nflverse
    play-by-play release for the 2025 season: quarter, clock, offense and defense, down and
@@ -118,7 +119,7 @@ python3 scripts/new_brief.py week04
 That writes `weeks/week04/BRIEF.md` with this week's questions as headings and space under
 each. The brief is your thinking in your own words. Your code, tables, and visuals are
 committed alongside it, so do not restate numbers the outputs already show; say what they
-mean. Your audience is a head coach, so he needs to know which play to show on film and
+mean. Your audience is Robert Kraft, so he needs to know which play to show on film and
 which number to trust late in a close game, not what a z-score is. Answer every question in
 a few sentences. `/coach-brief 4` will critique a draft; it will not write one.
 
