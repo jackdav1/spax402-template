@@ -49,8 +49,8 @@
       "sha256": "4b5d961b91bc80d1e1a425d82462165ab9098491cb9c2a9700730dd36ae83a20"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 6762,
-      "sha256": "c3530895ca64c44f160acc5c397e17c76409304e4aae4fbe2e99413291e51efe"
+      "bytes": 6904,
+      "sha256": "e146cd9f92aac8551be0df30ac3c1900418ce4fe0c624db5cd96ab31ebfc88e3"
     },
     "scripts/harness_update.py": {
       "bytes": 20176,
@@ -115,6 +115,18 @@
     "weeks/week03/data/hand-build-bayes-worksheet.xlsx": {
       "bytes": 8899,
       "sha256": "563c364301ede5980969eb67f282da777479ac1671b2b1caaf6d37ef48080b34"
+    },
+    "weeks/week04/README.md": {
+      "bytes": 7412,
+      "sha256": "ba841ee9860fb1f15d051b6a8f34fc6a09fcbb76e5825d81b84ab848bcd92ba7"
+    },
+    "weeks/week04/data/hand-build-descriptive-worksheet.xlsx": {
+      "bytes": 12734,
+      "sha256": "cbb13997a0f0d7471f40fd0e0e213c4f7d7401e39634c88cfe44ff604a4e3bc2"
+    },
+    "weeks/week04/data/super-bowl-lx-plays.csv": {
+      "bytes": 26196,
+      "sha256": "6016c2031cadd0700d2943eb75c52a6de340985fa6f5f2bffe00b589eefb85b7"
     }
   },
   "generated": "2026-09-17",
