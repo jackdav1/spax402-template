@@ -14,7 +14,9 @@ the same commit as the change:
     python3 scripts/build_harness_manifest.py --check   # CI-friendly, writes nothing
 
 `--check` exits non-zero when the manifest on disk does not match the tree, which catches
-a harness edit that was committed without regenerating the manifest.
+a harness edit that was committed without regenerating the manifest. Both modes also fail
+when a tracked file under weeks/ is absent from MANAGED_FILES, which is the one thing
+`--check` alone cannot see: a week nobody listed matches its own empty entry set.
 """
 
 import argparse
@@ -74,6 +76,18 @@ RETIRED_FILES = [
 
 # Never manage these, even by accident. Kept in step with harness_update.is_protected.
 NEVER = ("MISSION.md",)
+
+# Tracked files under weeks/ that are deliberately not delivered by /update. Everything
+# else under weeks/ must be managed, and `unlisted_week_files` fails the build otherwise.
+# A path belongs here only when a student is meant to have it from the initial repo and
+# never receive instructor edits to it; say why, because the next reader will assume an
+# omission.
+UNMANAGED_WEEK_FILES = [
+    # Week 1's bank ships in the repo so /quiz-me works before a student has ever pulled
+    # course materials. Weeks 2 onward have no copy here and the skill falls back to the
+    # course-materials repo, which is where an edited bank is published.
+    "weeks/week01/quiz-bank.md",
+]
 
 
 def staged_blob(relpath):
@@ -144,8 +158,48 @@ def retired(files):
     return sorted(RETIRED_FILES)
 
 
+def unlisted_week_files(files):
+    """Fail when a tracked file under weeks/ is neither managed nor allowlisted.
+
+    `--check` compares the manifest against the paths MANAGED_FILES already names, so it
+    cannot see a week that was never named at all. Week 4 shipped that way: the README,
+    the worksheet and the Case Study data sat on main for three days while the manifest
+    had no week04 entries, `/update` reported nothing pending because the plan it builds
+    is a walk of the manifest, and no student had a weeks/week04 folder. CI was green
+    throughout, which is the part worth preventing.
+
+    Reading the tree instead of the list is what closes it: a new weeks/weekNN/ directory
+    cannot be delivered and silent at the same time.
+    """
+    allowed = set(UNMANAGED_WEEK_FILES)
+    missing = [p for p in tracked()
+               if p.startswith("weeks/") and p not in files and p not in allowed]
+    if not missing:
+        return
+
+    by_week = {}
+    for relpath in missing:
+        by_week.setdefault(relpath.split("/")[1], []).append(relpath)
+
+    lines = ["%d tracked file%s under weeks/ %s absent from the manifest, so /update will "
+             "never deliver %s:"
+             % (len(missing), "" if len(missing) == 1 else "s",
+                "is" if len(missing) == 1 else "are",
+                "it" if len(missing) == 1 else "them")]
+    for week in sorted(by_week):
+        lines.append("  %s" % week)
+        for relpath in sorted(by_week[week]):
+            lines.append("    %s" % relpath)
+    lines.append("")
+    lines.append("Add each one to MANAGED_FILES and regenerate, or, if a student is meant "
+                 "to keep their own copy")
+    lines.append("untouched by updates, add it to UNMANAGED_WEEK_FILES with a reason.")
+    sys.exit("::error::" + "\n".join(lines))
+
+
 def build():
     files = collect()
+    unlisted_week_files(files)
     return {
         "generated": date.today().isoformat(),
         "source": "jackdav1/spax402-template@main",
