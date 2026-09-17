@@ -117,7 +117,7 @@
       "sha256": "563c364301ede5980969eb67f282da777479ac1671b2b1caaf6d37ef48080b34"
     }
   },
-  "generated": "2026-09-14",
+  "generated": "2026-09-17",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",
