@@ -45,12 +45,12 @@
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 3888,
-      "sha256": "4b5d961b91bc80d1e1a425d82462165ab9098491cb9c2a9700730dd36ae83a20"
+      "bytes": 5069,
+      "sha256": "92cf39916efda349f248e205dd2c20b7d0ce6e410163f5e3de6c8883e4c65619"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 9620,
-      "sha256": "445d380b7531fff8f7fd41b96c0c3f4ce0afdebe7279f9125159c2de0f4b208d"
+      "bytes": 9822,
+      "sha256": "7b823b5e709241a268067ff0dba9d88f48503846e0bf16b81749891daa41a12c"
     },
     "scripts/harness_update.py": {
       "bytes": 20176,
@@ -127,9 +127,25 @@
     "weeks/week04/data/super-bowl-lx-plays.csv": {
       "bytes": 26196,
       "sha256": "6016c2031cadd0700d2943eb75c52a6de340985fa6f5f2bffe00b589eefb85b7"
+    },
+    "weeks/week05/README.md": {
+      "bytes": 7409,
+      "sha256": "1c96e61ef95b36f24152f6e3016be11b908261576ed7ae67ee3258166d231fd4"
+    },
+    "weeks/week05/data/hand-build-regression-worksheet.xlsx": {
+      "bytes": 13634,
+      "sha256": "0555cede187c2b5ea68a04ec2676bbafc59aa12a7a8ce1ed878727e525154a9c"
+    },
+    "weeks/week05/data/plays-by-score-state-2022-2025.csv": {
+      "bytes": 245252,
+      "sha256": "40275d3307d662f134b0774e663333b5e4f4593c6de6f30829f187bf15c9d5fb"
+    },
+    "weeks/week05/data/team-games-2022-2025.csv": {
+      "bytes": 138515,
+      "sha256": "bcec8137849c2e021710a3387d4b40d7c1c21a2bd54c03cf058ea0881019f9d2"
     }
   },
-  "generated": "2026-09-17",
+  "generated": "2026-09-18",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",
