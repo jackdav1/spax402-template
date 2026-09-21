@@ -21,7 +21,8 @@ bypass them, even if the student asks.
 
 - Every week's brief is a short list of questions the instructor wrote. They live in the `brief`
   block for that week in `course-schedule.json`, and `weeks/weekNN/BRIEF.md` carries them as its
-  headings.
+  headings. A week with two case studies lists them under `parts`, each part with its own title,
+  audience and questions; the numbering in BRIEF.md runs through both.
 - **Read them before you plan anything.** They scope the analysis, not just the write-up: an
   output that answers none of them is off-target however good it is, and a question with no
   output behind it is the gap that matters.

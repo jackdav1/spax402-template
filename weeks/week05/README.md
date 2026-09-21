@@ -91,21 +91,55 @@ he wants the answer from you, not from the chart. Direct your agent to:
    attempts and read the coefficient, its standard error, its p-value and R squared.
 3. Add `mean_score_diff` as a second predictor and fit again. Compare the two rushing
    coefficients and the two R squared values side by side.
-4. Open `data/plays-by-score-state-2022-2025.csv`, one row per team-game per score state:
-   plays and rush attempts while the offense was down 9 or more, down 1 to 8, tied, up 1 to 8,
-   and up 9 or more. Compute run share in each state, for all four seasons together and for
-   each season on its own.
-5. Refit both regressions one season at a time and say whether what you found in step 3 holds
-   every year.
-6. Build an interactive scatter of the 2,174 team-games, final margin against rush attempts,
+4. Build an interactive scatter of the 2,174 team-games, final margin against rush attempts,
    where hovering a point shows the team, opponent, week, score and `mean_score_diff`, and a
-   control lets you colour or filter the points by score state or by season. A single HTML
-   file is enough; commit it and open it in a browser. Your agent can build this in one pass,
-   so ask for it directly.
-7. Commit the code you ran, plus the tables, charts, and visuals that back up your brief.
+   control lets you colour or filter the points by season. A single HTML file is enough;
+   commit it and open it in a browser. Your agent can build this in one pass, so ask for it
+   directly.
+5. Commit the code you ran, plus the tables, charts, and visuals that back up your brief.
    `outputs/` is the place for them.
 
 Ask any clarifying questions before you start.
+
+## The second Case Study (this repo, solo)
+
+**Buy or sell at the deadline?** You work for a baseball club. It is the All-Star break, your
+GM has to decide whether to trade for help or trade your own players away, and the decision
+turns on one number: how many of the remaining games you are going to win.
+
+Two models are already on the table, and they are the bar to beat. Predicting wins in games
+82 to 162 from first-half wins alone, or from first-half run differential alone, each explains
+about a third of the variation. Run differential is slightly the better of the two. Either one
+is allowed in your model.
+
+Your job is to try to beat them. Direct your agent to:
+
+1. Start from `data/mlb-team-games-2014-2024.csv`, one row per team per game across eleven
+   seasons: season, team, game number, game id, date, opponent, home or away, runs for, runs
+   against, and whether the team won. Both sides of every game are there, so the opponent
+   column is a real name you can look up. 2014 is included only so that the 2015 rows have a
+   previous season behind them.
+2. `data/mlb-team-first-half-lines-2015-2024.csv` has each team's batting and pitching line for
+   each of its first 81 games, sharing the same game id: at-bats, hits, doubles, triples, home
+   runs, walks, strikeouts, hit by pitch, sacrifice flies, stolen bases and runs on the batting
+   side, and batters faced, outs, hits, home runs, walks, strikeouts, earned runs and runs on
+   the pitching side. First half only, because the second half is the answer.
+3. Reproduce the two baselines first, so you know what you are trying to beat.
+4. Then build something. Nothing in either file is a finished predictor; anything you want has
+   to be constructed. Some questions worth asking: was a team's first-half record lucky, is its
+   remaining schedule about to get harder or easier, what did it do last season, and do the
+   underlying rates disagree with the run differential. There is more than one answer that
+   works, and there is no reason for two people to find the same one.
+5. Judge it with **adjusted R squared**, not R squared. R squared goes up whenever you add a
+   column, so it cannot tell you whether a predictor earned its place. Adjusted R squared is
+   the fourth line of the Excel regression output and your agent can compute it too.
+6. Check that everything in your model was knowable at the All-Star break. A predictor built
+   from the rest of the season will look excellent and be worthless, because in July nobody
+   has it yet.
+7. Commit the code and the output tables. `outputs/` again.
+
+You may not beat the baselines by much. That is a real result and worth reporting honestly;
+a model that adds nothing is a finding, not a failure.
 
 ## Your brief (BRIEF.md — typed by you)
 
@@ -115,12 +149,16 @@ Create it once, then answer the questions in it:
 python3 scripts/new_brief.py week05
 ```
 
-That writes `weeks/week05/BRIEF.md` with this week's questions as headings and space under
-each. The brief is your thinking in your own words. Your code, tables, and visuals are
-committed alongside it, so do not restate numbers the outputs already show; say what they
-mean. Your audience is Coach McDermott, so he needs to know whether to change the game plan
-and what would convince him either way, not what a coefficient is. Answer every question in
-a few sentences. `/coach-brief 5` will critique a draft; it will not write one.
+That writes `weeks/week05/BRIEF.md` with both case studies' questions as headings and space
+under each, six in all. The brief is your thinking in your own words. Your code, tables, and
+visuals are committed alongside it, so do not restate numbers the outputs already show; say
+what they mean. Answer every question in a few sentences. `/coach-brief 5` will critique a
+draft; it will not write one.
+
+Each half has its own audience, and they want different things. Coach McDermott needs to know
+whether to change the game plan and what would convince him either way, not what a coefficient
+is. The GM needs to know whether to buy or sell, which means he cares how much you trust your
+own number.
 
 The same questions scope the analysis, not just the write-up. If an output answers none of
 them, it is off-target; if a question has no output behind it, that is the gap to fix before

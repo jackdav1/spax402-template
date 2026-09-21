@@ -50,16 +50,36 @@ def load_brief(week):
     return briefs[week]
 
 
+def questions_of(brief):
+    """Every question in the week, in order, whether or not the week has parts.
+
+    A week with two case studies lists them under `parts`, each with its own title and
+    audience. Anything that only wants the questions reads them through here, so a week
+    with parts and a week without behave the same.
+    """
+    if brief.get("parts"):
+        return [q for part in brief["parts"] for q in part["questions"]]
+    return list(brief["questions"])
+
+
 def render(week, brief):
     week_label = "Week %s" % week.replace("week", "").lstrip("0")
-    parts = [HEADER % {
+    out = [HEADER % {
         "week_label": week_label,
         "title": brief.get("title", ""),
         "audience": brief.get("audience", "the audience named in the week's README"),
     }]
-    for i, question in enumerate(brief["questions"], 1):
-        parts.append("\n## %d. %s\n\n\n" % (i, question))
-    return "".join(parts)
+    # Numbering runs straight through the week rather than restarting inside each part, so a
+    # question can be named by its number alone in class and in the audit.
+    n = 0
+    for part in brief.get("parts") or [brief]:
+        if brief.get("parts"):
+            out.append("\n# %s\n\n<!-- Written for %s. -->\n"
+                       % (part.get("title", ""), part.get("audience", "")))
+        for question in part["questions"]:
+            n += 1
+            out.append("\n## %d. %s\n\n\n" % (n, question))
+    return "".join(out)
 
 
 def main():
@@ -80,7 +100,7 @@ def main():
     brief = load_brief(week)
     target.write_text(render(week, brief), encoding="utf-8")
     print("wrote %s with %d questions to answer."
-          % (target.relative_to(ROOT).as_posix(), len(brief["questions"])))
+          % (target.relative_to(ROOT).as_posix(), len(questions_of(brief))))
 
 
 if __name__ == "__main__":

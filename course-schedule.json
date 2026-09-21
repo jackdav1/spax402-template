@@ -69,15 +69,27 @@
    ]
   },
   "week05": {
-   "title": "Does running the ball win games, or does winning make you run?",
-   "audience": "Sean McDermott, head coach of the Buffalo Bills",
-   "questions": [
-    "Your first regression puts a number on what one more rush attempt is worth in final margin. Before you looked at anything else, how much of that number would you have believed, and why?",
-    "Once the score a team was playing from enters the model, what happens to the rushing coefficient, and what does that tell you about what the first regression was measuring?",
-    "Looking at run share by score state, which way does the arrow run between running the ball and winning? Say how the table supports your answer.",
-    "Something is left of the rushing coefficient after the control, and it still clears 0.05. Give two different explanations that would both produce that, and say what data would tell them apart.",
-    "An assistant on staff says the analytics say to run more. What would you tell him, in a sentence or two he would accept?",
-    "Which of the numbers you produced this week would you put in front of Coach McDermott, and which would you keep on your own screen? Why?"
+   "title": "Rushing, and the trade deadline",
+   "audience": "an NFL head coach, then an MLB general manager",
+   "parts": [
+    {
+     "title": "Does running the ball win games, or does winning make you run?",
+     "audience": "Sean McDermott, head coach of the Buffalo Bills",
+     "questions": [
+      "When you considered the score, what happened to the rushing coefficient? Why?",
+      "Once you controlled for score, what was the correlation? Do you believe it is telling you something meaningful? Why?",
+      "What would you show to Coach McDermott to catch him up on your work? What would be the most important thing you'd want to communicate?"
+     ]
+    },
+    {
+     "title": "Buy or sell at the deadline?",
+     "audience": "an MLB general manager at the All-Star break",
+     "questions": [
+      "What did you try adding to the model, and why did you think it would help?",
+      "Did it work? Say how you decided.",
+      "You are the GM deciding whether to buy or sell, and you are committed to getting this right. What would you look at next, and why that?"
+     ]
+    }
    ]
   }
  }
