@@ -3,12 +3,12 @@
 ## Objectives
 
 By Monday night you can:
-- fit a line to two columns of data and say in words what the slope, the intercept and a
-  residual mean;
-- read a regression output table, say the null hypothesis out loud, and explain what the
-  standard error, the confidence interval and the p-value each tell you;
-- say why a coefficient that clears 0.05 can still be the wrong number to act on: chance, a
-  lurking variable, or an effect too small to matter.
+- fit a line to two columns of data, and say in your own words what the slope, intercept,
+  and residual mean;
+- read a regression output table and explain what standard error, the confidence interval,
+  and the p value tell you;
+- understand why coefficients can clear 0.05 and still not be worth acting on due to
+  chance, lurking variables, and small effect sizes.
 
 ## Thursday (in class, in Excel, no agentic AI)
 
