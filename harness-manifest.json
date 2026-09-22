@@ -5,8 +5,8 @@
       "sha256": "d9458595802d4debcf9684b8db84f1a402904c943ea0d051aa8b548616593a87"
     },
     ".claude/skills/coach-brief/SKILL.md": {
-      "bytes": 3476,
-      "sha256": "155503b41a6fc0af204f27f5a8773ed9e220e06c43d5121f814691e433975556"
+      "bytes": 3852,
+      "sha256": "10adbaaa190828fb5e37a1b55da36bfc557c727f90655fe11030e207302e4e12"
     },
     ".claude/skills/quiz-me/SKILL.md": {
       "bytes": 3910,
@@ -37,16 +37,16 @@
       "sha256": "203e15ff8269a448b34f07da7d0ef8a77ac44f7b8d91bfb44419055359545992"
     },
     "CLAUDE.md": {
-      "bytes": 4323,
-      "sha256": "94e3709aa01f60499cb92c8bc39af678dd490048d951947431b76ddd1e9ab804"
+      "bytes": 4479,
+      "sha256": "259317ef3b7de7cfb74d180ff54776632fb01e27148d5ec8e05575b9ff7997a8"
     },
     "README.md": {
       "bytes": 5968,
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 5069,
-      "sha256": "92cf39916efda349f248e205dd2c20b7d0ce6e410163f5e3de6c8883e4c65619"
+      "bytes": 5003,
+      "sha256": "ec55afadb56c5ba8633bea698ba79b3d61960eb0775460c6033cf9c278090c56"
     },
     "scripts/build_harness_manifest.py": {
       "bytes": 9822,
@@ -61,8 +61,8 @@
       "sha256": "d5825a757db5997914c04204c167a27d68f562de949c4218b73e4374676f1d60"
     },
     "scripts/new_brief.py": {
-      "bytes": 3259,
-      "sha256": "4635791e2cad0af2197b114e9072c775c5cb17239c8a0bf222ebdc88a7c674c6"
+      "bytes": 4135,
+      "sha256": "31b0c468fceea9137091c1e4dbc900012fcc084e4b810623bffdbd37d0419761"
     },
     "scripts/quiz_gate.py": {
       "bytes": 6601,
@@ -129,12 +129,20 @@
       "sha256": "6016c2031cadd0700d2943eb75c52a6de340985fa6f5f2bffe00b589eefb85b7"
     },
     "weeks/week05/README.md": {
-      "bytes": 7409,
-      "sha256": "1c96e61ef95b36f24152f6e3016be11b908261576ed7ae67ee3258166d231fd4"
+      "bytes": 9826,
+      "sha256": "53f0ce30559c3ae3c428da19dd1c9a76c8615f826f303e946974c87de09fc194"
     },
     "weeks/week05/data/hand-build-regression-worksheet.xlsx": {
       "bytes": 13634,
-      "sha256": "0555cede187c2b5ea68a04ec2676bbafc59aa12a7a8ce1ed878727e525154a9c"
+      "sha256": "9648d0c07fa563f530dc84f3545b810d2010dbcc7f671f07bcf8debc953a2459"
+    },
+    "weeks/week05/data/mlb-team-first-half-lines-2015-2024.csv": {
+      "bytes": 2008303,
+      "sha256": "b059082b61f7a5b4a632bc5bebe0d496b4016028b59fbb3f6a635b37ccc091d3"
+    },
+    "weeks/week05/data/mlb-team-games-2014-2024.csv": {
+      "bytes": 3361849,
+      "sha256": "b63a52bdc2c3ee964cf460c3c8cc8e1fd02feb1beac3f25a2d717e75611469d3"
     },
     "weeks/week05/data/plays-by-score-state-2022-2025.csv": {
       "bytes": 245252,
@@ -145,7 +153,7 @@
       "sha256": "bcec8137849c2e021710a3387d4b40d7c1c21a2bd54c03cf058ea0881019f9d2"
     }
   },
-  "generated": "2026-09-18",
+  "generated": "2026-09-22",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",
