@@ -49,8 +49,8 @@
       "sha256": "ec55afadb56c5ba8633bea698ba79b3d61960eb0775460c6033cf9c278090c56"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 9822,
-      "sha256": "7b823b5e709241a268067ff0dba9d88f48503846e0bf16b81749891daa41a12c"
+      "bytes": 9941,
+      "sha256": "5539c4ac6948766fad1b1c436a0de253901247f350fd4a11467a5e8d9d2c1404"
     },
     "scripts/harness_update.py": {
       "bytes": 20176,
