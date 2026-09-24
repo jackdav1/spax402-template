@@ -144,8 +144,8 @@
       "sha256": "6016c2031cadd0700d2943eb75c52a6de340985fa6f5f2bffe00b589eefb85b7"
     },
     "weeks/week05/README.md": {
-      "bytes": 10514,
-      "sha256": "e69f10d3b401581b93bd42a06a8736a7d225845deb5873ccc5e5ce51d4ceab90"
+      "bytes": 10135,
+      "sha256": "16b1ee452bd23ed98cbd03d00b5d611e89f28b9f6f5e1700dd204e60ce3da9d8"
     },
     "weeks/week05/data/hand-build-regression-worksheet.xlsx": {
       "blank_sha256": [
@@ -153,8 +153,8 @@
         "9648d0c07fa563f530dc84f3545b810d2010dbcc7f671f07bcf8debc953a2459",
         "a98d7060ab3f24da5aa272649b966f7c8b036a727880fae465f3b2684336069c"
       ],
-      "bytes": 14047,
-      "sha256": "1432f2f62628a24fdd818de1446dc6eed19ab412b924db5871aa80615d600cc1"
+      "bytes": 14130,
+      "sha256": "52935be0cf96866dc4cd8c2904c47e8c9b04648dca468f35f0d64f27e96ecdcb"
     },
     "weeks/week05/data/mlb-injured-list-moves-2015-2024.csv": {
       "bytes": 2112809,
