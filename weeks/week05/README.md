@@ -40,18 +40,14 @@ the line predicted.
 The same ten games, plus a second column: each team's turnover differential that game,
 takeaways minus giveaways, from nflverse play-by-play. For each game you compute the
 predicted margin from the rushing slope and intercept, the residual, and the residual
-squared. The block below turns those into the numbers Excel prints beside a regression: the
-sum of squared residuals, the residual standard error (checked against STEYX), the standard
-error of the slope (residual standard error divided by the square root of DEVSQ of x), t, the
-two-sided p-value with T.DIST.2T, and the 95% interval with T.INV.2T. One check reads the
-slope's standard error straight out of LINEST, with INDEX(LINEST(y range, x range, TRUE,
-TRUE), 2, 1), so you can see the two routes agree.
+squared. The block below builds the rushing numbers by hand, each with a plain-English line
+and its formula: the total squared miss, the typical miss (residual standard error), the
+standard error of the slope, t, the p-value and the 95% range.
 
-Then you do the same for turnover differential in one step each: its slope, its standard
-error from LINEST, its p-value and its interval. The two slopes are in different units,
-points per rush attempt and points per turnover, so they cannot be compared directly. Take
-each predictor's standard deviation with STDEV.S and multiply it by its slope to get how far
-one standard deviation of each moves the margin.
+Then turnover differential, shorter: its slope, its standard error in one step with LINEST,
+and its p-value. The two slopes are in different units, points per rush attempt and points
+per turnover, so the last two cells put them on one scale: each slope times its predictor's
+standard deviation.
 
 ### Sheet 3, `two predictors`
 
