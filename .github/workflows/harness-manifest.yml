@@ -18,6 +18,9 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The manifest lists every blank each worksheet has shipped as, read from git history.
+          fetch-depth: 0
 
       - name: harness-manifest.json matches the tree
         run: python3 scripts/build_harness_manifest.py --check
