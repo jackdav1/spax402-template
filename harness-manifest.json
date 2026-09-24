@@ -25,8 +25,8 @@
       "sha256": "fea1c947336cc85a4ab15e6fbf4e553f423c8e1703181a95b2178ba74b9b1dea"
     },
     ".github/workflows/harness-manifest.yml": {
-      "bytes": 778,
-      "sha256": "7b30002b2d9d931eab238b0d7dfa04db54492be7909874ba3223b4aa434b9a16"
+      "bytes": 914,
+      "sha256": "6852dc0c5fef485b76032f457ed36797314ec93180abc19d116a9327a891adae"
     },
     ".github/workflows/quiz-gate.yml": {
       "bytes": 437,
