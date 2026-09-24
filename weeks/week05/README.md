@@ -37,32 +37,33 @@ the line predicted.
 
 ### Sheet 2, `standard error and p`
 
-The same ten games. For each one you compute the predicted margin from the slope and
-intercept, the residual, and the residual squared. The block below turns those into the
-numbers Excel prints beside a regression: the sum of squared residuals, the residual standard
-error (checked against STEYX), the standard error of the slope (residual standard error
-divided by the square root of DEVSQ of x), t, the two-sided p-value with T.DIST.2T, and the
-95% interval with T.INV.2T. The last check reads the slope's standard error straight out of
-LINEST, with INDEX(LINEST(y range, x range, TRUE, TRUE), 2, 1), so you can see the two
-routes agree.
+The same ten games, plus a second column: each team's turnover differential that game,
+takeaways minus giveaways, from nflverse play-by-play. For each game you compute the
+predicted margin from the rushing slope and intercept, the residual, and the residual
+squared. The block below turns those into the numbers Excel prints beside a regression: the
+sum of squared residuals, the residual standard error (checked against STEYX), the standard
+error of the slope (residual standard error divided by the square root of DEVSQ of x), t, the
+two-sided p-value with T.DIST.2T, and the 95% interval with T.INV.2T. One check reads the
+slope's standard error straight out of LINEST, with INDEX(LINEST(y range, x range, TRUE,
+TRUE), 2, 1), so you can see the two routes agree.
 
-The sheet ends with a judgment cell that has no check: would you tell a coach these ten
-games show that rushing more moves the margin? One sentence, and say which number you leaned
-on.
+Then you do the same for turnover differential in one step each: its slope, its standard
+error from LINEST, its p-value and its interval. The two slopes are in different units,
+points per rush attempt and points per turnover, so they cannot be compared directly. Take
+each predictor's standard deviation with STDEV.S and multiply it by its slope to get how far
+one standard deviation of each moves the margin.
 
 ### Sheet 3, `two predictors`
 
 All thirty MLB teams in 2024: on-base percentage, slugging percentage and runs per game, from
-the MLB Stats API. Runs per game is y and the two percentages are the two x columns, so this
-is one regression with two predictors. LINEST does it in one call. The formulas are written
-out on the sheet: INDEX(LINEST(y range, both x columns, TRUE, TRUE), 1, 2) is the coefficient
-on OBP, INDEX(..., 1, 1) is the coefficient on SLG, row 2 holds the standard errors and
-INDEX(..., 3, 1) is R squared. Then t and p for each predictor, the standard deviation of each
-predictor across the thirty teams with STDEV.S, and each coefficient multiplied by its
-standard deviation.
+the MLB Stats API. Runs per game is y and the two percentages are the two x columns.
 
-The OBP coefficient is about twice the SLG coefficient. The last cell asks which of the two
-matters more to a team's runs, and what the case is for each answer.
+Start with how closely the two predictors move together, with CORREL. Then fit each one
+alone: its slope with SLOPE and its R squared with RSQ. Then fit both at once, which LINEST
+does in one call. The formulas are written out on the sheet: INDEX(LINEST(y range, both x
+columns, TRUE, TRUE), 1, 2) is the coefficient on OBP, INDEX(..., 1, 1) is the coefficient on
+SLG, row 2 holds the standard errors and INDEX(..., 3, 1) is R squared. Then t and p for each
+predictor.
 
 ### Submitting it
 
@@ -75,9 +76,10 @@ Study. No need to ask.
 ## The Case Study (this repo, solo)
 
 **Case Study: does running the ball win games, or does winning make you run?** You work for
-the Buffalo Bills. Teams that run the ball more win more, and everyone in the building has
-seen the chart. Coach McDermott wants to know whether that means a team should run more, and
-he wants the answer from you, not from the chart. Direct your agent to:
+the Buffalo Bills. Joe Brady has just taken over as head coach and is looking back at the
+seasons before him. Teams that run the ball more win more, and everyone in the building has
+seen the chart. Coach Brady wants to know whether that means his team should run more, and he
+wants the answer from you, not from the chart. Direct your agent to:
 
 1. Start from `data/team-games-2022-2025.csv`. It is one row per team per regular-season
    game, 2,174 rows across four seasons, built from the nflverse play-by-play releases:
@@ -124,19 +126,25 @@ Your job is to try to beat them. Direct your agent to:
    runs, walks, strikeouts, hit by pitch, sacrifice flies, stolen bases and runs on the batting
    side, and batters faced, outs, hits, home runs, walks, strikeouts, earned runs and runs on
    the pitching side. First half only, because the second half is the answer.
-3. Reproduce the two baselines first, so you know what you are trying to beat.
-4. Then build something. Nothing in either file is a finished predictor; anything you want has
+3. Two more files, both public:
+   - `data/mlb-preseason-win-totals-2014-2024.csv`: each team's preseason Vegas win total
+     (the over/under line), with the source for each row.
+   - `data/mlb-injured-list-moves-2015-2024.csv`: every injured list move from MLB's
+     transaction feed, one row per move: date, team, player, whether the player was placed,
+     activated or transferred, the list length, and MLB's description.
+4. Reproduce the two baselines first, so you know what you are trying to beat.
+5. Then build something. Nothing in either file is a finished predictor; anything you want has
    to be constructed. Some questions worth asking: was a team's first-half record lucky, is its
    remaining schedule about to get harder or easier, what did it do last season, and do the
    underlying rates disagree with the run differential. There is more than one answer that
    works, and there is no reason for two people to find the same one.
-5. Judge it with **adjusted R squared**, not R squared. R squared goes up whenever you add a
+6. Judge it with **adjusted R squared**, not R squared. R squared goes up whenever you add a
    column, so it cannot tell you whether a predictor earned its place. Adjusted R squared is
    the fourth line of the Excel regression output and your agent can compute it too.
-6. Check that everything in your model was knowable at the All-Star break. A predictor built
+7. Check that everything in your model was knowable at the All-Star break. A predictor built
    from the rest of the season will look excellent and be worthless, because in July nobody
    has it yet.
-7. Commit the code and the output tables. `outputs/` again.
+8. Commit the code and the output tables. `outputs/` again.
 
 You may not beat the baselines by much. That is a real result and worth reporting honestly;
 a model that adds nothing is a finding, not a failure.
@@ -155,7 +163,7 @@ visuals are committed alongside it, so do not restate numbers the outputs alread
 what they mean. Answer every question in a few sentences. `/coach-brief 5` will critique a
 draft; it will not write one.
 
-Each half has its own audience, and they want different things. Coach McDermott needs to know
+Each half has its own audience, and they want different things. Coach Brady needs to know
 whether to change the game plan and what would convince him either way, not what a coefficient
 is. The GM needs to know whether to buy or sell, which means he cares how much you trust your
 own number.

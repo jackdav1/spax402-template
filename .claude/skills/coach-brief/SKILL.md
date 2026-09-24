@@ -17,7 +17,7 @@ smart, busy, non-technical head coach.
 Some weeks hold two case studies. Those weeks have a `parts` list instead of one `questions`
 list, and each part carries its own title, audience and questions. Critique each part as its
 own reader: an answer pitched at the wrong one of the two is a real defect, and the numbering
-in BRIEF.md runs straight through both so question 4 is the first question of the second part.
+in BRIEF.md runs straight through both, so the second part picks up where the first left off.
 
 Critique question by question. A brief that answers three of four has a gap worth naming, and
 an answer that drifts into a question nobody asked is worth naming too.
