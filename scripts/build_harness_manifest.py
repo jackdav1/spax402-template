@@ -147,7 +147,23 @@ def collect():
                   % relpath, file=sys.stderr)
             continue
         files[relpath] = {"sha256": hashlib.sha256(body).hexdigest(), "bytes": len(body)}
+        if relpath.endswith("-worksheet.xlsx"):
+            files[relpath]["blank_sha256"] = blank_versions(relpath)
     return files
+
+
+def blank_versions(relpath):
+    """Every version of a worksheet this repo has ever published. A student copy matching
+    one of these is an untouched blank and safe to replace; anything else is their work."""
+    shas = set()
+    log = subprocess.run(["git", "log", "--format=%H", "--", relpath],
+                         capture_output=True, text=True, check=True).stdout.split()
+    for commit in log:
+        r = subprocess.run(["git", "cat-file", "blob", "%s:%s" % (commit, relpath)],
+                           capture_output=True, check=False)
+        if r.returncode == 0:
+            shas.add(hashlib.sha256(r.stdout).hexdigest())
+    return sorted(shas)
 
 
 def retired(files):

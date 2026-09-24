@@ -71,6 +71,33 @@ PROTECTED_PREFIXES = (
 PROTECTED_PARTS = ("/checks/", "/outputs/", "/data/raw/")
 PROTECTED_NAMES = ("BRIEF.md", "MISSION.md")
 
+# Hand-build worksheets are replaced only while they are still an untouched blank: the
+# student copy must match some version the template once published. A filled-in sheet,
+# from an old week or from working ahead, never matches and is left alone.
+def is_worksheet(relpath):
+    return relpath.replace("\\", "/").endswith("-worksheet.xlsx")
+
+
+def v2_path(relpath):
+    return relpath[:-len(".xlsx")] + "-v2.xlsx"
+
+
+def started_from(relpath):
+    """The blank this student's worksheet began as: the file's content in the first commit
+    of this repo that added it, or None when git cannot say."""
+    try:
+        out = subprocess.run(
+            ["git", "-C", str(ROOT), "log", "--diff-filter=A", "--format=%H", "--", relpath],
+            capture_output=True, text=True, check=True).stdout.split()
+        if not out:
+            return None
+        r = subprocess.run(["git", "-C", str(ROOT), "cat-file", "blob", "%s:%s" % (out[-1], relpath)],
+                           capture_output=True, check=False)
+    except (OSError, subprocess.CalledProcessError):
+        return None
+    return r.stdout if r.returncode == 0 else None
+
+
 def is_protected(relpath):
     """True when a path belongs to the student rather than the harness."""
     posix = relpath.replace("\\", "/")
@@ -235,6 +262,15 @@ def plan(manifest):
             adds.append(relpath)
         elif sha256_bytes(local) == files[relpath].get("sha256"):
             unchanged.append(relpath)
+        elif is_worksheet(relpath) and (
+                sha256_bytes(local) not in files[relpath].get("blank_sha256", ())):
+            # Worked in, so never overwritten. If it was started from an older blank, the
+            # current blank goes beside it as -v2 rather than over it.
+            unchanged.append(relpath)
+            start = started_from(relpath)
+            if (start is not None and sha256_bytes(start) != files[relpath].get("sha256")
+                    and not (ROOT / v2_path(relpath)).exists()):
+                adds.append(v2_path(relpath))
         elif relpath in dirty:
             blocked.append((relpath, "you have uncommitted changes here"))
         else:
@@ -261,9 +297,9 @@ def plan(manifest):
     return adds, updates, deletes, blocked, unchanged
 
 
-def download_into(relpath, expected_sha):
+def download_into(relpath, expected_sha, source=None):
     """Fetch one managed file and write it, verifying the hash the manifest promised."""
-    url = raw_base() + relpath
+    url = raw_base() + (source or relpath)
     body = fetch(url)
     got = hashlib.sha256(body).hexdigest()
     if expected_sha and got != expected_sha:
@@ -310,7 +346,10 @@ def describe(adds, updates, deletes, blocked, unchanged, manifest):
 def apply_changes(adds, updates, deletes, files):
     written, removed = [], []
     for relpath in updates + adds:
-        download_into(relpath, files.get(relpath, {}).get("sha256"))
+        source = relpath
+        if relpath.endswith("-worksheet-v2.xlsx"):
+            source = relpath[:-len("-v2.xlsx")] + ".xlsx"
+        download_into(relpath, files.get(source, {}).get("sha256"), source=source)
         written.append(relpath)
     for relpath in deletes:
         target = ROOT / relpath

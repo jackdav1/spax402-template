@@ -49,12 +49,12 @@
       "sha256": "bf3d54ae238379b6324ee6b387c98dccaebfd5710620c0f37e4f9f626393d604"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 10067,
-      "sha256": "262f28807cce19dae7a037906a05577067902fa9f82a012da0566dee59a07346"
+      "bytes": 10851,
+      "sha256": "3663ba70b0da3789731ff14f4ec14f168dbe2a82d2c979df5273f7e84d3a814f"
     },
     "scripts/harness_update.py": {
-      "bytes": 19058,
-      "sha256": "8d277b16b16365fd216ba35534771123bb4b41f7e49aadbfb52be23d5affe87f"
+      "bytes": 20934,
+      "sha256": "70051261f020cb96005de4dee8356dfb2b55327594f306d8fc9df3f41da0c9d9"
     },
     "scripts/materials_path.py": {
       "bytes": 2921,
@@ -85,6 +85,9 @@
       "sha256": "c2df2ca80c56e80aa0084a9b9952beb7fa5d645c1a0b88f57997415c0a73d963"
     },
     "weeks/week01/data/hand-build-nfl-entropy-worksheet.xlsx": {
+      "blank_sha256": [
+        "dc1f268eeece886a56896c79e8d66629bb671e4eee961f4d038d52d2993d7d00"
+      ],
       "bytes": 5930,
       "sha256": "dc1f268eeece886a56896c79e8d66629bb671e4eee961f4d038d52d2993d7d00"
     },
@@ -101,6 +104,10 @@
       "sha256": "32caa606806e8ed54c6e011e2e2948b143d83a29a78d50c4c2028af3e18bee71"
     },
     "weeks/week02/data/hand-build-rates-and-intervals-worksheet.xlsx": {
+      "blank_sha256": [
+        "09066e88eeac5a44cfe2d4902eacd2e870ffe701a30fa3fad4be4dfcb3dcefd7",
+        "aa1dba15e38fe2496c3ef5e71d89a547085fb77f09c1bb42f4379a7b2958ca7d"
+      ],
       "bytes": 11322,
       "sha256": "aa1dba15e38fe2496c3ef5e71d89a547085fb77f09c1bb42f4379a7b2958ca7d"
     },
@@ -113,6 +120,9 @@
       "sha256": "404880b9293a5f567dc5f868a2ddca460d489f9a6cacf7b72bd1243720fbda49"
     },
     "weeks/week03/data/hand-build-bayes-worksheet.xlsx": {
+      "blank_sha256": [
+        "563c364301ede5980969eb67f282da777479ac1671b2b1caaf6d37ef48080b34"
+      ],
       "bytes": 8899,
       "sha256": "563c364301ede5980969eb67f282da777479ac1671b2b1caaf6d37ef48080b34"
     },
@@ -121,6 +131,11 @@
       "sha256": "ba841ee9860fb1f15d051b6a8f34fc6a09fcbb76e5825d81b84ab848bcd92ba7"
     },
     "weeks/week04/data/hand-build-descriptive-worksheet.xlsx": {
+      "blank_sha256": [
+        "65b3fcf1b4b2884b1d1240991eb8d0fa204b1aa49eb603eb62cfe3c25604bf62",
+        "a1938dbbd867682b275c59c81e47d65156ef862499b6451228ce75aaa0339dee",
+        "cbb13997a0f0d7471f40fd0e0e213c4f7d7401e39634c88cfe44ff604a4e3bc2"
+      ],
       "bytes": 12734,
       "sha256": "cbb13997a0f0d7471f40fd0e0e213c4f7d7401e39634c88cfe44ff604a4e3bc2"
     },
@@ -133,6 +148,11 @@
       "sha256": "e69f10d3b401581b93bd42a06a8736a7d225845deb5873ccc5e5ce51d4ceab90"
     },
     "weeks/week05/data/hand-build-regression-worksheet.xlsx": {
+      "blank_sha256": [
+        "1432f2f62628a24fdd818de1446dc6eed19ab412b924db5871aa80615d600cc1",
+        "9648d0c07fa563f530dc84f3545b810d2010dbcc7f671f07bcf8debc953a2459",
+        "a98d7060ab3f24da5aa272649b966f7c8b036a727880fae465f3b2684336069c"
+      ],
       "bytes": 14047,
       "sha256": "1432f2f62628a24fdd818de1446dc6eed19ab412b924db5871aa80615d600cc1"
     },
