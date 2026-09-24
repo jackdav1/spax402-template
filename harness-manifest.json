@@ -5,8 +5,8 @@
       "sha256": "d9458595802d4debcf9684b8db84f1a402904c943ea0d051aa8b548616593a87"
     },
     ".claude/skills/coach-brief/SKILL.md": {
-      "bytes": 3852,
-      "sha256": "10adbaaa190828fb5e37a1b55da36bfc557c727f90655fe11030e207302e4e12"
+      "bytes": 3851,
+      "sha256": "bcf9c41d5dc402d8acd1f69b83bc965a501eeb3777b53da72dac03978097c6c6"
     },
     ".claude/skills/quiz-me/SKILL.md": {
       "bytes": 3910,
@@ -45,16 +45,16 @@
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 5003,
-      "sha256": "ec55afadb56c5ba8633bea698ba79b3d61960eb0775460c6033cf9c278090c56"
+      "bytes": 4999,
+      "sha256": "bf3d54ae238379b6324ee6b387c98dccaebfd5710620c0f37e4f9f626393d604"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 9941,
-      "sha256": "5539c4ac6948766fad1b1c436a0de253901247f350fd4a11467a5e8d9d2c1404"
+      "bytes": 10067,
+      "sha256": "262f28807cce19dae7a037906a05577067902fa9f82a012da0566dee59a07346"
     },
     "scripts/harness_update.py": {
-      "bytes": 20176,
-      "sha256": "f35ff79324cc61debf6717453dc0f013fcae38564decf903ac25d66b4daab811"
+      "bytes": 19058,
+      "sha256": "8d277b16b16365fd216ba35534771123bb4b41f7e49aadbfb52be23d5affe87f"
     },
     "scripts/materials_path.py": {
       "bytes": 2921,
@@ -129,12 +129,20 @@
       "sha256": "6016c2031cadd0700d2943eb75c52a6de340985fa6f5f2bffe00b589eefb85b7"
     },
     "weeks/week05/README.md": {
-      "bytes": 9826,
-      "sha256": "53f0ce30559c3ae3c428da19dd1c9a76c8615f826f303e946974c87de09fc194"
+      "bytes": 10514,
+      "sha256": "e69f10d3b401581b93bd42a06a8736a7d225845deb5873ccc5e5ce51d4ceab90"
     },
     "weeks/week05/data/hand-build-regression-worksheet.xlsx": {
-      "bytes": 13634,
-      "sha256": "9648d0c07fa563f530dc84f3545b810d2010dbcc7f671f07bcf8debc953a2459"
+      "bytes": 14047,
+      "sha256": "1432f2f62628a24fdd818de1446dc6eed19ab412b924db5871aa80615d600cc1"
+    },
+    "weeks/week05/data/mlb-injured-list-moves-2015-2024.csv": {
+      "bytes": 2112809,
+      "sha256": "e85e45ecd07075008b1afb2261f07d41aea0429ff77025ea3d914ec38719761c"
+    },
+    "weeks/week05/data/mlb-preseason-win-totals-2014-2024.csv": {
+      "bytes": 40884,
+      "sha256": "6ef066996e2e83757cc9f99c36c0e2904df294e89105a9b18cb0cb172bc8b0cf"
     },
     "weeks/week05/data/mlb-team-first-half-lines-2015-2024.csv": {
       "bytes": 2008303,
@@ -153,7 +161,7 @@
       "sha256": "bcec8137849c2e021710a3387d4b40d7c1c21a2bd54c03cf058ea0881019f9d2"
     }
   },
-  "generated": "2026-09-22",
+  "generated": "2026-09-24",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",
