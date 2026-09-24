@@ -49,8 +49,8 @@
       "sha256": "bf3d54ae238379b6324ee6b387c98dccaebfd5710620c0f37e4f9f626393d604"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 10851,
-      "sha256": "3663ba70b0da3789731ff14f4ec14f168dbe2a82d2c979df5273f7e84d3a814f"
+      "bytes": 10910,
+      "sha256": "ff653973e3b4bf3575ec0874f0ce0fdc61a1bf3280b675552dbe2cc1e4a7d507"
     },
     "scripts/harness_update.py": {
       "bytes": 20934,
@@ -150,6 +150,7 @@
     "weeks/week05/data/hand-build-regression-worksheet.xlsx": {
       "blank_sha256": [
         "1432f2f62628a24fdd818de1446dc6eed19ab412b924db5871aa80615d600cc1",
+        "52935be0cf96866dc4cd8c2904c47e8c9b04648dca468f35f0d64f27e96ecdcb",
         "9648d0c07fa563f530dc84f3545b810d2010dbcc7f671f07bcf8debc953a2459",
         "a98d7060ab3f24da5aa272649b966f7c8b036a727880fae465f3b2684336069c"
       ],

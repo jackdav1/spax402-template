@@ -148,7 +148,8 @@ def collect():
             continue
         files[relpath] = {"sha256": hashlib.sha256(body).hexdigest(), "bytes": len(body)}
         if relpath.endswith("-worksheet.xlsx"):
-            files[relpath]["blank_sha256"] = blank_versions(relpath)
+            files[relpath]["blank_sha256"] = sorted(
+                set(blank_versions(relpath)) | {files[relpath]["sha256"]})
     return files
 
 
