@@ -67,6 +67,10 @@ MANAGED_FILES = [
     "weeks/week05/data/mlb-team-first-half-lines-2015-2024.csv",
     "weeks/week05/data/mlb-preseason-win-totals-2014-2024.csv",
     "weeks/week05/data/mlb-injured-list-moves-2015-2024.csv",
+    "weeks/week06/README.md",
+    "weeks/week06/data/hand-build-regression-modeling-worksheet.xlsx",
+    "weeks/week06/data/mlb-hitter-seasons-2008-2025.csv",
+    "weeks/week06/data/nfl-combine-draft-2000-2018.csv",
 ]
 
 # Files this harness used to ship and no longer does. Deletion propagates only inside
