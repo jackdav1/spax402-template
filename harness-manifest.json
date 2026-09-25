@@ -45,12 +45,12 @@
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 4999,
-      "sha256": "bf3d54ae238379b6324ee6b387c98dccaebfd5710620c0f37e4f9f626393d604"
+      "bytes": 6481,
+      "sha256": "16077b877d97f79a4557f6a8357a603dab7b134d51d1b092f6200c2cec5c681d"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 10910,
-      "sha256": "ff653973e3b4bf3575ec0874f0ce0fdc61a1bf3280b675552dbe2cc1e4a7d507"
+      "bytes": 11126,
+      "sha256": "7039b5bef1e9d0aa7f7dbe899f1f6459d858de4490d54969804f5800f91d0b4c"
     },
     "scripts/harness_update.py": {
       "bytes": 20934,
@@ -180,9 +180,28 @@
     "weeks/week05/data/team-games-2022-2025.csv": {
       "bytes": 138515,
       "sha256": "bcec8137849c2e021710a3387d4b40d7c1c21a2bd54c03cf058ea0881019f9d2"
+    },
+    "weeks/week06/README.md": {
+      "bytes": 8559,
+      "sha256": "1a5543d61306364dda065c3fcd624f85ad8ffa7e817ce10f4c213bdab5404ea2"
+    },
+    "weeks/week06/data/hand-build-regression-modeling-worksheet.xlsx": {
+      "blank_sha256": [
+        "abcbc7b0109fd7d2bdd50525235aeac6dd067e1029f0ad69857317a688f2c178"
+      ],
+      "bytes": 71484,
+      "sha256": "abcbc7b0109fd7d2bdd50525235aeac6dd067e1029f0ad69857317a688f2c178"
+    },
+    "weeks/week06/data/mlb-hitter-seasons-2008-2025.csv": {
+      "bytes": 1326712,
+      "sha256": "658e200de1560208230f6a681531b179746c8a67354b85cd89d33ce7713d0a32"
+    },
+    "weeks/week06/data/nfl-combine-draft-2000-2018.csv": {
+      "bytes": 320227,
+      "sha256": "2fecfab28eca623ac016bcdfa37d35af74e7579518315ddefc9462f400f7ff06"
     }
   },
-  "generated": "2026-09-24",
+  "generated": "2026-09-25",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",
