@@ -45,8 +45,8 @@
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 6481,
-      "sha256": "16077b877d97f79a4557f6a8357a603dab7b134d51d1b092f6200c2cec5c681d"
+      "bytes": 6508,
+      "sha256": "1eda38853c1277a2364b279bc18dedaf334a38a9561fe25dcbf4afc966218596"
     },
     "scripts/build_harness_manifest.py": {
       "bytes": 11126,
@@ -182,8 +182,8 @@
       "sha256": "bcec8137849c2e021710a3387d4b40d7c1c21a2bd54c03cf058ea0881019f9d2"
     },
     "weeks/week06/README.md": {
-      "bytes": 8559,
-      "sha256": "1a5543d61306364dda065c3fcd624f85ad8ffa7e817ce10f4c213bdab5404ea2"
+      "bytes": 8633,
+      "sha256": "37594e4b12f6b3e25114a4e3f1d6aa1f0f66c76f2ed7b94deef07a498b69a865"
     },
     "weeks/week06/data/hand-build-regression-modeling-worksheet.xlsx": {
       "blank_sha256": [
@@ -201,7 +201,7 @@
       "sha256": "2fecfab28eca623ac016bcdfa37d35af74e7579518315ddefc9462f400f7ff06"
     }
   },
-  "generated": "2026-09-25",
+  "generated": "2026-09-28",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",

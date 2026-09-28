@@ -106,20 +106,20 @@ your agent to:
    a player's contribution over his career, weighted toward his best seasons. A player who
    never played an NFL game has an AV of 0. The draft classes stop at 2018 so that every player
    has had at least seven seasons to build a career.
-2. Keep the offensive linemen (combine position OT, OG, C or OL) and the skill players (RB, WR
-   and CB). Plot career AV against overall pick. Fit a straight line, then a curve with the pick
+2. Keep the offensive linemen (combine position OT, OG, C or OL) and the running backs, receivers
+   and corners (RB, WR and CB). Plot career AV against overall pick. Fit a straight line, then a curve with the pick
    and the pick squared, and use the curve to say what moving up from pick 15 to pick 5 is
    worth, and from pick 105 to pick 95.
-3. Put every 40 on a fair scale. Linemen run about three quarters of a second slower than skill
-   players, so build each player's 40 relative to his group: his time minus the average time
-   for linemen, or for skill players.
+3. Put every 40 on a fair scale. Linemen run about three quarters of a second slower than backs,
+   receivers and corners, so build each player's 40 relative to his group: his time minus the average time
+   for linemen, or for the other three positions.
 4. Predict career AV from draft slot (the natural log of the pick bends the way the curve in
    step 2 does, and either one is fine), the relative 40, a lineman dummy, and the relative 40
-   times the lineman dummy. Read what the 40 adds for a skill player once draft slot is in the
+   times the lineman dummy. Read what the 40 adds for a back, receiver or corner once draft slot is in the
    model, and what it adds for a lineman.
 5. Build an interactive scatter of career AV against overall pick, coloured by group, where
    hovering a point shows the player, school, drafting team and 40 time, and a control shows
-   linemen only, skill players only, or both.
+   linemen only, the other three positions only, or both.
 6. Commit the code and the output tables. `outputs/` again.
 
 ## Your brief (BRIEF.md — typed by you)
