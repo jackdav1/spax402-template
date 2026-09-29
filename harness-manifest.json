@@ -13,8 +13,8 @@
       "sha256": "a6dd4a3846e8b5991a7e6576d55087f6a868d79a50a7c7b1f054992d1d07b6a8"
     },
     ".claude/skills/submit/SKILL.md": {
-      "bytes": 3986,
-      "sha256": "8f0b23169594a8bd9178135c07673c1e4831db33458b80f65294a291ef6004bd"
+      "bytes": 4174,
+      "sha256": "d13a429e47de6ce09ecf0e513021d772466796ac8ea0131777f8f5b3dd3037a0"
     },
     ".claude/skills/teach/SKILL.md": {
       "bytes": 2732,
@@ -45,12 +45,12 @@
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 6508,
-      "sha256": "1eda38853c1277a2364b279bc18dedaf334a38a9561fe25dcbf4afc966218596"
+      "bytes": 5624,
+      "sha256": "d8d4c1dd42adaee52c3985980813fc59f0dbfe474a525c298c48516f92f1ec76"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 11126,
-      "sha256": "7039b5bef1e9d0aa7f7dbe899f1f6459d858de4490d54969804f5800f91d0b4c"
+      "bytes": 11096,
+      "sha256": "05127e75001e9eca3c8a28a7487da30517f91e35251dc9cf7e549f96485bade4"
     },
     "scripts/harness_update.py": {
       "bytes": 20934,
@@ -182,26 +182,23 @@
       "sha256": "bcec8137849c2e021710a3387d4b40d7c1c21a2bd54c03cf058ea0881019f9d2"
     },
     "weeks/week06/README.md": {
-      "bytes": 8633,
-      "sha256": "37594e4b12f6b3e25114a4e3f1d6aa1f0f66c76f2ed7b94deef07a498b69a865"
-    },
-    "weeks/week06/data/hand-build-regression-modeling-worksheet.xlsx": {
-      "blank_sha256": [
-        "abcbc7b0109fd7d2bdd50525235aeac6dd067e1029f0ad69857317a688f2c178"
-      ],
-      "bytes": 71484,
-      "sha256": "abcbc7b0109fd7d2bdd50525235aeac6dd067e1029f0ad69857317a688f2c178"
+      "bytes": 8869,
+      "sha256": "9c22357aa75318d44e48d6cc5c24f852127a000702e900e6b517c3e59ca0c232"
     },
     "weeks/week06/data/mlb-hitter-seasons-2008-2025.csv": {
       "bytes": 1326712,
       "sha256": "658e200de1560208230f6a681531b179746c8a67354b85cd89d33ce7713d0a32"
     },
-    "weeks/week06/data/nfl-combine-draft-2000-2018.csv": {
-      "bytes": 320227,
-      "sha256": "2fecfab28eca623ac016bcdfa37d35af74e7579518315ddefc9462f400f7ff06"
+    "weeks/week06/data/nba-players-2024-25.csv": {
+      "bytes": 21264,
+      "sha256": "43760470aa4cbfdf64400702c97ed83eca7df739a048bd14b0ab57e74a0a0a44"
+    },
+    "weeks/week06/data/nhl-skaters-2024-25.csv": {
+      "bytes": 35387,
+      "sha256": "cf4402caf7d284cccb190e9a25b107e66d7d07c5f6c563179727f3174d6e1685"
     }
   },
-  "generated": "2026-09-28",
+  "generated": "2026-09-29",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",

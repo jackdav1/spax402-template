@@ -14,9 +14,11 @@ the case study grade, and that is the student's call to make, not this skill's.
 Check each item in `weeks/weekNN/` and report every result (pass or fail, all of them, so the
 student sees the whole picture at once):
 
-1. **The hand-build.** A committed copy of Thursday's in-class work (the Excel file).
-   Missing → tell them to add the file to `weeks/weekNN/` — there is no
-   command for this one, it's their own artifact.
+1. **The hand-build.** A committed copy of Thursday's in-class work: the Excel file, or,
+   in a week whose README runs Thursday as a model lab with Claude, the files that README
+   lists under "Submitting it" (Week 6: `outputs/lab-predictions.md`, the lab code and
+   `outputs/lab/`). Missing → tell them to add it to `weeks/weekNN/`. There is no
+   command for this one; it's their own artifact.
 2. **The analysis.** The scripts and outputs of the take-home case study.
 3. **The audit record.** `checks/weekNN-audit.md`, containing findings with dispositions (or an
    explicit "checked, holds" list). Missing → run `/audit NN`.
