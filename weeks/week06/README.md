@@ -12,22 +12,22 @@ By Monday night you can:
 
 ## Thursday: the model lab (in class, with Claude)
 
-No worksheet this week. You work in Claude Code, in this repo, on two files in `data/`:
-
-- `nhl-skaters-2024-25.csv`: every NHL skater with at least 40 games in 2024-25, 600 players
-  (397 forwards and 203 defensemen), from the NHL stats API. Points per game, average minutes
-  on ice per game, goals, assists, shots, power-play points and a few more.
-- `nba-players-2024-25.csv`: every NBA player with at least 40 games in 2024-25, 352 players,
-  from Basketball-Reference. Points and minutes per game, usage rate (the percent of his team's
-  possessions he ended while on the floor, stored as a percent: 18.9 means 18.9%), age,
-  position, true shooting and a few more.
+No worksheet this week. You work in Claude Code, in this repo, on one file:
+`data/mlb-batted-balls-2025.csv`, every ball put in play in the 2025 regular season with a
+tracked exit velocity and launch angle, 124,351 of them, from Baseball Savant. Columns: date,
+batter and his MLB id, which side he bats from, which hand the pitcher throws with, the home
+team (the park), pitch speed, exit velocity (mph off the bat), launch angle (degrees above
+flat), distance in feet, batted-ball type, result, whether it was a hit, its wOBA value, and
+bat speed and swing length where Statcast tracked them. A ball's wOBA value is what that
+result is worth on the wOBA scale: 0 for an out, about 0.9 for a single and about 2.0 for a
+home run.
 
 Every round has the same three steps.
 
 1. **Predict.** Before you type a prompt, open `outputs/lab-predictions.md` and write two
-   things yourself: the model as an equation (for example, points per game = a + b1 × minutes +
-   b2 × minutes²), and your guess for the number that answers the round's question. Commit
-   it. Nobody grades the guess. The commit shows it came first, and a wrong guess is where the
+   things yourself: the model as an equation (for example, wOBA value = a + b1 × angle +
+   b2 × angle²), and your guess for the number that answers the round's question. Commit it.
+   Nobody grades the guess. The commit shows it came first, and a wrong guess is where the
    learning happens.
 2. **Build.** Have Claude fit the model, print the coefficient table, and build the round's
    interactive chart as a single HTML file in `outputs/lab/`. Open it in a browser.
@@ -36,38 +36,39 @@ Every round has the same three steps.
 
 ### Round 1, the curve
 
-NHL forwards only, 397 players. Points per game against minutes: a straight line, then a
-curve (minutes and minutes squared). **Question:** over an 82-game season, how many points
-does the 13th minute add, and how many does the 19th?
+wOBA value against launch angle, with angle and angle squared. **Question:** at what launch
+angle is a ball in play worth the most?
 
-Build a scatter with both fits and a slider that picks a minute and shows what the next one
-adds. Then break it: which forward beats the curve by the most, and which falls furthest
-short? That gap is Tuesday's residual, used as a measure.
+Build a chart of the average wOBA value in each band of launch angle with the curve through
+it, and a slider that picks an angle and shows what the curve predicts there. Then break it:
+where is the curve furthest from the averages, and would a higher power of angle fix it?
 
-### Round 2, forwards and defensemen
+### Round 2, the interaction
 
-All 600 skaters. Fit minutes plus a defenseman dummy (1 for a defenseman, 0 for a forward),
-then add minutes times the dummy. **Question:** whose extra minute is worth more, a forward's
-or a defenseman's, and by how much?
+Add exit velocity, then exit velocity times launch angle. **Question:** does the best launch
+angle change when a hitter hits the ball harder? Guess the best angle at 85 mph and at 95.
 
-Build one chart with a line for each position and a toggle between the two models. Then
-break it: compare the defenseman coefficient in the first model with the one in the second.
-Why does it change so much?
+Build a chart of predicted wOBA value against launch angle with an exit velocity slider that
+redraws the curve and marks its peak. Then break it: drag the slider to 105 mph and ask
+whether you believe the peak it shows.
 
-### Round 3, minutes and usage
+### Round 3, the dummy
 
-The NBA file. Fit minutes and usage, then add minutes times usage. **Question:** what is one
-more minute worth to a player who uses 15% of his team's possessions, and to one who uses 30%?
+Fly balls only. Predict distance from exit velocity, launch angle and a dummy for a game at
+Coors Field in Denver (park `COL`). **Question:** how many extra feet does Denver add to the
+same fly ball? Then add the dummy times exit velocity: does the boost grow for balls hit
+harder?
 
-Build a chart of points against minutes, with a usage slider that redraws the line. Then
-break it: find a player the interaction model misses badly, and say what he does that the
-model cannot see.
+Build a chart of distance against exit velocity with a line for Coors Field and a line for
+everywhere else. Then break it: is Denver the only park that deserves its own dummy?
 
-### Round 4, your interaction
+### Round 4, your model
 
-Pick any two columns in either file that you think work together: one makes the other matter
-more or less. Predict it, fit it, and chart it the same way. Keep it if it teaches you
-something, including when it turns out to be nothing.
+Pick a question the file can answer and that needs a curve, an interaction or a dummy. A few
+to start from, or bring your own: does bat speed matter more for some launch angles; is the
+same batted ball worth more to a left-handed hitter; does pitch speed change the exit
+velocity a hitter gets. Predict it, fit it, and chart it the same way. Keep it if it teaches
+you something, including when it turns out to be nothing.
 
 ### Submitting it
 

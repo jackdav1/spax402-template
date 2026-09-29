@@ -49,8 +49,8 @@
       "sha256": "d8d4c1dd42adaee52c3985980813fc59f0dbfe474a525c298c48516f92f1ec76"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 11096,
-      "sha256": "05127e75001e9eca3c8a28a7487da30517f91e35251dc9cf7e549f96485bade4"
+      "bytes": 11049,
+      "sha256": "ccf997d149a3a8e65a674521faff744c26919fd7c6bb1726c6c2e1db89fc1b00"
     },
     "scripts/harness_update.py": {
       "bytes": 20934,
@@ -182,20 +182,16 @@
       "sha256": "bcec8137849c2e021710a3387d4b40d7c1c21a2bd54c03cf058ea0881019f9d2"
     },
     "weeks/week06/README.md": {
-      "bytes": 9072,
-      "sha256": "5fb8bacc9160ecec2ae66d8750f90efe0436a73f7780e1fb16949c800366f774"
+      "bytes": 9266,
+      "sha256": "edfa12a35f5063eb88b031bd4c373c285aa14643e0e146f34d81628219afb5d3"
+    },
+    "weeks/week06/data/mlb-batted-balls-2025.csv": {
+      "bytes": 11365262,
+      "sha256": "e58e3c3916cb08cc3d9a3e04fa609400e263ff619bb5bdb293ecbcd2f1fd29b9"
     },
     "weeks/week06/data/mlb-hitter-seasons-2008-2025.csv": {
       "bytes": 1326712,
       "sha256": "658e200de1560208230f6a681531b179746c8a67354b85cd89d33ce7713d0a32"
-    },
-    "weeks/week06/data/nba-players-2024-25.csv": {
-      "bytes": 21264,
-      "sha256": "43760470aa4cbfdf64400702c97ed83eca7df739a048bd14b0ab57e74a0a0a44"
-    },
-    "weeks/week06/data/nhl-skaters-2024-25.csv": {
-      "bytes": 35387,
-      "sha256": "cf4402caf7d284cccb190e9a25b107e66d7d07c5f6c563179727f3174d6e1685"
     }
   },
   "generated": "2026-09-29",
