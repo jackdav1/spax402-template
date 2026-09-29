@@ -25,50 +25,36 @@ home run.
 Every round has the same three steps.
 
 1. **Predict.** Before you type a prompt, open `outputs/lab-predictions.md` and write two
-   things yourself: the model as an equation (for example, wOBA value = a + b1 × angle +
-   b2 × angle²), and your guess for the number that answers the round's question. Commit it.
-   Nobody grades the guess. The commit shows it came first, and a wrong guess is where the
-   learning happens.
-2. **Build.** Have Claude fit the model, print the coefficient table, and build the round's
-   interactive chart as a single HTML file in `outputs/lab/`. Open it in a browser.
-3. **Break.** Push on it. Where is the model most wrong, and why? Ask Claude, then check its
-   answer against the data.
+   things yourself: the model you would fit, as an equation, and your guess for the number
+   that answers the round's question. Commit it. Nobody grades the guess. The commit shows it
+   came first, and a wrong guess is where the learning happens.
+2. **Build.** Have Claude fit your model and print the coefficient table. Then build an
+   interactive chart, a single HTML file in `outputs/lab/`, that shows the answer and shows
+   where the model misses. Open it in a browser.
+3. **Break.** Find where your model is most wrong and work out why. Then build a model that
+   does better, and show that it really is better, not just more complicated.
 
 ### Round 1, the curve
 
-wOBA value against launch angle, with angle and angle squared. **Question:** at what launch
-angle is a ball in play worth the most?
-
-Build a chart of the average wOBA value in each band of launch angle with the curve through
-it, and a slider that picks an angle and shows what the curve predicts there. Then break it:
-where is the curve furthest from the averages, and would a higher power of angle fix it?
+**Question:** at what launch angle is a ball in play worth the most? Use launch angle alone.
 
 ### Round 2, the interaction
 
-Add exit velocity, then exit velocity times launch angle. **Question:** does the best launch
-angle change when a hitter hits the ball harder? Guess the best angle at 85 mph and at 95.
-
-Build a chart of predicted wOBA value against launch angle with an exit velocity slider that
-redraws the curve and marks its peak. Then break it: drag the slider to 105 mph and ask
-whether you believe the peak it shows.
+**Question:** does the best launch angle depend on how hard the ball is hit? Use exit velocity
+and launch angle. Guess the best angle at 85 mph and at 95.
 
 ### Round 3, the dummy
 
-Fly balls only. Predict distance from exit velocity, launch angle and a dummy for a game at
-Coors Field in Denver (park `COL`). **Question:** how many extra feet does Denver add to the
-same fly ball? Then add the dummy times exit velocity: does the boost grow for balls hit
-harder?
-
-Build a chart of distance against exit velocity with a line for Coors Field and a line for
-everywhere else. Then break it: is Denver the only park that deserves its own dummy?
+**Question:** how much does the ballpark change how far a fly ball goes? Fly balls only.
+Guess which park adds the most distance, and how many feet.
 
 ### Round 4, your model
 
 Pick a question the file can answer and that needs a curve, an interaction or a dummy. A few
 to start from, or bring your own: does bat speed matter more for some launch angles; is the
 same batted ball worth more to a left-handed hitter; does pitch speed change the exit
-velocity a hitter gets. Predict it, fit it, and chart it the same way. Keep it if it teaches
-you something, including when it turns out to be nothing.
+velocity a hitter gets. Predict it, fit it, break it, and keep it if it teaches you
+something, including when it turns out to be nothing.
 
 ### Submitting it
 
