@@ -19,7 +19,8 @@ No worksheet this week. You work in Claude Code, in this repo, on two files in `
   on ice per game, goals, assists, shots, power-play points and a few more.
 - `nba-players-2024-25.csv`: every NBA player with at least 40 games in 2024-25, 352 players,
   from Basketball-Reference. Points and minutes per game, usage rate (the percent of his team's
-  possessions he ended while on the floor), age, position, true shooting and a few more.
+  possessions he ended while on the floor, stored as a percent: 18.9 means 18.9%), age,
+  position, true shooting and a few more.
 
 Every round has the same three steps.
 
@@ -97,7 +98,8 @@ commit the file before you start:
    season is left out), from the MLB Stats API. Columns: season, player id, name, birth date,
    age, games, plate appearances, at-bats, hits, doubles, triples, home runs, walks,
    strikeouts, hit by pitch, sacrifice flies, on-base percentage, slugging and OPS. Age is the
-   player's age on June 30 of that season, the convention Baseball-Reference uses.
+   player's age on June 30 of that season, the convention Baseball-Reference uses. Twenty
+   names belong to more than one player, so follow hitters by player id, never by name.
 2. **Fit the obvious curve.** Keep the qualified seasons, 300 or more plate appearances, for
    ages 21 to 38. Plot OPS against age. Fit a straight line, then a curve (add age squared),
    and find the age where the curve peaks. Look hard at what it says. If it does not match
@@ -105,7 +107,9 @@ commit the file before you start:
 3. **Find out what that curve is hiding.** Follow individual hitters instead of pooling them.
    What became of the hitters who were qualified at 30 by the time they were 34? When each
    hitter is compared only with himself a year earlier, what does aging look like, and at
-   what age does the average change turn negative?
+   what age does the average change turn negative? Count a hitter's fate at 34 only when his
+   age-34 season could be in the file: a hitter who was 30 in 2023 is 32 now, not gone, and
+   nobody's age-34 season is 2020.
 4. **Build the Contract Room.** Dombrowski picks any qualified hitter's age-30 season, in a
    single HTML file you commit and open in a browser. He sees:
    - the hitters who looked most like him at 30 (you decide what "most like" means, and say
@@ -132,12 +136,10 @@ Ask any clarifying questions before you start.
 <summary>Stuck on step 3?</summary>
 
 - **Following hitters to 34.** Take each hitter qualified at 30 and look up his age-34 row:
-  still qualified, batted but under 300 plate appearances, or no row at all. Count only
-  hitters whose age-34 season is inside the file. A hitter who was 30 in 2023 is not gone,
-  he is 32, and nobody's age-34 season is 2020.
+  still qualified, batted but under 300 plate appearances, or no row at all.
 - **Comparing a hitter with himself.** Pair each qualified season with the same player's
-  season one year of age later, when he also qualified. 2019 and 2021 are two years apart,
-  so they are not a pair. Average the change in OPS at each age, fit that change against age,
+  season one year of age later, when he also qualified and the two seasons are consecutive
+  in the file. 2019 and 2021 are two years apart, so they are not a pair. Average the change in OPS at each age, fit that change against age,
   and find where it crosses zero.
 - **Then compare.** Put the qualified 30-year-olds who were still qualified at 34 beside the
   ones who were not, using their OPS at 30.
