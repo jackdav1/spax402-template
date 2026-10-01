@@ -67,12 +67,11 @@ likely to look like, and how sure you are.
 
 ### Before you open the data
 
-Add three guesses to `outputs/prediction.md`, in your own words and without Claude, and
+Add two guesses to `outputs/prediction.md`, in your own words and without Claude, and
 commit the file before you start:
 
 1. The age at which hitters peak.
 2. How much OPS a typical qualified 30-year-old hitter has lost by 34.
-3. Out of every ten qualified 30-year-olds, how many are still qualified at 34.
 
 ### Direct your agent to
 
