@@ -27,12 +27,13 @@ home run.
 Three questions, taken together. Everyone calls a number before we look, then we reveal what
 the 2025 data says.
 
-1. At what launch angle is a ball in play worth the most, in wOBA value? How wide and how
-   steep is the drop-off on either side?
+1. At what launch angle is a ball in play worth the most, in wOBA value? How high is the
+   peak, and how wide and steep is the drop-off on either side?
 2. Does the best launch angle depend on how hard the ball is hit? Call the best angle
-   at 85 mph and at 95.
-3. How much does the ballpark change how far a fly ball goes? Fly balls only
-   (`batted_ball_type` is `fly_ball`). Call which park adds the most, and how many feet.
+   at 85 mph and at 105.
+3. How much distance does the ballpark add to a fly ball, on average, controlling for exit
+   velocity and launch angle? Fly balls only (`batted_ball_type` is `fly_ball`). Call which
+   park adds the most, and how many feet.
 
 ### Your model (with Claude)
 
