@@ -45,8 +45,8 @@
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 5624,
-      "sha256": "d8d4c1dd42adaee52c3985980813fc59f0dbfe474a525c298c48516f92f1ec76"
+      "bytes": 5621,
+      "sha256": "edcfb24456ee482ceefb5753632bc701c3c2fecbfd10d2a00e3275da9a553f29"
     },
     "scripts/build_harness_manifest.py": {
       "bytes": 11049,
@@ -182,8 +182,8 @@
       "sha256": "bcec8137849c2e021710a3387d4b40d7c1c21a2bd54c03cf058ea0881019f9d2"
     },
     "weeks/week06/README.md": {
-      "bytes": 8346,
-      "sha256": "0619518df3a3ff7e1e5701d6456c8a48c1418b6ee0c2a464e00856b0634fe7b7"
+      "bytes": 8338,
+      "sha256": "5439cabc17f530929f86d6a06b3483107b91a41054d80c45110d44ec7c7d8204"
     },
     "weeks/week06/data/mlb-batted-balls-2025.csv": {
       "bytes": 11365262,

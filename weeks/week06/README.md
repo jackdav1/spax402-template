@@ -97,8 +97,9 @@ commit the file before you start:
    single HTML file you commit and open in a browser. He sees:
    - the hitters who looked most like him at 30 (you decide what "most like" means, and say
      so on the page);
-   - what happened to each of them over the next four seasons, with the ones who stopped
-     being regulars or left the league drawn so he cannot miss them;
+   - what happened to each of them over the next four seasons. Keep the ones who stopped
+     being regulars or left the league, and draw them so he cannot miss them. Pick comps only
+     from hitters old enough to have reached 34 in the file;
    - your projection for ages 31 to 34 from step 3.
 
    Hover shows each season. Your agent can build this in one pass, so ask for it directly.
