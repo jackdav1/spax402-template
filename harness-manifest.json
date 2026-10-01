@@ -13,8 +13,8 @@
       "sha256": "a6dd4a3846e8b5991a7e6576d55087f6a868d79a50a7c7b1f054992d1d07b6a8"
     },
     ".claude/skills/submit/SKILL.md": {
-      "bytes": 4174,
-      "sha256": "d13a429e47de6ce09ecf0e513021d772466796ac8ea0131777f8f5b3dd3037a0"
+      "bytes": 4144,
+      "sha256": "590b77150da8c2c10e338af5d1dd00e10f68c4aaed5ded440ec5ab162a84a823"
     },
     ".claude/skills/teach/SKILL.md": {
       "bytes": 2732,
@@ -182,8 +182,8 @@
       "sha256": "bcec8137849c2e021710a3387d4b40d7c1c21a2bd54c03cf058ea0881019f9d2"
     },
     "weeks/week06/README.md": {
-      "bytes": 8483,
-      "sha256": "37c7c053e32d4d9d232f87d88c8db20fc5237911e52bf3a670b7eb04f1f50faa"
+      "bytes": 8278,
+      "sha256": "3cbea1884af41dbd083eb25c1763999c1162b39ce018fdffd90bbe78eb85a4b8"
     },
     "weeks/week06/data/mlb-batted-balls-2025.csv": {
       "bytes": 11365262,
