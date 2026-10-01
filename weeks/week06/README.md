@@ -93,7 +93,7 @@ commit the file before you start:
    what age does the average change turn negative? Count a hitter's fate at 34 only when his
    age-34 season could be in the file: a hitter who was 30 in 2023 is 32 now, not gone, and
    nobody's age-34 season is 2020.
-4. **Build the Contract Room.** Dombrowski picks any qualified hitter's age-30 season, in a
+4. **Build a comps page.** Dombrowski picks any qualified hitter's age-30 season, in a
    single HTML file you commit and open in a browser. He sees:
    - the hitters who looked most like him at 30 (you decide what "most like" means, and say
      so on the page);
@@ -110,7 +110,7 @@ commit the file before you start:
    - high-strikeout hitters against low;
    - hitters who were regulars young against those who arrived late;
    - hitters from before 2015 against those after.
-6. **Commit** the code you ran, plus the tables, charts and the Contract Room that back up
+6. **Commit** the code you ran, plus the tables, charts and the comps page that back up
    your brief. `outputs/` is the place for them.
 
 Ask any clarifying questions before you start.
