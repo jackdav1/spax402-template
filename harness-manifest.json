@@ -182,8 +182,8 @@
       "sha256": "bcec8137849c2e021710a3387d4b40d7c1c21a2bd54c03cf058ea0881019f9d2"
     },
     "weeks/week06/README.md": {
-      "bytes": 9266,
-      "sha256": "edfa12a35f5063eb88b031bd4c373c285aa14643e0e146f34d81628219afb5d3"
+      "bytes": 8433,
+      "sha256": "d6a1c341f8372d6f1804fa38644ed61507202201b8f40e35d515696b01f22cee"
     },
     "weeks/week06/data/mlb-batted-balls-2025.csv": {
       "bytes": 11365262,
@@ -194,7 +194,7 @@
       "sha256": "658e200de1560208230f6a681531b179746c8a67354b85cd89d33ce7713d0a32"
     }
   },
-  "generated": "2026-09-29",
+  "generated": "2026-10-01",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",

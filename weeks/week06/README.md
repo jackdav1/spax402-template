@@ -36,7 +36,8 @@ Every round has the same three steps.
 
 ### Round 1, the curve
 
-**Question:** at what launch angle is a ball in play worth the most? Use launch angle alone.
+**Question:** at what launch angle is a ball in play worth the most, in wOBA value? Use
+launch angle alone.
 
 ### Round 2, the interaction
 
@@ -45,8 +46,8 @@ and launch angle. Guess the best angle at 85 mph and at 95.
 
 ### Round 3, the dummy
 
-**Question:** how much does the ballpark change how far a fly ball goes? Fly balls only.
-Guess which park adds the most distance, and how many feet.
+**Question:** how much does the ballpark change how far a fly ball goes? Fly balls only
+(`batted_ball_type` is `fly_ball`). Guess which park adds the most distance, and how many feet.
 
 ### Round 4, your model
 
