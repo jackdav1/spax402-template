@@ -82,10 +82,10 @@ commit the file before you start:
    strikeouts, hit by pitch, sacrifice flies, on-base percentage, slugging and OPS. Age is the
    player's age on June 30 of that season, the convention Baseball-Reference uses. Twenty
    names belong to more than one player, so follow hitters by player id, never by name.
-2. **Fit the obvious curve.** Keep the qualified seasons, 300 or more plate appearances, for
+2. **Fit the curve.** Keep the qualified seasons, 300 or more plate appearances, for
    ages 21 to 38. Plot OPS against age. Fit a straight line, then a curve (add age squared),
-   and find the age where the curve peaks. Look hard at what it says. If it does not match
-   what you know about baseball, do not believe it yet.
+   and find the age where the curve peaks. Does it match your prior? If not, say whether
+   you want to update your prior to the data or refine your model.
 3. **Find out what that curve is hiding.** Follow individual hitters instead of pooling them.
    What became of the hitters who were qualified at 30 by the time they were 34? When each
    hitter is compared only with himself a year earlier, what does aging look like, and at
