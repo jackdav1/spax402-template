@@ -22,45 +22,38 @@ bat speed and swing length where Statcast tracked them. A ball's wOBA value is w
 result is worth on the wOBA scale: 0 for an out, about 0.9 for a single and about 2.0 for a
 home run.
 
-Every round has the same three steps.
+### Call your shot (as a class)
 
-1. **Predict.** Before you type a prompt, open `outputs/lab-predictions.md` and write two
-   things yourself: the model you would fit, as an equation, and your guess for the number
-   that answers the round's question. Commit it. Nobody grades the guess. The commit shows it
-   came first, and a wrong guess is where the learning happens.
-2. **Build.** Have Claude fit your model and print the coefficient table. Then build an
-   interactive chart, a single HTML file in `outputs/lab/`, that shows the answer and shows
-   where the model misses. Open it in a browser.
-3. **Break.** Find where your model is most wrong and work out why. Then build a model that
-   does better, and show that it really is better, not just more complicated.
+Three questions, taken together. Everyone calls a number before we look, then we reveal what
+the 2025 data says.
 
-### Round 1, the curve
+1. At what launch angle is a ball in play worth the most, in wOBA value? How wide and how
+   steep is the drop-off on either side?
+2. Does the best launch angle depend on how hard the ball is hit? Call the best angle
+   at 85 mph and at 95.
+3. How much does the ballpark change how far a fly ball goes? Fly balls only
+   (`batted_ball_type` is `fly_ball`). Call which park adds the most, and how many feet.
 
-**Question:** at what launch angle is a ball in play worth the most, in wOBA value? Use
-launch angle alone.
+### Your model (with Claude)
 
-### Round 2, the interaction
+Pick a question the file can answer that needs a curve, an interaction or a dummy. Beat the
+model we revealed on one of the three above, or ask your own: does bat speed matter more for
+some launch angles; is the same batted ball worth more to a left-handed hitter; does pitch
+speed change the exit velocity a hitter gets.
 
-**Question:** does the best launch angle depend on how hard the ball is hit? Use exit velocity
-and launch angle. Guess the best angle at 85 mph and at 95.
-
-### Round 3, the dummy
-
-**Question:** how much does the ballpark change how far a fly ball goes? Fly balls only
-(`batted_ball_type` is `fly_ball`). Guess which park adds the most distance, and how many feet.
-
-### Round 4, your model
-
-Pick a question the file can answer and that needs a curve, an interaction or a dummy. A few
-to start from, or bring your own: does bat speed matter more for some launch angles; is the
-same batted ball worth more to a left-handed hitter; does pitch speed change the exit
-velocity a hitter gets. Predict it, fit it, break it, and keep it if it teaches you
-something, including when it turns out to be nothing.
+1. **Expect.** Decide what you think the answer is before you fit anything.
+2. **Build.** Have Claude fit the model and print the coefficient table.
+3. **Break.** Find where your model is most wrong and work out why. Then build one that does
+   better, and show that it really is better, not just more complicated.
+4. **Make it land.** Build one interactive chart, a single HTML file in `outputs/lab/`, that a
+   coach would remember. Put the finding in the title, make it readable at a glance, and give
+   the viewer something to play with: a slider, a toggle, a hover. Open it in a browser, then
+   ask Claude for the one change that makes it hit harder.
 
 ### Submitting it
 
-Commit `outputs/lab-predictions.md`, the code Claude ran and the HTML files in `outputs/lab/`.
-They are part of the Monday, October 5 submission. Out of time? Finish the rounds at home
+Commit the code Claude ran and the HTML files in `outputs/lab/`.
+They are part of the Monday, October 5 submission. Out of time? Finish your model at home
 before you start the Case Study. No need to ask.
 
 ## The Case Study (this repo, solo)
