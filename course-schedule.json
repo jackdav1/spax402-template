@@ -91,6 +91,16 @@
      ]
     }
    ]
+  },
+  "week06": {
+   "title": "When do hitters peak?",
+   "audience": "Dave Dombrowski, President of Baseball Operations of the Philadelphia Phillies, weighing a five-year offer to a 30-year-old free agent hitter",
+   "questions": [
+    "What did you predict before you started, and what surprised you?",
+    "Why does the curve across every hitter tell a different story from following the same hitters?",
+    "What did you test on your own, what did you expect, and what happened?",
+    "Using your comps page, what would you tell Dombrowski about a five-year deal for a 30-year-old hitter, and how sure are you?"
+   ]
   }
  }
 }

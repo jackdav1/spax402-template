@@ -13,8 +13,8 @@
       "sha256": "a6dd4a3846e8b5991a7e6576d55087f6a868d79a50a7c7b1f054992d1d07b6a8"
     },
     ".claude/skills/submit/SKILL.md": {
-      "bytes": 3986,
-      "sha256": "8f0b23169594a8bd9178135c07673c1e4831db33458b80f65294a291ef6004bd"
+      "bytes": 4144,
+      "sha256": "590b77150da8c2c10e338af5d1dd00e10f68c4aaed5ded440ec5ab162a84a823"
     },
     ".claude/skills/teach/SKILL.md": {
       "bytes": 2732,
@@ -45,12 +45,12 @@
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 4999,
-      "sha256": "bf3d54ae238379b6324ee6b387c98dccaebfd5710620c0f37e4f9f626393d604"
+      "bytes": 5621,
+      "sha256": "edcfb24456ee482ceefb5753632bc701c3c2fecbfd10d2a00e3275da9a553f29"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 10910,
-      "sha256": "ff653973e3b4bf3575ec0874f0ce0fdc61a1bf3280b675552dbe2cc1e4a7d507"
+      "bytes": 11049,
+      "sha256": "ccf997d149a3a8e65a674521faff744c26919fd7c6bb1726c6c2e1db89fc1b00"
     },
     "scripts/harness_update.py": {
       "bytes": 20934,
@@ -180,9 +180,21 @@
     "weeks/week05/data/team-games-2022-2025.csv": {
       "bytes": 138515,
       "sha256": "bcec8137849c2e021710a3387d4b40d7c1c21a2bd54c03cf058ea0881019f9d2"
+    },
+    "weeks/week06/README.md": {
+      "bytes": 8424,
+      "sha256": "3c4b1b02f737c19c6cfce9a70badfe7fd50e201391284e780c20fc201754875a"
+    },
+    "weeks/week06/data/mlb-batted-balls-2025.csv": {
+      "bytes": 11365262,
+      "sha256": "e58e3c3916cb08cc3d9a3e04fa609400e263ff619bb5bdb293ecbcd2f1fd29b9"
+    },
+    "weeks/week06/data/mlb-hitter-seasons-2008-2025.csv": {
+      "bytes": 1326712,
+      "sha256": "658e200de1560208230f6a681531b179746c8a67354b85cd89d33ce7713d0a32"
     }
   },
-  "generated": "2026-09-24",
+  "generated": "2026-10-01",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",
