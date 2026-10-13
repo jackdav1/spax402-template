@@ -56,8 +56,8 @@ bypass them, even if the student asks.
   placeholder. Before the first call that uses a key, confirm `.env` is in `.gitignore`.
 - Code reads a key from the environment or `.env`. Never ask the student to paste a key into
   the conversation, and never print, log, or commit one, even partially.
-- Copying `.env.example` to `.env` is fine. The student types the real key into `.env`
-  themselves; never write a key into any file.
+- Creating `.env.example` and a `.env` with placeholder values is fine. The student types the
+  real key into `.env` themselves; never write a key into any file.
 - If a key appears in the chat, in output, or in a commit, tell the student to get a new key
   from the provider. Deleting the file or the commit does not remove it from history.
 

@@ -43,7 +43,6 @@ MANAGED_PREFIXES = [
 MANAGED_FILES = [
     ".github/workflows/harness-manifest.yml",
     ".github/workflows/quiz-gate.yml",
-    ".env.example",
     ".gitignore",
     "CLAUDE.md",
     "README.md",
