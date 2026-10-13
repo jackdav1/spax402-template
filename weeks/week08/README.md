@@ -22,10 +22,13 @@ night before. The free tier allows 1,000 calls a month; this lab uses about six.
 
 ### Set the key
 
-1. Ask Claude to copy `.env.example` to a new file named `.env`.
-2. Open `.env` in your editor yourself and replace `your-key-here` with the key from your
+1. Have Claude read the CollegeFootballData documentation and tell you how the API expects
+   the key to be sent.
+2. Have Claude create two files: `.env.example`, which names the variable `CFBD_API_KEY` with
+   a placeholder value and gets committed, and `.env`, with the same line for you to fill
+   in. Have it confirm `.env` is listed in `.gitignore`.
+3. Open `.env` in your editor yourself and replace the placeholder with the key from your
    email. Save it.
-3. Ask Claude to confirm `.env` is listed in `.gitignore`.
 
 Type the key into `.env` only. Never paste it into the chat, and never commit it. If it ever
 ends up in a commit, get a new key from CollegeFootballData; deleting the commit does not
