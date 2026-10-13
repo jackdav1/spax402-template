@@ -24,6 +24,10 @@
       "bytes": 5605,
       "sha256": "fea1c947336cc85a4ab15e6fbf4e553f423c8e1703181a95b2178ba74b9b1dea"
     },
+    ".env.example": {
+      "bytes": 259,
+      "sha256": "e98df495b03bee1b5484c241b971f01f5ecb725896699a295a28644bcc4bd859"
+    },
     ".github/workflows/harness-manifest.yml": {
       "bytes": 914,
       "sha256": "6852dc0c5fef485b76032f457ed36797314ec93180abc19d116a9327a891adae"
@@ -37,20 +41,20 @@
       "sha256": "203e15ff8269a448b34f07da7d0ef8a77ac44f7b8d91bfb44419055359545992"
     },
     "CLAUDE.md": {
-      "bytes": 4479,
-      "sha256": "259317ef3b7de7cfb74d180ff54776632fb01e27148d5ec8e05575b9ff7997a8"
+      "bytes": 5154,
+      "sha256": "e6bfd890bcb7763d785a64111fee7982bba69b82c5729d93a5e68330187cbe63"
     },
     "README.md": {
       "bytes": 5968,
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 5621,
-      "sha256": "edcfb24456ee482ceefb5753632bc701c3c2fecbfd10d2a00e3275da9a553f29"
+      "bytes": 6879,
+      "sha256": "94ea14e96578c7dd386af4a01f8c4233c80d0a597df2b14df2bb885ae6f00d9d"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 11049,
-      "sha256": "ccf997d149a3a8e65a674521faff744c26919fd7c6bb1726c6c2e1db89fc1b00"
+      "bytes": 11099,
+      "sha256": "a23c00b1389e84d987c82a53ac0e39b17781215a3ae4e20198e9bddbc18b78a4"
     },
     "scripts/harness_update.py": {
       "bytes": 20934,
@@ -192,9 +196,13 @@
     "weeks/week06/data/mlb-hitter-seasons-2008-2025.csv": {
       "bytes": 1326712,
       "sha256": "658e200de1560208230f6a681531b179746c8a67354b85cd89d33ce7713d0a32"
+    },
+    "weeks/week08/README.md": {
+      "bytes": 7382,
+      "sha256": "efa8159241af20102664b7b3eb4f79b47116d3dd5153ad7a65e0ddc7de99c446"
     }
   },
-  "generated": "2026-10-01",
+  "generated": "2026-10-13",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",

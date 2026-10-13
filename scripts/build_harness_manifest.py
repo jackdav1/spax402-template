@@ -43,6 +43,7 @@ MANAGED_PREFIXES = [
 MANAGED_FILES = [
     ".github/workflows/harness-manifest.yml",
     ".github/workflows/quiz-gate.yml",
+    ".env.example",
     ".gitignore",
     "CLAUDE.md",
     "README.md",
@@ -70,6 +71,7 @@ MANAGED_FILES = [
     "weeks/week06/README.md",
     "weeks/week06/data/mlb-hitter-seasons-2008-2025.csv",
     "weeks/week06/data/mlb-batted-balls-2025.csv",
+    "weeks/week08/README.md",
 ]
 
 # Files this harness used to ship and no longer does. Deletion propagates only inside
