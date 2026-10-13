@@ -37,8 +37,8 @@
       "sha256": "203e15ff8269a448b34f07da7d0ef8a77ac44f7b8d91bfb44419055359545992"
     },
     "CLAUDE.md": {
-      "bytes": 5154,
-      "sha256": "e6bfd890bcb7763d785a64111fee7982bba69b82c5729d93a5e68330187cbe63"
+      "bytes": 5182,
+      "sha256": "4b45ca7580aa2fdee61d4709d79d9bf15fc86674f2ee90a4570c072e2ccb7255"
     },
     "README.md": {
       "bytes": 5968,
@@ -49,8 +49,8 @@
       "sha256": "94ea14e96578c7dd386af4a01f8c4233c80d0a597df2b14df2bb885ae6f00d9d"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 11099,
-      "sha256": "a23c00b1389e84d987c82a53ac0e39b17781215a3ae4e20198e9bddbc18b78a4"
+      "bytes": 11079,
+      "sha256": "b6a274b16d941ff98f1af1b11ebdece28bd7bc307108b77f733bf6d1479aac78"
     },
     "scripts/harness_update.py": {
       "bytes": 20934,
@@ -194,8 +194,8 @@
       "sha256": "658e200de1560208230f6a681531b179746c8a67354b85cd89d33ce7713d0a32"
     },
     "weeks/week08/README.md": {
-      "bytes": 7382,
-      "sha256": "efa8159241af20102664b7b3eb4f79b47116d3dd5153ad7a65e0ddc7de99c446"
+      "bytes": 7613,
+      "sha256": "d8846b1be98549d15130e5e32be2002c7e601059bc96f298e568c476dc4ccfb4"
     }
   },
   "generated": "2026-10-13",
