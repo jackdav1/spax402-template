@@ -111,18 +111,17 @@
      "title": "Which programs produce NFL players?",
      "audience": "an NFL director of college scouting",
      "questions": [
-      "Which programs turn recruiting into more draft picks than their recruiting predicts, and what would you check before believing a program's place on that list?",
-      "Do NFL teams over- or undervalue players from certain programs, or certain types of programs? What did you compare, and what did you find?",
-      "What other data would you want before telling a scouting department to adjust its board by school?"
+      "Which programs are the best at developing recruits into draft picks? What else would you check before finalizing this list?",
+      "Do NFL teams over- or undervalue players from certain programs or certain types of programs?",
+      "What other data or analysis would you want to complete before telling a scouting department to adjust its board by school?"
      ]
     },
     {
      "title": "Scouting the data for your project",
      "audience": "the stakeholder for your final project",
      "questions": [
-      "What two or three questions did you consider for your final project, and who would act on each answer?",
-      "For the question you picked, what is one row of its data, where does the data come from, and what are you allowed to do with it?",
-      "What other data would you want before committing to this question?"
+      "What two or three questions did you consider for your final project? Who would your audience be?",
+      "For the question you picked, what data sources are available? How will you receive it? (download, API, scrape)."
      ]
     }
    ]
