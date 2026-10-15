@@ -22,11 +22,11 @@ night before. The free tier allows 1,000 calls a month; this lab uses about six.
 
 ### Set the key
 
-1. Have Claude read the CollegeFootballData documentation and tell you how the API expects
-   the key to be sent.
-2. Have Claude create two files: `.env.example`, which names the variable `CFBD_API_KEY` with
-   a placeholder value and gets committed, and `.env`, with the same line for you to fill
-   in. Have it confirm `.env` is listed in `.gitignore`.
+1. Give Claude the CollegeFootballData documentation, or download the schema from the docs
+   page and choose Use in Claude. Have it tell you how the API expects the key to be sent.
+2. Using the documentation, have Claude create two files: `.env.example`, which names the
+   variable `CFBD_API_KEY` with a placeholder value and gets committed, and `.env`, with the
+   same line for you to fill in. Have it confirm `.env` is listed in `.gitignore`.
 3. Open `.env` in your editor yourself and replace the placeholder with the key from your
    email. Save it.
 
@@ -36,28 +36,34 @@ remove it from history.
 
 ### Direct your agent to
 
-1. **Read the documentation first.** Point Claude at `api.collegefootballdata.com` and have it
+1. **Pull the recruiting rankings.** Point Claude at `api.collegefootballdata.com` and have it
    find the team recruiting endpoint and its fields before it writes any code. Then pull team
    recruiting rankings for the 2015 to 2020 classes, one call per class. The key is read from
-   `.env`, never printed.
+   `.env`, never printed. Profile the pull: rows, columns, what one row is, and the share of
+   blanks in each column. Plot the number of teams per class year.
 2. **Download the draft picks.** nflverse publishes every NFL draft pick as one file, no key:
    `https://github.com/nflverse/nflverse-data/releases/download/draft_picks/draft_picks.csv`.
    Keep the 2018 to 2025 drafts. Save both raw pulls under `data/raw/` and leave them
-   untouched.
-3. **Decide what one row is.** Recruiting comes one row per program per class, and draft
-   picks one row per player. Roll both up to one row per program: recruiting points summed
-   over the six classes, draft picks counted over the eight drafts.
-4. **Join by school.** The two sources do not spell schools the same way. Have Claude build a
-   crosswalk, then print every school that still does not match and read the list yourself.
-5. **Check the join.** Ask for these numbers, and save them to `outputs/`:
+   untouched. Profile the draft file the same way, then plot picks per draft year and compare
+   each year with the official count (253 to 262 a year, compensatory picks included).
+3. **Decide what one row is, and join by school.** Recruiting comes one row per program per
+   class, and draft picks one row per player. Roll both up to one row per program, then join
+   by school. The two sources do not spell schools the same way, so have Claude build a
+   crosswalk, print every school that still does not match, and read the list yourself.
+4. **Check the join.** Ask for these numbers, and save them to `outputs/`:
    - rows pulled from each source;
-   - picks per draft year, against the official count (253 to 262 a year, compensatory picks
-     included);
    - how many programs matched, and how many draft picks fell outside the join;
    - whether any program appears twice after the join;
    - rows before and after every filter and join, and why any were dropped.
-6. **Fit draft picks on recruiting points** and rank programs by the residual: the picks a
-   program produced minus what its recruiting predicted. Save the leaderboard to `outputs/`.
+
+   Also have Claude save a short note next to the raw files: where each came from, the date,
+   and every change you made.
+5. **Build a leaderboard of the programs that do the best at turning recruits into draft
+   picks.** You decide what "best" means. Picks per class, raw picks, or picks against what
+   a program's recruiting predicted (fit draft picks on recruiting points and look at the
+   residual) are all options. Decide whether any recruiting classes are too early to call,
+   since the 2020 class has only three drafts in this window. Save the leaderboard to
+   `outputs/` and write down how you defined "best".
 
 <details>
 <summary>Stuck on the join?</summary>
@@ -85,7 +91,7 @@ Two parts, one brief.
 ### Part 1: which programs produce NFL players?
 
 You are writing to an NFL director of college scouting. Thursday's leaderboard says which
-programs produce more picks than their recruiting predicts. A scouting department cares about
+programs do the best at turning recruits into draft picks. A scouting department cares about
 a second question: once a player is drafted, do players from some programs do better or worse
 in the NFL than where they were picked?
 
@@ -121,9 +127,9 @@ You are writing to the person who would act on your final project. No code is re
 
 1. **List two or three questions** your final project could answer, each with the person who
    would act on the answer.
-2. **For each, find a real source.** Say what one row is, how you would collect it
-   (download, API or scrape), what its terms allow, and what is missing.
-3. **Pick the question with the best data.**
+2. **For each, search for data sources you could use.** Say what one row is, how you would
+   collect it (download, API or scrape), what its terms allow, and what is missing.
+3. **Pick the question with the best publicly available data** for a robust project.
 
 Stay with Level I data: public box scores, published stats, public play-by-play. A project
 that needs anything else is a conversation with the instructor first.
@@ -136,7 +142,7 @@ Create it once, then answer the questions in it:
 python3 scripts/new_brief.py week08
 ```
 
-That writes `weeks/week08/BRIEF.md` with the six questions as headings, three for each part,
+That writes `weeks/week08/BRIEF.md` with the five questions as headings, three for Part 1 and two for Part 2,
 and space under each. The brief is your thinking in your own words. Your code, tables, and
 visuals are committed alongside it, so do not restate numbers the outputs already show; say
 what they mean. Answer every question in a few sentences. `/coach-brief 8` will critique a

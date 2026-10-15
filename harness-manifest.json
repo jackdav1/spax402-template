@@ -45,8 +45,8 @@
       "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
     },
     "course-schedule.json": {
-      "bytes": 6879,
-      "sha256": "94ea14e96578c7dd386af4a01f8c4233c80d0a597df2b14df2bb885ae6f00d9d"
+      "bytes": 6723,
+      "sha256": "d3147b997336f33556f1aa2e6a002e86cdceea416e434d850d2711397cf57e7b"
     },
     "scripts/build_harness_manifest.py": {
       "bytes": 11079,
@@ -194,11 +194,11 @@
       "sha256": "658e200de1560208230f6a681531b179746c8a67354b85cd89d33ce7713d0a32"
     },
     "weeks/week08/README.md": {
-      "bytes": 7613,
-      "sha256": "d8846b1be98549d15130e5e32be2002c7e601059bc96f298e568c476dc4ccfb4"
+      "bytes": 8341,
+      "sha256": "b638aadecce54b598cff7ede893ae5c0640e0f4ae2ec556095f73f1ab7f1094d"
     }
   },
-  "generated": "2026-10-13",
+  "generated": "2026-10-15",
   "managed_prefixes": [
     ".claude/skills/",
     "scripts/",
