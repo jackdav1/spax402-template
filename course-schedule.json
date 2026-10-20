@@ -20,7 +20,8 @@
   "week04": "2026-09-21",
   "week05": "2026-09-28",
   "week06": "2026-10-05",
-  "week08": "2026-10-19"
+  "week08": "2026-10-19",
+  "week09": "2026-10-26"
  },
  "brief": {
   "week01": {
@@ -122,6 +123,21 @@
      "questions": [
       "What two or three questions did you consider for your final project? Who would your audience be?",
       "For the question you picked, what data sources are available? How will you receive it? (download, API, scrape)."
+     ]
+    }
+   ]
+  },
+  "week09": {
+   "title": "Telling the draft story",
+   "audience": "an NFL general manager or a college recruiting director, your choice of team",
+   "parts": [
+    {
+     "title": "One story, two mediums",
+     "audience": "an NFL general manager or a college recruiting director, your choice of team",
+     "questions": [
+      "What is the one thing you want the audience to take away? What did you intentionally leave out?",
+      "What did your skill fix in your first draft? Did it miss anything that you had to fix yourself?",
+      "Would your audience rather get your one-pager or your video? Why?"
      ]
     }
    ]

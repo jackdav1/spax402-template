@@ -21,8 +21,8 @@
       "sha256": "224163aa58d81d3dc88646774b63e2fd7e114568a3ed0f8b55c250c679e72bfe"
     },
     ".claude/skills/update/SKILL.md": {
-      "bytes": 5605,
-      "sha256": "fea1c947336cc85a4ab15e6fbf4e553f423c8e1703181a95b2178ba74b9b1dea"
+      "bytes": 5721,
+      "sha256": "110a678a07d8593d2a9a170fa22d46b82d4abbc7452f298df5cd0d28c5d45486"
     },
     ".github/workflows/harness-manifest.yml": {
       "bytes": 914,
@@ -41,16 +41,16 @@
       "sha256": "4b45ca7580aa2fdee61d4709d79d9bf15fc86674f2ee90a4570c072e2ccb7255"
     },
     "README.md": {
-      "bytes": 5968,
-      "sha256": "bd69e72ba54c2320644754039fb226cf6a4db9e8928239c631ae38e5ef4184f0"
+      "bytes": 6011,
+      "sha256": "004708b3f9c349296473160a7fe3a1de8f1bcf61808830ee580a2512358453aa"
     },
     "course-schedule.json": {
-      "bytes": 6723,
-      "sha256": "d3147b997336f33556f1aa2e6a002e86cdceea416e434d850d2711397cf57e7b"
+      "bytes": 7381,
+      "sha256": "e0c68169b3c225f00517e6098389cb3fe106da1a0c911db67b0482ebd1073c8e"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 11079,
-      "sha256": "b6a274b16d941ff98f1af1b11ebdece28bd7bc307108b77f733bf6d1479aac78"
+      "bytes": 11603,
+      "sha256": "f6617fbbd6cf96bbd70bdb0102cd8219879447744b4a88c98bdc4d52e476be5d"
     },
     "scripts/harness_update.py": {
       "bytes": 20934,
@@ -196,11 +196,20 @@
     "weeks/week08/README.md": {
       "bytes": 8341,
       "sha256": "b638aadecce54b598cff7ede893ae5c0640e0f4ae2ec556095f73f1ab7f1094d"
+    },
+    "weeks/week09/README.md": {
+      "bytes": 4454,
+      "sha256": "d2afdc944c35a3bfa4d39f93db91d9d0527a190bbe23d6fbe8e5030dfb18b2e2"
     }
   },
-  "generated": "2026-10-15",
+  "generated": "2026-10-20",
   "managed_prefixes": [
-    ".claude/skills/",
+    ".claude/skills/audit/",
+    ".claude/skills/coach-brief/",
+    ".claude/skills/quiz-me/",
+    ".claude/skills/submit/",
+    ".claude/skills/teach/",
+    ".claude/skills/update/",
     "scripts/",
     "setup/"
   ],

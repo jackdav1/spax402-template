@@ -32,8 +32,18 @@ MANIFEST = ROOT / "harness-manifest.json"
 
 # Whole directories the instructor owns. Deletion propagates inside these: a tracked file
 # here that is not in the manifest is removed on update.
+#
+# Skills are listed one directory each, never .claude/skills/ as a whole: from Week 9
+# students write their own skills there, and Claude Code only loads skills from that
+# folder. A whole-folder prefix would make /update delete a student's skill as "retired".
+# A harness skill that is ever dropped goes in RETIRED_FILES instead.
 MANAGED_PREFIXES = [
-    ".claude/skills/",
+    ".claude/skills/audit/",
+    ".claude/skills/coach-brief/",
+    ".claude/skills/quiz-me/",
+    ".claude/skills/submit/",
+    ".claude/skills/teach/",
+    ".claude/skills/update/",
     "scripts/",
     "setup/",
 ]
@@ -71,6 +81,7 @@ MANAGED_FILES = [
     "weeks/week06/data/mlb-hitter-seasons-2008-2025.csv",
     "weeks/week06/data/mlb-batted-balls-2025.csv",
     "weeks/week08/README.md",
+    "weeks/week09/README.md",
 ]
 
 # Files this harness used to ship and no longer does. Deletion propagates only inside
