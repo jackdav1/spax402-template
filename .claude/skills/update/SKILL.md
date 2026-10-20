@@ -102,7 +102,8 @@ The script protects these regardless of what the manifest says, and you must not
 - `weeks/*/checks/` — quiz and audit artifacts, which are graded
 - `weeks/*/outputs/` and any `data/raw/` — their results and source data
 - `learning-records/` and `lessons/` — what `/teach` has built up for them
-- `my-skills/` — skills they author from Week 9 on; this is theirs, not the harness
+- skills they author from Week 9 on: any folder in `.claude/skills/` other than audit, coach-brief,
+  quiz-me, submit, teach and update (and anything in `my-skills/`); these are theirs, not the harness
 - `MISSION.md` — their own words about what they want out of the course
 
 If a student asks you to update one of those from the template, decline and explain that it is

@@ -75,13 +75,13 @@ weeks/weekNN/         your work for each week
 learning-records/     what you've learned, accumulated by /teach across the semester
 lessons/              reference lessons /teach builds for you
 scripts/              helpers the harness runs (do not edit)
-my-skills/            skills YOU author (Week 9+) — this is yours; the harness itself is not editable
+.claude/skills/NAME/   skills YOU author (Week 9+), next to the harness skills; /update only touches the six it ships
 ```
 
 Your repo was made from a template, so `git pull` here does not bring you instructor fixes. When
 a skill, a script, or a due date is corrected mid-semester, `/update` fetches it. It shows you
 what would change before writing anything, and it cannot touch your briefs, your `checks/`
-artifacts, your outputs, your learning records, or `my-skills/`.
+artifacts, your outputs, your learning records, or the skills you write in `.claude/skills/`.
 
 ## The materials repo
 
