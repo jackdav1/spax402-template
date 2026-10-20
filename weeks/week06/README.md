@@ -43,9 +43,7 @@ batted ball worth more to a left-handed hitter; does pitch speed change the exit
 hitter gets.
 
 1. **Expect.** Decide what you think the answer is before you fit anything.
-2. **Build.** Have Claude fit the model and print the coefficient table. Score it the way we
-   did last week: adjusted R² against a baseline, fit on the first half of the season and
-   checked on the second.
+2. **Build.** Have Claude fit the model and print the coefficient table.
 3. **Break.** Find where your model is most wrong and work out why. Then build one that does
    better, and show that it really is better, not just more complicated.
 4. **Make it land.** Create something from your work that would help a coach or player
