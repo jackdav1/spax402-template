@@ -82,6 +82,7 @@ MANAGED_FILES = [
     "weeks/week06/data/mlb-batted-balls-2025.csv",
     "weeks/week08/README.md",
     "weeks/week09/README.md",
+    "weeks/week10/README.md",
 ]
 
 # Files this harness used to ship and no longer does. Deletion propagates only inside

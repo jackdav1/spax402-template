@@ -21,7 +21,8 @@
   "week05": "2026-09-28",
   "week06": "2026-10-05",
   "week08": "2026-10-19",
-  "week09": "2026-10-26"
+  "week09": "2026-10-26",
+  "week10": "2026-11-02"
  },
  "brief": {
   "week01": {
@@ -138,6 +139,21 @@
       "What is the one thing you want the audience to take away? What did you intentionally leave out?",
       "What did your skill fix in your first draft? Did it miss anything that you had to fix yourself?",
       "Would your audience rather get your one-pager or your video? Why?"
+     ]
+    }
+   ]
+  },
+  "week10": {
+   "title": "A bias in the wild",
+   "audience": "the coach, general manager or writer behind the decision",
+   "parts": [
+    {
+     "title": "Testing a decision",
+     "audience": "the coach, general manager or writer behind the decision",
+     "questions": [
+      "Which cognitive bias does your decision or article show, and what in it convinced you? Could a different bias explain it just as well?",
+      "What is the strongest argument for the decision as it was made, and does your data answer it?",
+      "What other data would you want before telling the decision maker they got it wrong?"
      ]
     }
    ]
