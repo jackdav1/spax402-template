@@ -83,6 +83,23 @@ MANAGED_FILES = [
     "weeks/week08/README.md",
     "weeks/week09/README.md",
     "weeks/week10/README.md",
+    "weeks/week11/README.md",
+    "weeks/week11/data/pull_week11_data.py",
+    "weeks/week11/data/nfl_played.csv",
+    "weeks/week11/data/nfl_remaining.csv",
+    "weeks/week11/data/nfl_rules.md",
+    "weeks/week11/data/nba_played.csv",
+    "weeks/week11/data/nba_remaining.csv",
+    "weeks/week11/data/nba_rules.md",
+    "weeks/week11/data/nhl_played.csv",
+    "weeks/week11/data/nhl_remaining.csv",
+    "weeks/week11/data/nhl_rules.md",
+    "weeks/week11/data/cfb_played.csv",
+    "weeks/week11/data/cfb_remaining.csv",
+    "weeks/week11/data/cfb_rules.md",
+    "weeks/week11/data/epl_played.csv",
+    "weeks/week11/data/epl_remaining.csv",
+    "weeks/week11/data/epl_rules.md",
 ]
 
 # Files this harness used to ship and no longer does. Deletion propagates only inside
