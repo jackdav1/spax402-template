@@ -67,7 +67,7 @@ Create it once, then answer the questions in it:
 python3 scripts/new_brief.py week11
 ```
 
-That writes `weeks/week11/BRIEF.md` with the three questions as headings and space under each.
+That writes `weeks/week11/BRIEF.md` with the two questions as headings and space under each.
 The brief is your thinking in your own words. Your odds table and page are committed alongside
 it, so do not restate what they show; say what you believe about them and why. Answer every
 question in a few sentences. `/coach-brief 11` will critique a draft; it will not write one.

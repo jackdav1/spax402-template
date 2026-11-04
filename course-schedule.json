@@ -167,9 +167,8 @@
      "title": "The rest of the season",
      "audience": "a beat writer covering the team you care most about",
      "questions": [
-      "Which assumption in your model do you trust least, and what would it do to your odds if it were wrong?",
-      "Pick one team where you'd bet against your own model. Why?",
-      "How would you describe one team's chances to that team's fans, and how confident are you?"
+      "What assumption in your model do you trust least? How does that assumption impact your odds?",
+      "Was there a team your model liked more than you expected? Why do you think your model liked that team more than you would’ve anticipated?"
      ]
     }
    ]
