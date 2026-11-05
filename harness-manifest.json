@@ -45,8 +45,8 @@
       "sha256": "004708b3f9c349296473160a7fe3a1de8f1bcf61808830ee580a2512358453aa"
     },
     "course-schedule.json": {
-      "bytes": 8643,
-      "sha256": "11b86884938dc04af3ce97d45568e78795c2b4e418905f061e596f27e98370f4"
+      "bytes": 8615,
+      "sha256": "a6136fe719f6b3bbcdc09379bc38de7424d4b4f3477249ff6f619c1268356de2"
     },
     "scripts/build_harness_manifest.py": {
       "bytes": 12313,
@@ -206,8 +206,8 @@
       "sha256": "dee9903c2a18b21fd739878a846c0bb3a458090575245c738011762706473316"
     },
     "weeks/week11/README.md": {
-      "bytes": 3801,
-      "sha256": "31426db6258100cdaef0245ac0642e4db045f401716dd1a80e62a109a5fef89c"
+      "bytes": 3799,
+      "sha256": "f01d1780dc119c8fea363c69670fc3ea099cc76058ef98c047aac05a613d5dd6"
     },
     "weeks/week11/data/cfb_played.csv": {
       "bytes": 64429,
@@ -274,7 +274,7 @@
       "sha256": "6e0acc6c4bbbb2eafd6ddf9ba8c076efdd856449ec6608bb5006a92e1af3c442"
     }
   },
-  "generated": "2026-11-04",
+  "generated": "2026-11-05",
   "managed_prefixes": [
     ".claude/skills/audit/",
     ".claude/skills/coach-brief/",
