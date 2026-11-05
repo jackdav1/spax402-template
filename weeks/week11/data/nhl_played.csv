@@ -1,0 +1,247 @@
+date,home,away,home_score,away_score,ot,neutral,home_conf,away_conf,home_div,away_div
+2026-09-29,Boston Bruins,New York Rangers,3,0,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-09-29,Carolina Hurricanes,Florida Panthers,0,1,1,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-09-29,Edmonton Oilers,Vancouver Canucks,5,6,1,0,Western,Western,Pacific,Pacific
+2026-09-29,Toronto Maple Leafs,Montréal Canadiens,2,3,0,0,Eastern,Eastern,Atlantic,Atlantic
+2026-09-29,Vegas Golden Knights,Chicago Blackhawks,5,2,0,0,Western,Western,Pacific,Central
+2026-09-30,Colorado Avalanche,Los Angeles Kings,8,4,0,0,Western,Western,Central,Pacific
+2026-09-30,Philadelphia Flyers,Pittsburgh Penguins,0,7,0,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-09-30,Toronto Maple Leafs,New York Islanders,2,1,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-01,Calgary Flames,Seattle Kraken,1,6,0,0,Western,Western,Pacific,Pacific
+2026-10-01,Columbus Blue Jackets,Buffalo Sabres,6,3,0,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-10-01,Nashville Predators,Minnesota Wild,1,3,0,0,Western,Western,Central,Central
+2026-10-01,New Jersey Devils,Philadelphia Flyers,3,2,1,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-01,New York Rangers,Tampa Bay Lightning,5,1,0,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-10-01,San Jose Sharks,Florida Panthers,4,3,1,0,Western,Eastern,Pacific,Atlantic
+2026-10-01,Utah Mammoth,Chicago Blackhawks,6,0,0,0,Western,Western,Central,Central
+2026-10-01,Vancouver Canucks,Edmonton Oilers,7,9,0,0,Western,Western,Pacific,Pacific
+2026-10-02,Carolina Hurricanes,Washington Capitals,2,5,0,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-02,Dallas Stars,St. Louis Blues,0,4,0,0,Western,Western,Central,Central
+2026-10-02,Detroit Red Wings,New York Rangers,0,2,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-02,Vegas Golden Knights,Anaheim Ducks,3,4,0,0,Western,Western,Pacific,Pacific
+2026-10-02,Winnipeg Jets,Boston Bruins,3,4,1,0,Western,Eastern,Central,Atlantic
+2026-10-03,Buffalo Sabres,Chicago Blackhawks,4,3,0,0,Eastern,Western,Atlantic,Central
+2026-10-03,Colorado Avalanche,St. Louis Blues,6,1,0,0,Western,Western,Central,Central
+2026-10-03,Columbus Blue Jackets,Utah Mammoth,1,4,0,0,Eastern,Western,Metropolitan,Central
+2026-10-03,Edmonton Oilers,Seattle Kraken,3,1,0,0,Western,Western,Pacific,Pacific
+2026-10-03,Minnesota Wild,Boston Bruins,4,1,0,0,Western,Eastern,Central,Atlantic
+2026-10-03,Nashville Predators,Dallas Stars,2,1,0,0,Western,Western,Central,Central
+2026-10-03,New York Islanders,New Jersey Devils,6,0,0,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-03,Philadelphia Flyers,Carolina Hurricanes,2,3,1,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-03,Pittsburgh Penguins,Montréal Canadiens,6,5,1,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-10-03,San Jose Sharks,Los Angeles Kings,5,4,1,0,Western,Western,Pacific,Pacific
+2026-10-03,Tampa Bay Lightning,Washington Capitals,3,1,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-03,Toronto Maple Leafs,Ottawa Senators,2,3,0,0,Eastern,Eastern,Atlantic,Atlantic
+2026-10-03,Vancouver Canucks,Calgary Flames,4,1,0,0,Western,Western,Pacific,Pacific
+2026-10-04,Anaheim Ducks,Florida Panthers,3,2,1,0,Western,Eastern,Pacific,Atlantic
+2026-10-04,Detroit Red Wings,Winnipeg Jets,2,3,0,0,Eastern,Western,Atlantic,Central
+2026-10-04,New York Rangers,Utah Mammoth,4,2,0,0,Eastern,Western,Metropolitan,Central
+2026-10-04,Seattle Kraken,Calgary Flames,6,1,0,0,Western,Western,Pacific,Pacific
+2026-10-04,Vancouver Canucks,Vegas Golden Knights,2,3,0,0,Western,Western,Pacific,Pacific
+2026-10-05,Boston Bruins,Ottawa Senators,1,4,0,0,Eastern,Eastern,Atlantic,Atlantic
+2026-10-05,Dallas Stars,San Jose Sharks,5,0,0,0,Western,Western,Central,Pacific
+2026-10-05,Pittsburgh Penguins,Winnipeg Jets,2,3,0,0,Eastern,Western,Metropolitan,Central
+2026-10-05,Tampa Bay Lightning,Philadelphia Flyers,4,1,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-06,Buffalo Sabres,Minnesota Wild,3,2,1,0,Eastern,Western,Atlantic,Central
+2026-10-06,Chicago Blackhawks,St. Louis Blues,4,2,0,0,Western,Western,Central,Central
+2026-10-06,Detroit Red Wings,Ottawa Senators,5,3,0,0,Eastern,Eastern,Atlantic,Atlantic
+2026-10-06,Los Angeles Kings,Florida Panthers,1,2,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-06,Montréal Canadiens,Carolina Hurricanes,4,6,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-06,New Jersey Devils,Utah Mammoth,3,5,0,0,Eastern,Western,Metropolitan,Central
+2026-10-06,New York Rangers,New York Islanders,5,2,0,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-06,Seattle Kraken,Vegas Golden Knights,2,6,0,0,Western,Western,Pacific,Pacific
+2026-10-06,Toronto Maple Leafs,Nashville Predators,5,4,1,0,Eastern,Western,Atlantic,Central
+2026-10-07,Anaheim Ducks,Edmonton Oilers,2,5,0,0,Western,Western,Pacific,Pacific
+2026-10-07,Washington Capitals,Pittsburgh Penguins,5,3,0,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-07,Winnipeg Jets,Colorado Avalanche,3,2,0,0,Western,Western,Central,Central
+2026-10-08,Boston Bruins,Utah Mammoth,6,1,0,0,Eastern,Western,Atlantic,Central
+2026-10-08,Buffalo Sabres,Dallas Stars,0,4,0,0,Eastern,Western,Atlantic,Central
+2026-10-08,Calgary Flames,Colorado Avalanche,3,7,0,0,Western,Western,Pacific,Central
+2026-10-08,Carolina Hurricanes,Vancouver Canucks,7,2,0,0,Eastern,Western,Metropolitan,Pacific
+2026-10-08,Montréal Canadiens,Nashville Predators,2,5,0,0,Eastern,Western,Atlantic,Central
+2026-10-08,New York Islanders,Chicago Blackhawks,4,1,0,0,Eastern,Western,Metropolitan,Central
+2026-10-08,Ottawa Senators,Philadelphia Flyers,2,1,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-08,St. Louis Blues,San Jose Sharks,2,3,1,0,Western,Western,Central,Pacific
+2026-10-08,Tampa Bay Lightning,Minnesota Wild,3,2,0,0,Eastern,Western,Atlantic,Central
+2026-10-08,Vegas Golden Knights,Toronto Maple Leafs,4,3,1,0,Western,Eastern,Pacific,Atlantic
+2026-10-09,Columbus Blue Jackets,Pittsburgh Penguins,3,2,1,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-09,Detroit Red Wings,Seattle Kraken,3,6,0,0,Eastern,Western,Atlantic,Pacific
+2026-10-09,Washington Capitals,New York Rangers,3,1,0,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-09,Winnipeg Jets,Anaheim Ducks,1,5,0,0,Western,Western,Central,Pacific
+2026-10-10,Boston Bruins,Philadelphia Flyers,5,1,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-10,Buffalo Sabres,Utah Mammoth,1,4,0,0,Eastern,Western,Atlantic,Central
+2026-10-10,Calgary Flames,Anaheim Ducks,2,4,0,0,Western,Western,Pacific,Pacific
+2026-10-10,Chicago Blackhawks,Carolina Hurricanes,2,5,0,0,Western,Eastern,Central,Metropolitan
+2026-10-10,Colorado Avalanche,Toronto Maple Leafs,3,6,0,0,Western,Eastern,Central,Atlantic
+2026-10-10,Florida Panthers,Minnesota Wild,1,4,0,0,Eastern,Western,Atlantic,Central
+2026-10-10,Montréal Canadiens,Detroit Red Wings,1,0,1,0,Eastern,Eastern,Atlantic,Atlantic
+2026-10-10,New Jersey Devils,Vancouver Canucks,4,1,0,0,Eastern,Western,Metropolitan,Pacific
+2026-10-10,New York Islanders,Tampa Bay Lightning,3,5,0,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-10-10,Ottawa Senators,Nashville Predators,3,2,1,0,Eastern,Western,Atlantic,Central
+2026-10-10,Pittsburgh Penguins,Dallas Stars,2,1,1,0,Eastern,Western,Metropolitan,Central
+2026-10-10,San Jose Sharks,Edmonton Oilers,1,3,0,0,Western,Western,Pacific,Pacific
+2026-10-10,St. Louis Blues,Columbus Blue Jackets,5,3,0,0,Western,Eastern,Central,Metropolitan
+2026-10-10,Vegas Golden Knights,Los Angeles Kings,2,1,1,0,Western,Western,Pacific,Pacific
+2026-10-11,New York Rangers,Vancouver Canucks,6,2,0,0,Eastern,Western,Metropolitan,Pacific
+2026-10-11,Philadelphia Flyers,Carolina Hurricanes,1,4,0,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-11,Washington Capitals,Seattle Kraken,3,5,0,0,Eastern,Western,Metropolitan,Pacific
+2026-10-12,Buffalo Sabres,Florida Panthers,5,3,0,0,Eastern,Eastern,Atlantic,Atlantic
+2026-10-12,Minnesota Wild,Vegas Golden Knights,4,2,0,0,Western,Western,Central,Pacific
+2026-10-12,New Jersey Devils,Ottawa Senators,1,4,0,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-10-13,Anaheim Ducks,Calgary Flames,2,4,0,0,Western,Western,Pacific,Pacific
+2026-10-13,Carolina Hurricanes,Washington Capitals,4,2,0,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-13,Chicago Blackhawks,Pittsburgh Penguins,5,3,0,0,Western,Eastern,Central,Metropolitan
+2026-10-13,Columbus Blue Jackets,Florida Panthers,3,7,0,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-10-13,Dallas Stars,Colorado Avalanche,2,3,0,0,Western,Western,Central,Central
+2026-10-13,Detroit Red Wings,New Jersey Devils,4,5,1,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-13,Los Angeles Kings,Edmonton Oilers,1,4,0,0,Western,Western,Pacific,Pacific
+2026-10-13,Montréal Canadiens,Buffalo Sabres,4,3,1,0,Eastern,Eastern,Atlantic,Atlantic
+2026-10-13,Nashville Predators,Vegas Golden Knights,2,5,0,0,Western,Western,Central,Pacific
+2026-10-13,New York Islanders,Vancouver Canucks,3,2,0,0,Eastern,Western,Metropolitan,Pacific
+2026-10-13,New York Rangers,Tampa Bay Lightning,4,1,0,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-10-13,Ottawa Senators,St. Louis Blues,2,7,0,0,Eastern,Western,Atlantic,Central
+2026-10-13,Philadelphia Flyers,Seattle Kraken,2,3,1,0,Eastern,Western,Metropolitan,Pacific
+2026-10-13,San Jose Sharks,Boston Bruins,3,6,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-13,Utah Mammoth,Toronto Maple Leafs,5,4,0,0,Western,Eastern,Central,Atlantic
+2026-10-13,Winnipeg Jets,Minnesota Wild,5,2,0,0,Western,Western,Central,Central
+2026-10-14,Colorado Avalanche,Dallas Stars,2,3,1,0,Western,Western,Central,Central
+2026-10-14,Washington Capitals,Montréal Canadiens,5,4,0,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-10-15,Chicago Blackhawks,Winnipeg Jets,4,3,1,0,Western,Western,Central,Central
+2026-10-15,Detroit Red Wings,Philadelphia Flyers,2,1,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-15,Edmonton Oilers,Utah Mammoth,2,4,0,0,Western,Western,Pacific,Central
+2026-10-15,Florida Panthers,Vancouver Canucks,3,2,1,0,Eastern,Western,Atlantic,Pacific
+2026-10-15,Minnesota Wild,St. Louis Blues,5,4,0,0,Western,Western,Central,Central
+2026-10-15,Nashville Predators,San Jose Sharks,2,3,1,0,Western,Western,Central,Pacific
+2026-10-15,New Jersey Devils,New York Rangers,7,1,0,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-15,Ottawa Senators,New York Islanders,2,1,1,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-15,Tampa Bay Lightning,Seattle Kraken,4,3,1,0,Eastern,Western,Atlantic,Pacific
+2026-10-15,Toronto Maple Leafs,Buffalo Sabres,4,5,1,0,Eastern,Eastern,Atlantic,Atlantic
+2026-10-15,Vegas Golden Knights,Calgary Flames,6,2,0,0,Western,Western,Pacific,Pacific
+2026-10-16,Anaheim Ducks,Boston Bruins,2,4,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-16,Colorado Avalanche,Pittsburgh Penguins,5,2,0,0,Western,Eastern,Central,Metropolitan
+2026-10-17,Chicago Blackhawks,Dallas Stars,0,4,0,0,Western,Western,Central,Central
+2026-10-17,Columbus Blue Jackets,New York Rangers,1,0,1,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-17,Detroit Red Wings,San Jose Sharks,4,3,1,0,Eastern,Western,Atlantic,Pacific
+2026-10-17,Florida Panthers,Seattle Kraken,8,3,0,0,Eastern,Western,Atlantic,Pacific
+2026-10-17,Los Angeles Kings,Boston Bruins,1,4,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-17,Montréal Canadiens,Buffalo Sabres,4,3,1,0,Eastern,Eastern,Atlantic,Atlantic
+2026-10-17,Nashville Predators,St. Louis Blues,5,2,0,0,Western,Western,Central,Central
+2026-10-17,Philadelphia Flyers,Ottawa Senators,3,1,0,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-10-17,Tampa Bay Lightning,Vancouver Canucks,4,2,0,0,Eastern,Western,Atlantic,Pacific
+2026-10-17,Toronto Maple Leafs,New York Islanders,1,4,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-17,Utah Mammoth,Edmonton Oilers,2,6,0,0,Western,Western,Central,Pacific
+2026-10-17,Vegas Golden Knights,Pittsburgh Penguins,6,2,0,0,Western,Eastern,Pacific,Metropolitan
+2026-10-17,Washington Capitals,New Jersey Devils,4,2,0,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-17,Winnipeg Jets,Carolina Hurricanes,2,3,0,0,Western,Eastern,Central,Metropolitan
+2026-10-18,Calgary Flames,Carolina Hurricanes,3,2,0,0,Western,Eastern,Pacific,Metropolitan
+2026-10-18,Minnesota Wild,Columbus Blue Jackets,2,1,0,0,Western,Eastern,Central,Metropolitan
+2026-10-19,New York Rangers,Anaheim Ducks,5,2,0,0,Eastern,Western,Metropolitan,Pacific
+2026-10-19,Philadelphia Flyers,Colorado Avalanche,3,2,0,0,Eastern,Western,Metropolitan,Central
+2026-10-19,Toronto Maple Leafs,San Jose Sharks,3,1,0,0,Eastern,Western,Atlantic,Pacific
+2026-10-19,Utah Mammoth,Pittsburgh Penguins,5,4,0,0,Western,Eastern,Central,Metropolitan
+2026-10-20,Columbus Blue Jackets,Toronto Maple Leafs,2,6,0,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-10-20,Dallas Stars,Boston Bruins,3,2,1,0,Western,Eastern,Central,Atlantic
+2026-10-20,Edmonton Oilers,Minnesota Wild,4,3,1,0,Western,Western,Pacific,Central
+2026-10-20,Montréal Canadiens,San Jose Sharks,3,4,1,0,Eastern,Western,Atlantic,Pacific
+2026-10-20,New Jersey Devils,Colorado Avalanche,4,3,0,0,Eastern,Western,Metropolitan,Central
+2026-10-20,New York Islanders,Anaheim Ducks,3,2,0,0,Eastern,Western,Metropolitan,Pacific
+2026-10-20,Seattle Kraken,Detroit Red Wings,4,3,1,0,Western,Eastern,Pacific,Atlantic
+2026-10-20,St. Louis Blues,Winnipeg Jets,2,1,0,0,Western,Western,Central,Central
+2026-10-20,Vancouver Canucks,Carolina Hurricanes,3,6,0,0,Western,Eastern,Pacific,Metropolitan
+2026-10-20,Vegas Golden Knights,Tampa Bay Lightning,2,6,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-20,Washington Capitals,Los Angeles Kings,2,5,0,0,Eastern,Western,Metropolitan,Pacific
+2026-10-21,Buffalo Sabres,Philadelphia Flyers,1,3,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-21,Ottawa Senators,Florida Panthers,5,1,0,0,Eastern,Eastern,Atlantic,Atlantic
+2026-10-22,Boston Bruins,Nashville Predators,6,0,0,0,Eastern,Western,Atlantic,Central
+2026-10-22,Calgary Flames,Minnesota Wild,2,1,0,0,Western,Western,Pacific,Central
+2026-10-22,Dallas Stars,Winnipeg Jets,3,2,1,0,Western,Western,Central,Central
+2026-10-22,Edmonton Oilers,Carolina Hurricanes,6,5,1,0,Western,Eastern,Pacific,Metropolitan
+2026-10-22,New Jersey Devils,Anaheim Ducks,4,1,0,0,Eastern,Western,Metropolitan,Pacific
+2026-10-22,New York Islanders,Los Angeles Kings,2,3,1,0,Eastern,Western,Metropolitan,Pacific
+2026-10-22,Ottawa Senators,San Jose Sharks,2,6,0,0,Eastern,Western,Atlantic,Pacific
+2026-10-22,Pittsburgh Penguins,Florida Panthers,4,0,0,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-10-22,Seattle Kraken,Utah Mammoth,5,3,0,0,Western,Western,Pacific,Central
+2026-10-22,St. Louis Blues,Vegas Golden Knights,6,2,0,0,Western,Western,Central,Pacific
+2026-10-22,Toronto Maple Leafs,New York Rangers,5,4,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-22,Vancouver Canucks,Detroit Red Wings,2,5,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-23,Chicago Blackhawks,Montréal Canadiens,1,4,0,0,Western,Eastern,Central,Atlantic
+2026-10-23,Colorado Avalanche,Tampa Bay Lightning,6,3,0,0,Western,Eastern,Central,Atlantic
+2026-10-24,Boston Bruins,San Jose Sharks,6,4,0,0,Eastern,Western,Atlantic,Pacific
+2026-10-24,Calgary Flames,Detroit Red Wings,4,1,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-24,Columbus Blue Jackets,Vegas Golden Knights,2,1,1,0,Eastern,Western,Metropolitan,Pacific
+2026-10-24,Edmonton Oilers,Toronto Maple Leafs,2,7,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-24,New Jersey Devils,Los Angeles Kings,3,1,0,0,Eastern,Western,Metropolitan,Pacific
+2026-10-24,Ottawa Senators,New York Rangers,7,4,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-24,Philadelphia Flyers,Anaheim Ducks,4,5,0,0,Eastern,Western,Metropolitan,Pacific
+2026-10-24,Pittsburgh Penguins,Nashville Predators,3,2,1,0,Eastern,Western,Metropolitan,Central
+2026-10-24,Seattle Kraken,Minnesota Wild,1,5,0,0,Western,Western,Pacific,Central
+2026-10-24,St. Louis Blues,Carolina Hurricanes,0,4,0,0,Western,Eastern,Central,Metropolitan
+2026-10-24,Utah Mammoth,Tampa Bay Lightning,5,4,1,0,Western,Eastern,Central,Atlantic
+2026-10-24,Washington Capitals,Buffalo Sabres,4,3,1,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-10-25,Chicago Blackhawks,Florida Panthers,2,3,0,0,Western,Eastern,Central,Atlantic
+2026-10-25,Dallas Stars,New York Islanders,6,3,0,0,Western,Eastern,Central,Metropolitan
+2026-10-25,Nashville Predators,Colorado Avalanche,6,2,0,0,Western,Western,Central,Central
+2026-10-25,Vancouver Canucks,Minnesota Wild,2,4,0,0,Western,Western,Pacific,Central
+2026-10-25,Winnipeg Jets,Montréal Canadiens,1,2,0,1,Western,Eastern,Central,Atlantic
+2026-10-26,Calgary Flames,Toronto Maple Leafs,5,2,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-26,Edmonton Oilers,Detroit Red Wings,3,4,1,0,Western,Eastern,Pacific,Atlantic
+2026-10-26,New York Rangers,Los Angeles Kings,3,6,0,0,Eastern,Western,Metropolitan,Pacific
+2026-10-27,Anaheim Ducks,Vancouver Canucks,5,6,1,0,Western,Western,Pacific,Pacific
+2026-10-27,Carolina Hurricanes,Boston Bruins,2,1,0,0,Eastern,Eastern,Metropolitan,Atlantic
+2026-10-27,Chicago Blackhawks,Los Angeles Kings,2,1,0,0,Western,Western,Central,Pacific
+2026-10-27,Dallas Stars,New Jersey Devils,1,5,0,0,Western,Eastern,Central,Metropolitan
+2026-10-27,Nashville Predators,New York Islanders,3,4,1,0,Western,Eastern,Central,Metropolitan
+2026-10-27,Philadelphia Flyers,Columbus Blue Jackets,3,4,1,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-27,San Jose Sharks,Buffalo Sabres,0,2,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-27,St. Louis Blues,Montréal Canadiens,0,2,0,0,Western,Eastern,Central,Atlantic
+2026-10-27,Utah Mammoth,Minnesota Wild,1,3,0,0,Western,Western,Central,Central
+2026-10-27,Vegas Golden Knights,Ottawa Senators,4,1,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-27,Winnipeg Jets,Florida Panthers,1,5,0,0,Western,Eastern,Central,Atlantic
+2026-10-28,Colorado Avalanche,New Jersey Devils,5,2,0,0,Western,Eastern,Central,Metropolitan
+2026-10-28,Edmonton Oilers,Calgary Flames,4,0,0,0,Western,Western,Pacific,Pacific
+2026-10-28,Seattle Kraken,Toronto Maple Leafs,5,4,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-28,Washington Capitals,Philadelphia Flyers,5,2,0,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-29,Anaheim Ducks,Buffalo Sabres,6,7,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-29,Carolina Hurricanes,Columbus Blue Jackets,3,2,0,0,Eastern,Eastern,Metropolitan,Metropolitan
+2026-10-29,Dallas Stars,Montréal Canadiens,2,5,0,0,Western,Eastern,Central,Atlantic
+2026-10-29,Detroit Red Wings,Chicago Blackhawks,4,1,0,0,Eastern,Western,Atlantic,Central
+2026-10-29,Los Angeles Kings,Ottawa Senators,6,5,1,0,Western,Eastern,Pacific,Atlantic
+2026-10-29,Minnesota Wild,New York Islanders,3,4,1,0,Western,Eastern,Central,Metropolitan
+2026-10-29,Nashville Predators,Washington Capitals,3,4,0,0,Western,Eastern,Central,Metropolitan
+2026-10-29,Pittsburgh Penguins,Utah Mammoth,3,4,1,0,Eastern,Western,Metropolitan,Central
+2026-10-29,San Jose Sharks,Vancouver Canucks,3,2,0,0,Western,Western,Pacific,Pacific
+2026-10-29,St. Louis Blues,Boston Bruins,4,1,0,0,Western,Eastern,Central,Atlantic
+2026-10-29,Tampa Bay Lightning,Winnipeg Jets,6,4,0,0,Eastern,Western,Atlantic,Central
+2026-10-30,Calgary Flames,Seattle Kraken,6,2,0,0,Western,Western,Pacific,Pacific
+2026-10-30,Florida Panthers,Winnipeg Jets,5,2,0,0,Eastern,Western,Atlantic,Central
+2026-10-30,Vegas Golden Knights,New Jersey Devils,2,5,0,0,Western,Eastern,Pacific,Metropolitan
+2026-10-31,Boston Bruins,Chicago Blackhawks,5,4,1,0,Eastern,Western,Atlantic,Central
+2026-10-31,Colorado Avalanche,Calgary Flames,5,2,0,0,Western,Western,Central,Pacific
+2026-10-31,Dallas Stars,Columbus Blue Jackets,3,1,0,0,Western,Eastern,Central,Metropolitan
+2026-10-31,Detroit Red Wings,St. Louis Blues,4,5,0,0,Eastern,Western,Atlantic,Central
+2026-10-31,Los Angeles Kings,Buffalo Sabres,2,3,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-31,Montréal Canadiens,Pittsburgh Penguins,5,4,0,0,Eastern,Eastern,Atlantic,Metropolitan
+2026-10-31,Nashville Predators,Tampa Bay Lightning,5,4,1,0,Western,Eastern,Central,Atlantic
+2026-10-31,New York Islanders,Edmonton Oilers,0,4,0,0,Eastern,Western,Metropolitan,Pacific
+2026-10-31,San Jose Sharks,Ottawa Senators,1,5,0,0,Western,Eastern,Pacific,Atlantic
+2026-10-31,Vancouver Canucks,Toronto Maple Leafs,2,4,0,0,Western,Eastern,Pacific,Atlantic
+2026-11-01,Anaheim Ducks,Ottawa Senators,6,3,0,0,Western,Eastern,Pacific,Atlantic
+2026-11-01,Carolina Hurricanes,Winnipeg Jets,7,0,0,0,Eastern,Western,Metropolitan,Central
+2026-11-01,New York Rangers,Edmonton Oilers,1,4,0,0,Eastern,Western,Metropolitan,Pacific
+2026-11-01,Philadelphia Flyers,Utah Mammoth,6,3,0,0,Eastern,Western,Metropolitan,Central
+2026-11-01,Washington Capitals,Minnesota Wild,1,5,0,0,Eastern,Western,Metropolitan,Central
+2026-11-02,Boston Bruins,Vegas Golden Knights,3,2,1,0,Eastern,Western,Atlantic,Pacific
+2026-11-02,Chicago Blackhawks,Colorado Avalanche,2,5,0,0,Western,Western,Central,Central
+2026-11-02,Florida Panthers,Detroit Red Wings,3,5,0,0,Eastern,Eastern,Atlantic,Atlantic
+2026-11-02,San Jose Sharks,Calgary Flames,1,2,0,0,Western,Western,Pacific,Pacific
+2026-11-03,Columbus Blue Jackets,Colorado Avalanche,7,2,0,0,Eastern,Western,Metropolitan,Central
+2026-11-03,Montréal Canadiens,Winnipeg Jets,4,5,1,0,Eastern,Western,Atlantic,Central
+2026-11-03,Nashville Predators,Carolina Hurricanes,4,1,0,0,Western,Eastern,Central,Metropolitan
+2026-11-03,New Jersey Devils,Edmonton Oilers,4,3,1,0,Eastern,Western,Metropolitan,Pacific
+2026-11-03,New York Rangers,St. Louis Blues,3,1,0,0,Eastern,Western,Metropolitan,Central
+2026-11-03,Philadelphia Flyers,Minnesota Wild,2,4,0,0,Eastern,Western,Metropolitan,Central
+2026-11-03,Pittsburgh Penguins,Vegas Golden Knights,2,3,0,0,Eastern,Western,Metropolitan,Pacific
+2026-11-03,Tampa Bay Lightning,Detroit Red Wings,4,2,0,0,Eastern,Eastern,Atlantic,Atlantic
+2026-11-03,Toronto Maple Leafs,Utah Mammoth,2,3,0,0,Eastern,Western,Atlantic,Central
+2026-11-03,Vancouver Canucks,Anaheim Ducks,4,5,0,0,Western,Western,Pacific,Pacific
+2026-11-03,Washington Capitals,Dallas Stars,5,6,0,0,Eastern,Western,Metropolitan,Central

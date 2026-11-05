@@ -22,7 +22,8 @@
   "week06": "2026-10-05",
   "week08": "2026-10-19",
   "week09": "2026-10-26",
-  "week10": "2026-11-02"
+  "week10": "2026-11-02",
+  "week11": "2026-11-09"
  },
  "brief": {
   "week01": {
@@ -154,6 +155,20 @@
       "Which cognitive bias does your decision or article show, and what in it convinced you? Could a different bias explain it just as well?",
       "What is the strongest argument for the decision as it was made, and does your data answer it?",
       "What other data would you want before telling the decision maker they got it wrong?"
+     ]
+    }
+   ]
+  },
+  "week11": {
+   "title": "Simulating a season",
+   "audience": "a beat writer covering the team you care most about",
+   "parts": [
+    {
+     "title": "The rest of the season",
+     "audience": "a beat writer covering the team you care most about",
+     "questions": [
+      "What assumption in your model do you trust least? How does that assumption impact your odds?",
+      "Was there a team your model liked more than you expected? Why do you think your model liked that team more than you would’ve anticipated?"
      ]
     }
    ]

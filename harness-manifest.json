@@ -45,12 +45,12 @@
       "sha256": "004708b3f9c349296473160a7fe3a1de8f1bcf61808830ee580a2512358453aa"
     },
     "course-schedule.json": {
-      "bytes": 8045,
-      "sha256": "ea3812e2b53b37704ac863adbe04047b2b8adb397ad59658da728a59352cd18d"
+      "bytes": 8643,
+      "sha256": "11b86884938dc04af3ce97d45568e78795c2b4e418905f061e596f27e98370f4"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 11633,
-      "sha256": "52794ea7a2afef1a39eef8ca241ec553fa1af1781e1c9cebe56473cfb86a2b27"
+      "bytes": 12313,
+      "sha256": "9bc6f121dd1d24b93e8668e9efb09840b37c753b3c74f667d423b47d95f194ff"
     },
     "scripts/harness_update.py": {
       "bytes": 20934,
@@ -204,9 +204,77 @@
     "weeks/week10/README.md": {
       "bytes": 2553,
       "sha256": "dee9903c2a18b21fd739878a846c0bb3a458090575245c738011762706473316"
+    },
+    "weeks/week11/README.md": {
+      "bytes": 3801,
+      "sha256": "31426db6258100cdaef0245ac0642e4db045f401716dd1a80e62a109a5fef89c"
+    },
+    "weeks/week11/data/cfb_played.csv": {
+      "bytes": 64429,
+      "sha256": "afa1a59c6c741ae773dfc29c5f35c2cb122f888f6b09d5ea88db5a8fb5e7fe77"
+    },
+    "weeks/week11/data/cfb_remaining.csv": {
+      "bytes": 26781,
+      "sha256": "a3c21f3a3e98526e2293e9ffcdcaa0298626ed16cbb5c580b6b522d477cd6ac6"
+    },
+    "weeks/week11/data/cfb_rules.md": {
+      "bytes": 2052,
+      "sha256": "cc5c74616cbcde877d1aab570a4df607d0c57dae1bf6734c8050ecb32578ed25"
+    },
+    "weeks/week11/data/epl_played.csv": {
+      "bytes": 3052,
+      "sha256": "fbce5b03baf2885e2cb9ad3ca43544351b65a52996c1558d76ca0cb1cc0fa88a"
+    },
+    "weeks/week11/data/epl_remaining.csv": {
+      "bytes": 9172,
+      "sha256": "e6082a9be647380ccc2f3265821b8855a1444326594de4bdac8f29c9f3027e58"
+    },
+    "weeks/week11/data/epl_rules.md": {
+      "bytes": 1473,
+      "sha256": "228a204acea0ffd22dcbc907ec013039e5f49c47b0ea63c715386101caf7cf6a"
+    },
+    "weeks/week11/data/nba_played.csv": {
+      "bytes": 7593,
+      "sha256": "e1c2643536284d69058e908a93d739c9517191def26bc3fe60db97e9fe7b6fcf"
+    },
+    "weeks/week11/data/nba_remaining.csv": {
+      "bytes": 70585,
+      "sha256": "196f760a3d65315ee977fccb162747c31f96c37cb3fa8aeb0abe9c0737908901"
+    },
+    "weeks/week11/data/nba_rules.md": {
+      "bytes": 1861,
+      "sha256": "f4e2aac02e265c698dd724dd14c8101973a379f71099c0168a135cf442ae27e3"
+    },
+    "weeks/week11/data/nfl_played.csv": {
+      "bytes": 6784,
+      "sha256": "7a694387c6b713d65d0eea115b6fb5d39be0f660ece8ba35e17bcf8c816ac344"
+    },
+    "weeks/week11/data/nfl_remaining.csv": {
+      "bytes": 8001,
+      "sha256": "9afcc3faadce72ea3d83354ff6e0e0d165daeb4140f07e30abf55d3bae0cb6ed"
+    },
+    "weeks/week11/data/nfl_rules.md": {
+      "bytes": 1517,
+      "sha256": "76ce57736e3d536b3c31de23b25da949049c29b7110b67e0ee2b004538feb00f"
+    },
+    "weeks/week11/data/nhl_played.csv": {
+      "bytes": 21932,
+      "sha256": "83ce2d0a944f859236a55e7dce5dcc5d97bb3034bd48c2f418929993a085e75a"
+    },
+    "weeks/week11/data/nhl_remaining.csv": {
+      "bytes": 94394,
+      "sha256": "02230bc6226bc9c4ba9209d1176db124f6d6eb3de8293949447c21e3989617c3"
+    },
+    "weeks/week11/data/nhl_rules.md": {
+      "bytes": 2146,
+      "sha256": "35893936e010f81120518a5831076209464c710d44fb877f04146a940eeb125b"
+    },
+    "weeks/week11/data/pull_week11_data.py": {
+      "bytes": 13056,
+      "sha256": "6e0acc6c4bbbb2eafd6ddf9ba8c076efdd856449ec6608bb5006a92e1af3c442"
     }
   },
-  "generated": "2026-10-27",
+  "generated": "2026-11-04",
   "managed_prefixes": [
     ".claude/skills/audit/",
     ".claude/skills/coach-brief/",
