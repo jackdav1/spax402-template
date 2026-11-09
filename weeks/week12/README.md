@@ -6,6 +6,7 @@ By Monday night you can:
 - say what a decision tree and a random forest do, and direct an agent to build one;
 - judge a model on data it never saw, and say when it has overfit;
 - read a confusion matrix and choose between accuracy, precision and recall for a decision;
+- check whether a model's probabilities mean what they say (calibration and the Brier score);
 - catch data leakage: a column the model would not have when it makes the prediction.
 
 ## Thursday: the model lab (in class, with Claude)
@@ -13,67 +14,61 @@ By Monday night you can:
 No worksheet this week. You work in Claude Code, in this repo, on one file:
 `weeks/week12/data/nfl-field-goals-2016-2025.csv`, every NFL field goal attempt from 2016 to
 2025, regular season and playoffs, 10,015 of them, from nflverse play-by-play. One row is one
-kick. Columns: game id, season, regular season or playoffs, week, kicking team, opponent,
-whether the kicking team was at home, the kicker's name and id, the kick distance in yards,
-quarter, seconds left in the game, the kicking team's score minus the opponent's, whether the
-game was indoors (a dome or a closed roof), grass or turf, wind in miles per hour, the result
-(made, missed or blocked) and `made` (1 if it was good, 0 if not). Wind is 0 indoors. Kicks
-from games with an open retractable roof or no recorded wind are left out.
+kick. Kicks from games with an open retractable roof or no recorded wind are left out. Every
+column except the last two is known before the kick:
 
-Each round is the same three steps:
+- `game_id`, `season`, `season_type` (regular or playoffs), `playoff` (1 for a playoff game),
+  `week`, `kicking_team`, `opponent`, and `home` (1 if the kicking team was at home);
+- `stadium` and `stadium_id`, as nflverse records them (a team's stadium can change names, so
+  use the id to group), and `denver_altitude` (1 for kicks in Denver's stadium);
+- `kicker` and `kicker_id`;
+- `kicker_prior_attempts` and `kicker_prior_rate`: how many field goals this kicker attempted
+  before this kick, from 2016 on, and the share of them he made (0 to 1). Only earlier kicks
+  count, never this one or later ones. Blank for a kicker's first kick in the file;
+- `kick_distance` in yards, `qtr`, `game_seconds_remaining`, and `score_differential` (the
+  kicking team's score minus the opponent's);
+- `iced`, 1 when the defense called a timeout right before the kick, with no snap in between;
+- `roof` (outdoors, dome or closed), `indoor` (1 for a dome or a closed roof) and `surface`
+  (grass or turf);
+- `wind` in miles per hour (0 indoors) and `temp` in degrees Fahrenheit (blank indoors: nflverse
+  doesn't record a temperature under a roof);
+- `precipitation`, 1 when the game's weather note mentions rain, snow, showers, drizzle, sleet,
+  flurries or storms. Forecast phrases such as "chance of rain" don't count;
+- `result` (made, missed or blocked) and `made` (1 if it was good, 0 if not). These two are the
+  outcome.
 
-1. **Predict.** Before any prompt, write your guess for the round's number in
-   `outputs/lab-predictions.md` and commit it.
-2. **Build.** Have Claude build the model. Use a train/test split of 0.8/0.2 and report
-   everything on the test kicks.
-3. **Break.** Find where the model is wrong, and say why.
+Public play-by-play doesn't record which hash the ball was spotted on, so the file has no hash
+mark column.
 
-### Round 1: every kick is good
+In class, Jack walks through example models on this file and what each one gets wrong. Then
+it's your turn.
 
-A model that says every field goal is good. How often is it right on the test kicks? How many
-misses does it catch?
+### Your model
 
-### Round 2: distance
+Build the best model you can for the probability that a field goal is good. Train on 2016 to
+2023 and test on 2024 and 2025, so the test kicks come after every kick the model learns from.
+Which columns and which model are up to you.
 
-A decision tree classifier with a maximum depth of two, on kick distance alone. Show a
-confusion matrix of the test kicks, with totals and with percentages. How many misses does it
-catch?
+1. **Set a `/goal` first.** `/goal` sets a finish line: after every turn a second model reads
+   the conversation and decides whether the condition holds. It can't run code or open files,
+   so every clause has to be something Claude's output will show. Give it a concrete success
+   condition and a turn cap, such as `or stop after 15 turns` (there is no limit unless you
+   write one). Save it as `outputs/lab/goal.md` and commit it before you run it.
+2. **Report on the 2024 and 2025 kicks:** accuracy next to a model that says every kick is
+   good, the Brier score (the average squared gap between the predicted probability and what
+   happened; lower is better), and a calibration chart (predicted probability against how often
+   those kicks were good). Save the chart in `outputs/lab/`.
+3. **Write two sentences** in `outputs/lab/goal.md`, under your goal, on what you'd tell a
+   kicking coach.
 
-### Round 3: class weights
-
-The same tree, with balanced class weights. Now how many misses does it catch, and how often is
-it right when it predicts a miss? At what distance does it start predicting misses?
-
-### Round 4: the kickers
-
-Add the kicker's name, one-hot encoded, plus wind and indoors, and let the tree grow with no
-depth limit. Guess its accuracy on the kicks it learned from and on the test kicks before you
-run it.
-
-### Round 5: a goal for your model
-
-Write a `/goal` for the model you would hand a coach deciding whether to attempt a kick, and
-let Claude work until it is met. `/goal` sets a finish line: after every turn a second model
-reads the conversation and decides whether the condition holds. It can't run code or open
-files, so every clause has to be something Claude's output will show. Your goal should name:
-
-- the train/test split, and the goal you optimize for (say why in `outputs/lab/goal.md`);
-- the numbers the output must print, such as accuracy, misses caught and the confusion matrix
-  of the test kicks;
-- an interactive page, saved as a single HTML file in `outputs/lab/`, where the coach sets the
-  distance and the conditions and sees what your model says;
-- a turn cap, such as `or stop after 15 turns`. There is no limit unless you write one.
-
-Save the goal in `outputs/lab/goal.md` and commit it before you run it. `/goal` with nothing
-after it shows the status, and `/goal clear` stops it. A goal doesn't change your permissions:
-unless you switch to auto mode, Claude still stops to ask before it runs code, so stay at the
-keyboard and approve each step. When it finishes, check the output against each clause of your
-goal, and open the page in a browser.
+`/goal` with nothing after it shows the status, and `/goal clear` stops it. A goal doesn't
+change your permissions: unless you switch to auto mode, Claude still stops to ask before it
+runs code, so stay at the keyboard and approve each step. When it finishes, check the output
+against each clause of your goal yourself.
 
 ### Submitting it
 
-Commit `outputs/lab-predictions.md`, `outputs/lab/goal.md`, the code Claude ran and the HTML
-file in `outputs/lab/`.
+Commit `outputs/lab/goal.md`, the code Claude ran and the calibration chart in `outputs/lab/`.
 They are part of the Monday, November 16 submission. Out of time? Finish at home before you
 start the Case Study. No need to ask.
 
@@ -108,23 +103,29 @@ before you start: which 4th & 1 play call converts most often, and about how oft
    - `offense_formation`, `offense_personnel`, `defenders_in_box` and `defense_personnel`;
    - `converted`, 1 if the offense got the first down and 0 if not. This is the target.
 2. **Write your prompt before you run anything.** Save it as `outputs/prompt.md` and commit it.
-   Fill in each of the six parts:
-   - the target variable;
-   - the goal of the model;
-   - the model and its settings: a decision tree classifier with a maximum depth of two or
-     three, and a train/test split of 0.8/0.2;
-   - the transformations it needs: the text columns have to be one-hot encoded;
-   - how you will judge it: a labeled confusion matrix of the test plays, with totals and with
-     percentages, and the goal you optimize for, balancing class weights if needed;
-   - the visuals you want: the tree, drawn.
-3. **Run it, and compare it with a baseline:** a model that says every 4th & 1 converts.
-4. **Read the tree.** Turn its top splits into advice your coach could use, and check each one
+   Cover each of the five parts from the lecture:
+   - your question and audience;
+   - how you define success (ask an LLM to grill you on edge cases);
+   - what data you have available and want to use: where it lives, what one row is, what the
+     columns mean, and when each one becomes known;
+   - what you want to optimize for, including which mistake costs more;
+   - what to watch out for, such as a column known only after the snap.
+3. **Run it, and compare it with a baseline:** a model that says every 4th & 1 converts. The
+   model is a decision tree classifier with a maximum depth of two or three and a train/test
+   split of 0.8/0.2. Show a labeled confusion matrix of the test plays, with totals and with
+   percentages, and the tree, drawn.
+4. **Check its probabilities.** Have the model report a predicted conversion probability for
+   each test play. Show a calibration chart of the test plays (predicted probability against
+   how often those plays converted; five bins, since there are only about 540 test plays) and
+   the Brier score, next to the Brier score of a baseline that gives every play the league
+   conversion rate from the training plays.
+5. **Read the tree.** Turn its top splits into advice your coach could use, and check each one
    against the plays themselves: how many plays sit behind the split, and how often they
    converted.
-5. **Build an interactive page** where the coach picks a situation (field position, formation,
+6. **Build an interactive page** where the coach picks a situation (field position, formation,
    play call) and sees what your tree predicts and how often similar plays converted. Save it
    in `outputs/`.
-6. **Commit** the code you ran and the tables, charts and page that back up your brief.
+7. **Commit** the code you ran and the tables, charts and page that back up your brief.
 
 Ask any clarifying questions before you start.
 
