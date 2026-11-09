@@ -23,7 +23,8 @@
   "week08": "2026-10-19",
   "week09": "2026-10-26",
   "week10": "2026-11-02",
-  "week11": "2026-11-09"
+  "week11": "2026-11-09",
+  "week12": "2026-11-16"
  },
  "brief": {
   "week01": {
@@ -169,6 +170,22 @@
      "questions": [
       "What assumption in your model do you trust least? How does that assumption impact your odds?",
       "Was there a team your model liked more than you expected? Why do you think your model liked that team more than you would’ve anticipated?"
+     ]
+    }
+   ]
+  },
+  "week12": {
+   "title": "4th & 1",
+   "audience": "the head coach",
+   "parts": [
+    {
+     "title": "4th & 1",
+     "audience": "the head coach",
+     "questions": [
+      "What would you tell your coach to call on 4th & 1, and what in your model supports it?",
+      "Was any column in the data something your coach couldn’t know before the snap? How did you find out, and what did it do to your model?",
+      "Which mistake matters more to your coach here, a false positive or a false negative? How did that change the model you built?",
+      "What other data would you want before telling your coach to change his 4th & 1 calls?"
      ]
     }
    ]

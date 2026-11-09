@@ -45,12 +45,12 @@
       "sha256": "004708b3f9c349296473160a7fe3a1de8f1bcf61808830ee580a2512358453aa"
     },
     "course-schedule.json": {
-      "bytes": 8615,
-      "sha256": "a6136fe719f6b3bbcdc09379bc38de7424d4b4f3477249ff6f619c1268356de2"
+      "bytes": 9305,
+      "sha256": "2208ee67307cf71edf05a9811154ad308c7f3b03c8039653be1a30644a535727"
     },
     "scripts/build_harness_manifest.py": {
-      "bytes": 12313,
-      "sha256": "9bc6f121dd1d24b93e8668e9efb09840b37c753b3c74f667d423b47d95f194ff"
+      "bytes": 12456,
+      "sha256": "2d19574579d1f7d0722868b84e424164862ec341b6298cdb83ecd0fdccce5ab8"
     },
     "scripts/harness_update.py": {
       "bytes": 20934,
@@ -272,9 +272,21 @@
     "weeks/week11/data/pull_week11_data.py": {
       "bytes": 13056,
       "sha256": "6e0acc6c4bbbb2eafd6ddf9ba8c076efdd856449ec6608bb5006a92e1af3c442"
+    },
+    "weeks/week12/README.md": {
+      "bytes": 8519,
+      "sha256": "c9b6a4852ce8d0302fcb16ff5b4e411260cda8dcf6d9362b7e71f2879ef89d1c"
+    },
+    "weeks/week12/data/nfl-field-goals-2016-2025.csv": {
+      "bytes": 1421912,
+      "sha256": "1bcce8980c3e8f22eb9548b71edffe32e25a45ea9a81602be0dbc0dfcd675f59"
+    },
+    "weeks/week12/data/nfl-fourth-and-one-2016-2025.csv": {
+      "bytes": 432514,
+      "sha256": "ce2cb5da0905e191582d7d9578bca6fc6764eb268e0e0b03e756891981f253b4"
     }
   },
-  "generated": "2026-11-05",
+  "generated": "2026-11-09",
   "managed_prefixes": [
     ".claude/skills/audit/",
     ".claude/skills/coach-brief/",
