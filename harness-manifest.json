@@ -286,7 +286,7 @@
       "sha256": "ce2cb5da0905e191582d7d9578bca6fc6764eb268e0e0b03e756891981f253b4"
     }
   },
-  "generated": "2026-11-05",
+  "generated": "2026-11-09",
   "managed_prefixes": [
     ".claude/skills/audit/",
     ".claude/skills/coach-brief/",

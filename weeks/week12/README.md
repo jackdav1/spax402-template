@@ -50,16 +50,30 @@ Add the kicker's name, one-hot encoded, plus wind and indoors, and let the tree 
 depth limit. Guess its accuracy on the kicks it learned from and on the test kicks before you
 run it.
 
-### Round 5: your model
+### Round 5: a goal for your model
 
-Build the model you would hand a coach deciding whether to attempt a kick. Pick the goal you
-optimize for, and say why. Then make it land: an interactive page where the coach sets the
-distance and the conditions and sees what your model says. Save it as a single HTML file in
-`outputs/lab/`, open it in a browser, then ask Claude for the one change that makes it clearer.
+Write a `/goal` for the model you would hand a coach deciding whether to attempt a kick, and
+let Claude work until it is met. `/goal` sets a finish line: after every turn a second model
+reads the conversation and decides whether the condition holds. It can't run code or open
+files, so every clause has to be something Claude's output will show. Your goal should name:
+
+- the train/test split, and the goal you optimize for (say why in `outputs/lab/goal.md`);
+- the numbers the output must print, such as accuracy, misses caught and the confusion matrix
+  of the test kicks;
+- an interactive page, saved as a single HTML file in `outputs/lab/`, where the coach sets the
+  distance and the conditions and sees what your model says;
+- a turn cap, such as `or stop after 15 turns`. There is no limit unless you write one.
+
+Save the goal in `outputs/lab/goal.md` and commit it before you run it. `/goal` with nothing
+after it shows the status, and `/goal clear` stops it. A goal doesn't change your permissions:
+unless you switch to auto mode, Claude still stops to ask before it runs code, so stay at the
+keyboard and approve each step. When it finishes, check the output against each clause of your
+goal, and open the page in a browser.
 
 ### Submitting it
 
-Commit `outputs/lab-predictions.md`, the code Claude ran and the HTML file in `outputs/lab/`.
+Commit `outputs/lab-predictions.md`, `outputs/lab/goal.md`, the code Claude ran and the HTML
+file in `outputs/lab/`.
 They are part of the Monday, November 16 submission. Out of time? Finish at home before you
 start the Case Study. No need to ask.
 
