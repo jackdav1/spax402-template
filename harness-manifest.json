@@ -274,12 +274,12 @@
       "sha256": "6e0acc6c4bbbb2eafd6ddf9ba8c076efdd856449ec6608bb5006a92e1af3c442"
     },
     "weeks/week12/README.md": {
-      "bytes": 7577,
-      "sha256": "2054e183cf90769c71f4b630616545ea70d631654f6e59a407e9ec8ea4e7d1c8"
+      "bytes": 8519,
+      "sha256": "c9b6a4852ce8d0302fcb16ff5b4e411260cda8dcf6d9362b7e71f2879ef89d1c"
     },
     "weeks/week12/data/nfl-field-goals-2016-2025.csv": {
-      "bytes": 904496,
-      "sha256": "e10db76bf4c3f367900b430b4cd15f43f586baffdf7f2acfdf42013e390a5c34"
+      "bytes": 1421912,
+      "sha256": "1bcce8980c3e8f22eb9548b71edffe32e25a45ea9a81602be0dbc0dfcd675f59"
     },
     "weeks/week12/data/nfl-fourth-and-one-2016-2025.csv": {
       "bytes": 432514,
