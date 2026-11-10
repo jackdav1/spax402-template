@@ -175,17 +175,15 @@
    ]
   },
   "week12": {
-   "title": "4th & 1",
+   "title": "Field goals",
    "audience": "the head coach",
    "parts": [
     {
-     "title": "4th & 1",
+     "title": "54 yards in the rain",
      "audience": "the head coach",
      "questions": [
-      "What would you tell your coach to call on 4th & 1, and what in your model supports it?",
-      "Was any column in the data something your coach couldn’t know before the snap? How did you find out, and what did it do to your model?",
-      "Which mistake matters more to your coach here, a false positive or a false negative? How did that change the model you built?",
-      "What other data would you want before telling your coach to change his 4th & 1 calls?"
+      "Your team is down by three with one minute left in the fourth quarter. It’s 4th & 2, it’s raining, and the kick would be 54 yards. Your kicker is about average. What would you tell your coach the odds of making the kick are?",
+      "What else would you want to know before advising your coach?"
      ]
     }
    ]

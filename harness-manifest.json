@@ -280,13 +280,9 @@
     "weeks/week12/data/nfl-field-goals-2016-2025.csv": {
       "bytes": 1421912,
       "sha256": "1bcce8980c3e8f22eb9548b71edffe32e25a45ea9a81602be0dbc0dfcd675f59"
-    },
-    "weeks/week12/data/nfl-fourth-and-one-2016-2025.csv": {
-      "bytes": 432514,
-      "sha256": "ce2cb5da0905e191582d7d9578bca6fc6764eb268e0e0b03e756891981f253b4"
     }
   },
-  "generated": "2026-11-09",
+  "generated": "2026-11-10",
   "managed_prefixes": [
     ".claude/skills/audit/",
     ".claude/skills/coach-brief/",
