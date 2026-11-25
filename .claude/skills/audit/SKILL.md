@@ -73,3 +73,22 @@ Write `weeks/weekNN/checks/weekNN-audit.md`: each finding (severity, what, why i
 the student's verbatim disposition, and what changed as a result. If there are genuinely no
 findings, say so and state explicitly what you checked — an empty audit with no checklist is not
 a clean audit.
+
+End the file with a `## Brief follow-ups` section. A fix changes the code and outputs, but the
+brief is the student's to change, so this list is what tells them which parts of it the audit
+touched. One line per item, in this form:
+
+- `- [revise] Q2: "<the brief sentence, quoted exactly as it stands now>" — <the finding it
+  conflicts with, and the corrected number or fact from the outputs>`: a brief sentence that a
+  finding contradicts, whatever the disposition. **accept** does not exempt it: a student can
+  accept that a finding leaves the conclusion standing while a number in the brief is still
+  wrong.
+- `- [disclose] Q<n or "any">: <the limitation, named in a few words>`: one line per disclose
+  disposition.
+- `- [check] Q<n>: <the finding>`: a fix that changed a number or result the brief will need,
+  when there is no draft brief yet or the draft doesn't state that number.
+
+Quote the brief and the outputs; never draft replacement wording, a corrected sentence, or the
+disclosure itself. Same hard rule as /coach-brief: every word of the brief is the student's. If
+nothing in the audit touches the brief, write `None.` under the heading. Then tell the student
+in one line how many follow-ups there are and that `/submit` will check them.

@@ -28,6 +28,19 @@ student sees the whole picture at once):
    questions still blank. Either way, tell them who the audience is (the file says so at the
    top) and remind them `/coach-brief NN` will critique a draft. **Never write or suggest a
    single sentence of the brief itself** — same hard rule as /coach-brief.
+4b. **The brief after the audit.** Read the `## Brief follow-ups` section at the end of
+   `checks/weekNN-audit.md` and check each line against the current `BRIEF.md`:
+   - `[revise]`: open if the quoted sentence is still in the brief word for word (ignore
+     whitespace). If the student reworded it, read the new version and call it open only if
+     it still states what the finding contradicts.
+   - `[disclose]`: open if no sentence in the brief names that limitation, in any wording.
+   - `[check]`: open if the brief states a number or result the finding changed and still uses
+     the old one; resolved if it uses the new one or doesn't state it.
+   Report each line as resolved or open, quoting the audit line for every open one. Also say
+   when `BRIEF.md` was last committed before the audit file was (`git log -1 --format=%ci`
+   on each), since that usually means the brief was never reread after the audit. An audit
+   file with no follow-ups section predates this check: say so and skip it. Report only; never
+   suggest wording, and an open follow-up never blocks a submission.
 5. **The quiz.** `checks/weekNN-quiz.json` with `"pass": true`, plus its transcript. Missing or
    `pass: false` → run `/quiz-me NN`.
 
@@ -54,7 +67,8 @@ submit — a deadline is never the moment to change the harness.
 ## Step 2 — anything missing
 
 List what's missing and the command for each, in the order they should run them
-(audit → brief → quiz is the intended order). Then say plainly: they can submit right now with
+(audit → brief → quiz is the intended order), and list any open brief follow-ups as items
+to fix in the brief. Then say plainly: they can submit right now with
 these gaps. A missing hand-build, audit record, or quiz transcript counts against the analysis
 half of the case study grade; a missing or empty BRIEF.md counts against the brief half. Or fill
 the gaps first if there is time. Ask which they want. If they say submit, submit. Never refuse
