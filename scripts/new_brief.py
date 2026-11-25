@@ -28,7 +28,10 @@ HEADER = """# Brief — %(week_label)s: %(title)s
 <!-- Written for %(audience)s. Every word below is yours: the agent may critique this
      draft (/coach-brief), never write it. Half a page total. Answer each question in a
      few sentences, in language your audience would use. Write under the headings; the
-     quiz gate reads anything outside a heading or a comment as your answer. -->
+     quiz gate reads anything outside a heading or a comment as your answer.
+     After /audit, reread this brief against the "Brief follow-ups" list at the end of
+     checks/%(week)s-audit.md: anything the audit changed or you agreed to disclose has to
+     change here too. /submit checks that list. -->
 """
 
 
@@ -65,6 +68,7 @@ def questions_of(brief):
 def render(week, brief):
     week_label = "Week %s" % week.replace("week", "").lstrip("0")
     out = [HEADER % {
+        "week": week,
         "week_label": week_label,
         "title": brief.get("title", ""),
         "audience": brief.get("audience", "the audience named in the week's README"),

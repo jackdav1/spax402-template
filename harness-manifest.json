@@ -1,8 +1,8 @@
 {
   "files": {
     ".claude/skills/audit/SKILL.md": {
-      "bytes": 4812,
-      "sha256": "d9458595802d4debcf9684b8db84f1a402904c943ea0d051aa8b548616593a87"
+      "bytes": 6072,
+      "sha256": "fe6163ed9b3b1ad98871215c5eacace6e7933d384650e4f2d8d861de16b18f96"
     },
     ".claude/skills/coach-brief/SKILL.md": {
       "bytes": 3851,
@@ -13,8 +13,8 @@
       "sha256": "a6dd4a3846e8b5991a7e6576d55087f6a868d79a50a7c7b1f054992d1d07b6a8"
     },
     ".claude/skills/submit/SKILL.md": {
-      "bytes": 4144,
-      "sha256": "590b77150da8c2c10e338af5d1dd00e10f68c4aaed5ded440ec5ab162a84a823"
+      "bytes": 5305,
+      "sha256": "a389a4abdf3603ab8fa0aa357e73202e8ea06db2b648fca8d74d2df378e5289c"
     },
     ".claude/skills/teach/SKILL.md": {
       "bytes": 2732,
@@ -61,8 +61,8 @@
       "sha256": "d5825a757db5997914c04204c167a27d68f562de949c4218b73e4374676f1d60"
     },
     "scripts/new_brief.py": {
-      "bytes": 4135,
-      "sha256": "31b0c468fceea9137091c1e4dbc900012fcc084e4b810623bffdbd37d0419761"
+      "bytes": 4383,
+      "sha256": "664504a20132d866ee7efa4da0757e314534a1d24cde980b9b074b62ee45e588"
     },
     "scripts/quiz_gate.py": {
       "bytes": 6601,
@@ -282,7 +282,7 @@
       "sha256": "1bcce8980c3e8f22eb9548b71edffe32e25a45ea9a81602be0dbc0dfcd675f59"
     }
   },
-  "generated": "2026-11-10",
+  "generated": "2026-11-25",
   "managed_prefixes": [
     ".claude/skills/audit/",
     ".claude/skills/coach-brief/",
